@@ -68,13 +68,9 @@ def shopping_columns(plan, recipes, format_quantity):
         if not meal.get('ingredients_verified', recipe['ingredients_verified']):
             columns[column] = ['DRAFT', 'Ingredients pending verification.']
             continue
-        previous = None
         for row in day_shopping(plan,meal,recipe):
-            category = 'Pantry check' if row['pantry'] else row['category']
-            if category != previous:
-                columns[column].append(category.upper())
-                previous = category
-            columns[column].append(f"[ ] {row['item']} - {format_quantity(row)}")
+            pantry = ' (pantry)' if row['pantry'] else ''
+            columns[column].append(f"{format_quantity(row)} {row['item']}{pantry}")
     return columns
 
 

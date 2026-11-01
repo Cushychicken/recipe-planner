@@ -74,17 +74,9 @@
         pending++;
         shopping.append(element('p', 'Ingredients pending verification.', 'pending'));
       } else {
-        let previous;
         recipe.shopping.forEach(row => {
-          if (row.category !== previous) {
-            shopping.append(element('h3', row.category));
-            previous = row.category;
-          }
-          const label = element('label');
-          const checkbox = element('input');
-          checkbox.type = 'checkbox';
-          label.append(checkbox, element('span', `${row.item} - ${row.quantity}`));
-          shopping.append(label);
+          const pantry = row.category === 'Pantry check' ? ' (pantry)' : '';
+          shopping.append(element('div', `${row.quantity} ${row.item}${pantry}`, 'ingredient'));
         });
       }
       document.querySelector(`[data-action="leftovers"][data-day="${day}"]`).setAttribute('aria-pressed', String(choice.kind === 'leftovers'));
@@ -122,5 +114,23 @@
   });
   document.getElementById('reset-plan').addEventListener('click', () => { choices = data.initial.map(x => ({...x})); persist(); });
   document.getElementById('print-plan').addEventListener('click', () => window.print());
+  // Fit current browser selections, including random replacements, on the same
+  // landscape Letter sheet as the generated PDF. Keep all ingredients intact.
+  window.addEventListener('beforeprint', () => {
+    const root = document.documentElement;
+    const page = document.querySelector('main');
+    const availableHeight = 7.8 * 96; // 8.5-inch page minus two 0.35-inch margins.
+    root.style.setProperty('--print-scale','1');
+    for (const size of [8.25,8,7.75,7.5]) {
+      root.style.setProperty('--shopping-font',`${size}pt`);
+      if (page.getBoundingClientRect().height <= availableHeight) return;
+    }
+    const scale = Math.min(1,availableHeight / page.getBoundingClientRect().height);
+    root.style.setProperty('--print-scale',String(scale * 0.99));
+  });
+  window.addEventListener('afterprint', () => {
+    document.documentElement.style.removeProperty('--shopping-font');
+    document.documentElement.style.removeProperty('--print-scale');
+  });
   render();
 })();

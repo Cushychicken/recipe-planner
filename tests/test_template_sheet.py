@@ -35,6 +35,8 @@ class TemplateTests(unittest.TestCase):
             else:
                 self.assertIn('DRAFT',table.cell(3,1).text)
             self.assertGreater(doc.sections[0].page_width,doc.sections[0].page_height)
+            for cell in table.rows[3].cells[1:]:
+                self.assertNotIn('[ ]',cell.text)
 
     @unittest.skipUnless(shutil.which('soffice') or shutil.which('libreoffice'),'LibreOffice required')
     def test_populated_shopping_sheet_is_exactly_one_page(self):
@@ -60,6 +62,8 @@ class TemplateTests(unittest.TestCase):
             output=PdfReader(pdf)
             self.assertEqual(1,len(output.pages))
             text=' '.join(output.pages[0].extract_text().split())
+            for heading in ('PRODUCE','MEAT','PANTRY'):
+                self.assertNotIn(heading,text)
             for i in range(42):
                 self.assertIn(f'ingredient {i:02d}',text)
             self.assertNotIn('DRAFT',text)
