@@ -11,7 +11,7 @@ from docx import Document
 from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT, WD_ROW_HEIGHT_RULE
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
-from docx.shared import Inches, Pt
+from docx.shared import Inches, Pt, RGBColor
 from lxml import etree
 from pypdf import PdfReader
 
@@ -40,7 +40,7 @@ def template_document():
     return Document(buffer)
 
 
-def set_cell(cell, lines, size=9, bold_first=False):
+def set_cell(cell, lines, size=9, bold_first=False, secondary_size=None):
     cell.text = ''
     cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
     for index, line in enumerate(lines):
@@ -50,7 +50,8 @@ def set_cell(cell, lines, size=9, bold_first=False):
         paragraph.paragraph_format.line_spacing = 1
         run = paragraph.add_run(line)
         run.font.name = 'Arial'
-        run.font.size = Pt(size)
+        run.font.size = Pt(secondary_size if index and secondary_size is not None else size)
+        run.font.color.rgb = RGBColor(0, 0, 0)
         run.bold = bold_first and index == 0
 
 
@@ -69,7 +70,7 @@ def shopping_columns(plan, recipes, format_quantity):
             columns[column] = ['DRAFT', 'Ingredients pending verification.']
             continue
         for row in day_shopping(plan,meal,recipe):
-            columns[column].append(shopping_label(row))
+            columns[column].append('• ' + shopping_label(row))
     return columns
 
 
@@ -131,11 +132,10 @@ def render_docx(path, plan, recipes, sources, format_quantity, shopping_size=8.5
         set_cell(table.cell(0,index), [day], size=10, bold_first=index == 0)
         cell = table.cell(0,index)
         shade = OxmlElement('w:shd')
-        shade.set(qn('w:fill'),'365E47')
+        shade.set(qn('w:fill'),'FFFFFF')
         cell._tc.get_or_add_tcPr().append(shade)
         for run in cell.paragraphs[0].runs:
-            from docx.shared import RGBColor
-            run.font.color.rgb = RGBColor.from_string('FFFFFF')
+            run.font.color.rgb = RGBColor(0, 0, 0)
     # Keep both merged lunch areas blank for handwriting; no lunch data was supplied.
     set_cell(table.cell(1,0), ['Lunch Options'], size=10, bold_first=True)
     set_cell(table.cell(1,4), ['Lunch Ingredients'], size=10, bold_first=True)
@@ -146,7 +146,12 @@ def render_docx(path, plan, recipes, sources, format_quantity, shopping_size=8.5
             borders = cell._tc.get_or_add_tcPr().find(qn('w:tcBorders'))
             if borders is not None:
                 for edge in borders:
-                    edge.set(qn('w:color'),'C9CCBF')
+                    edge.set(qn('w:color'),'000000')
+            shade = cell._tc.get_or_add_tcPr().find(qn('w:shd'))
+            if shade is None:
+                shade = OxmlElement('w:shd')
+                cell._tc.get_or_add_tcPr().append(shade)
+            shade.set(qn('w:fill'),'FFFFFF')
     by_id = {r['id']:r for r in recipes}
     for column in range(1,8):
         set_cell(table.cell(2,column), [])
@@ -161,8 +166,9 @@ def render_docx(path, plan, recipes, sources, format_quantity, shopping_size=8.5
         column = (day.weekday()+1)%7 + 1
         source = recipe['source']
         if recipe.get('page'):
-            source += f", p. {recipe['page']}"
-        set_cell(table.cell(2,column), [recipe['name'], source], bold_first=True)
+            source += f" · p. {recipe['page']}"
+        set_cell(table.cell(2,column), [recipe['name'], source], size=9.5,
+                 secondary_size=10.5, bold_first=True)
     columns = shopping_columns(plan, recipes, format_quantity)
     for column, lines in enumerate(columns, 1):
         set_cell(table.cell(3,column), lines, size=shopping_size)
@@ -178,6 +184,7 @@ def render_docx(path, plan, recipes, sources, format_quantity, shopping_size=8.5
     run = legend.add_run(f"{plan['servings']} servings per dinner. " + text)
     run.font.name = 'Arial'
     run.font.size = Pt(7)
+    run.font.color.rgb = RGBColor(0, 0, 0)
     doc.core_properties.title = f"Dinner plan week of {plan['week_start']}"
     doc.save(path)
 
