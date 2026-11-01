@@ -122,33 +122,43 @@ def build_plan(recipes, start, settings, history, existing=None):
 
 
 def render_html(plan, recipes, sources, archive):
+    from template_sheet import shopping_columns
     by_id = {r['id']: r for r in recipes}
     start = date.fromisoformat(plan['week_start'])
-    meals = ''
-    for meal in plan['meals']:
-        recipe = by_id[meal['recipe_id']]
-        day = date.fromisoformat(meal['day']).strftime('%a %m/%d')
-        title = escape(recipe['name'])
-        if recipe.get('url'):
-            title = f'<a href="{escape(recipe["url"], quote=True)}">{title}</a>'
-        meals += f'<tr><th>{day}</th><td><strong>{title}</strong><small>{escape(reference(recipe, sources))}</small></td></tr>'
-    warning = '<aside><b>DRAFT — ingredients not verified.</b> This is a layout preview. No shopping list is available until all selected recipes have verified ingredient quantities.</aside>' if plan['draft'] else ''
-    groups = defaultdict(list)
-    for row in plan['shopping']:
-        groups['Pantry — check before buying' if row['pantry'] else row['category']].append(row)
-    shopping = ''
-    for category, rows in groups.items():
-        shopping += f'<section class="category"><h3>{escape(category)}</h3>'
-        for row in rows:
-            shopping += f'<label><input type="checkbox"> {escape(row["item"])} <span>{escape(quantity(row))}</span></label>'
-        shopping += '</section>'
-    if not shopping:
-        shopping = '<p class="muted">Ingredient quantities still need to be entered and checked against the original recipes.</p>'
+    meals_by_day = {date.fromisoformat(m['day']): by_id[m['recipe_id']] for m in plan['meals']}
+    headings = '<th scope="col" class="row-label">Day</th>'
+    dinners = '<th scope="row" class="row-label">Dinner</th>'
+    for i, label in enumerate(('Sun','Mon','Tues','Weds','Thurs','Fri','Sat')):
+        day = start + timedelta(days=i)
+        headings += f'<th scope="col">{label}<small>{day.strftime("%m/%d")}</small></th>'
+        recipe = meals_by_day.get(day)
+        if recipe:
+            title = escape(recipe['name'])
+            if recipe.get('url'):
+                title = f'<a href="{escape(recipe["url"], quote=True)}">{title}</a>'
+            page = f", p. {recipe['page']}" if recipe.get('page') else ''
+            dinners += f'<td><strong>{title}</strong><small>{escape(recipe["source"]+page)}</small></td>'
+        else:
+            dinners += '<td></td>'
+    groceries = '<th scope="row" class="row-label">Shopping list<small>Combined</small></th>'
+    for index, lines in enumerate(shopping_columns(plan['shopping'], quantity)):
+        cell = ''
+        for line in lines:
+            if line.startswith('[ ] '):
+                cell += f'<label><input type="checkbox"><span>{escape(line[4:])}</span></label>'
+            else:
+                cell += f'<h3>{escape(line)}</h3>'
+        if plan['draft'] and index == 0:
+            cell = '<p class="pending">Ingredient quantities pending verification.</p>'
+        groceries += f'<td>{cell}</td>'
+    warning = '<aside><b>Draft plan.</b> Ingredient quantities are still being verified; the shopping list is pending.</aside>' if plan['draft'] else ''
     links = ' · '.join(f'<a href="{escape(p)}.html">{escape(p)}</a>' for p in archive)
+    used = sorted({r['source'] for r in meals_by_day.values()})
+    legend = ' · '.join(escape(code+': '+sources.get(code, {'name':code})['name']) for code in used)
     return f'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Dinner plan · {start.isoformat()}</title><style>
-*{{box-sizing:border-box}}body{{font:15px/1.45 system-ui,sans-serif;color:#202a25;background:#eeeae1;margin:0}}main{{max-width:1060px;margin:35px auto;background:#fffdf8;padding:40px;border-top:7px solid #365e47}}header{{display:flex;justify-content:space-between;align-items:center;gap:20px}}h1{{font:36px Georgia,serif;margin:0}}h2{{font:25px Georgia,serif;border-bottom:1px solid #c9ccbf;padding-bottom:8px}}h3{{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:#365e47;margin:12px 0 5px}}p{{margin:8px 0 20px}}.eyebrow{{text-transform:uppercase;letter-spacing:.15em;font-size:12px;color:#365e47}}.layout{{display:grid;grid-template-columns:1fr 1fr;gap:36px}}table{{border-collapse:collapse;width:100%}}th,td{{text-align:left;vertical-align:top;border-bottom:1px solid #e1e1d8;padding:12px 0}}th{{width:85px;font-size:13px}}small{{display:block;color:#687168;font-size:12px;margin-top:4px}}label{{display:flex;align-items:baseline;gap:7px;padding:4px 0;border-bottom:1px dotted #ddd}}label span{{margin-left:auto;white-space:nowrap;font-size:13px}}input{{accent-color:#365e47}}a{{color:inherit}}button,.button{{font:inherit;border:1px solid #365e47;background:white;padding:9px 12px;border-radius:4px;cursor:pointer;text-decoration:none;display:inline-block}}aside{{background:#fff1cd;padding:15px;border:1px solid #e3bd67;margin:20px 0}}.muted,footer{{color:#687168}}footer{{border-top:1px solid #ddd;margin-top:25px;padding-top:12px;font-size:12px}}.category{{break-inside:avoid}}nav{{display:flex;gap:8px;flex-wrap:wrap}}@media(max-width:700px){{main{{margin:0;padding:22px}}.layout{{grid-template-columns:1fr}}header{{display:block}}nav{{margin:15px 0}}}}@page{{size:letter;margin:.4in}}@media print{{body,main{{background:white}}main{{margin:0;padding:0;max-width:none;border:0}}nav,.archive{{display:none}}h1{{font-size:25px}}body{{font-size:11px}}h2{{font-size:19px}}.layout{{grid-template-columns:1fr 1fr;gap:24px}}th,td{{padding:9px 0}}small{{font-size:9px}}h3{{font-size:10px}}label span{{font-size:10px}}footer{{font-size:9px}}a{{text-decoration:none}}}}
-</style><main><header><div><div class="eyebrow">The weekly dinner plan</div><h1>{start.strftime('%B %d')} – {(start+timedelta(days=6)).strftime('%B %d, %Y')}</h1></div><nav><button onclick="window.print()">Print sheet</button><a class="button" href="{start.isoformat()}.pdf">Download PDF</a><a class="button" href="catalog.html">Recipes</a></nav></header><p>{plan['servings']} servings per dinner · Sunday–Saturday</p>{warning}<div class="layout"><section><h2>On the menu</h2><table>{meals}</table></section><section><h2>Shopping list</h2>{shopping}</section></div><footer>Quantities are scaled to {plan['servings']} servings. Pantry items remain listed for checking. Recipes and methods are in the referenced books or linked originals.<div class="archive">Past plans: {links or 'First week'}</div></footer></main></html>'''
+*{{box-sizing:border-box}}body{{font:15px/1.45 system-ui,sans-serif;color:#202a25;background:#eeeae1;margin:0}}main{{max-width:1400px;margin:35px auto;background:#fffdf8;padding:36px;border-top:7px solid #365e47}}header{{display:flex;justify-content:space-between;align-items:center;gap:24px}}h1{{font:34px Georgia,serif;margin:3px 0 0}}p{{margin:8px 0 20px}}.eyebrow{{text-transform:uppercase;letter-spacing:.15em;font-size:12px;color:#365e47}}.subhead{{color:#687168;margin:10px 0 22px}}nav{{display:flex;gap:8px;flex-wrap:wrap}}.button{{font-size:13px;border:1px solid #365e47;background:transparent;padding:9px 12px;border-radius:4px;white-space:nowrap;text-decoration:none;display:inline-block}}.button.primary{{background:#365e47;color:#fffdf8}}a{{color:inherit}}.grid-wrap{{overflow-x:auto}}table{{border-collapse:collapse;table-layout:fixed;width:100%;min-width:980px}}th,td{{border:1px solid #c9ccbf;padding:12px 10px;text-align:left;vertical-align:top;overflow-wrap:break-word}}.row-label{{width:90px;color:#365e47;font-weight:600;background:#f1f1e8}}thead th{{color:#fffdf8;background:#365e47;font-weight:500;padding-top:10px;padding-bottom:10px}}thead .row-label{{background:#365e47;color:#fffdf8}}small{{display:block;color:#687168;font-size:11px;margin-top:7px;font-weight:400}}thead small{{color:#dce6dc;margin-top:2px}}.lunch td{{height:125px;padding:14px}}h2{{font:21px Georgia,serif;margin:0;color:#365e47}}.dinners td{{height:145px}}.dinners strong{{font-size:14px;font-weight:600;line-height:1.45}}.dinners a{{text-decoration:none}}.dinners a:hover{{text-decoration:underline}}.groceries td{{height:300px}}h3{{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#365e47;margin:7px 0}}label{{display:flex;align-items:baseline;gap:5px;padding:5px 0;border-bottom:1px dotted #dddfd3;font-size:12px}}input{{accent-color:#365e47;flex-shrink:0}}.pending{{font-size:12px;color:#687168}}aside{{background:#fff1cd;padding:12px 15px;border:1px solid #e3bd67;margin:0 0 20px;font-size:13px}}footer{{color:#687168;margin-top:15px;font-size:11px}}.archive{{margin-top:10px}}@media(max-width:800px){{main{{margin:0;padding:22px}}header{{display:block}}h1{{font-size:28px}}nav{{margin:18px 0}}.subhead{{margin-bottom:15px}}}}@page{{size:letter landscape;margin:.35in}}@media print{{body,main{{background:white}}main{{margin:0;padding:0;max-width:none;border-top:4px solid #365e47}}header{{padding-top:8px}}h1{{font-size:22px}}.eyebrow{{font-size:9px}}nav,.archive{{display:none}}.subhead{{font-size:9px;margin:4px 0 8px}}.grid-wrap{{overflow:visible}}table{{min-width:0}}th,td{{padding:5px;font-size:9px}}.row-label{{width:57px}}thead th{{padding:4px 5px}}small{{font-size:8px;margin-top:4px}}.lunch td{{height:.9in;padding:7px}}h2{{font-size:14px}}.dinners td{{height:1.05in}}.dinners strong{{font-size:9px;line-height:1.25}}.groceries td{{height:3.1in}}h3{{font-size:8px;margin:4px 0}}label{{font-size:8px;padding:2px 0;line-height:1.2}}input{{width:9px;height:9px;margin:0}}aside{{font-size:9px;padding:5px 8px;margin:0 0 6px}}footer{{font-size:7px;margin-top:6px}}.pending{{font-size:9px}}}}
+</style><main><header><div><div class="eyebrow">The weekly dinner plan</div><h1>{start.strftime('%B %d')} – {(start+timedelta(days=6)).strftime('%B %d, %Y')}</h1></div><nav><a class="button primary" href="{start.isoformat()}.pdf">Print one-page plan</a><a class="button" href="{start.isoformat()}.docx">Edit Word plan</a><a class="button" href="catalog.html">Recipes</a></nav></header><p class="subhead">{plan['servings']} servings per dinner · Sunday–Saturday</p>{warning}<div class="grid-wrap"><table aria-label="Weekly meal plan"><thead><tr>{headings}</tr></thead><tbody><tr class="lunch"><td colspan="4"><h2>Lunch options</h2></td><td colspan="4"><h2>Lunch ingredients</h2></td></tr><tr class="dinners">{dinners}</tr><tr class="groceries">{groceries}</tr></tbody></table></div><footer>{legend}<div class="archive">Past plans: {links or 'First week'} · <a href="{start.isoformat()}-shopping.pdf">Separate shopping checklist</a></div></footer></main></html>'''
 
 
 def render_pdf(path, plan, recipes, sources):
@@ -218,7 +228,10 @@ def main():
         old = load(p)
         page = docs/f'{p.stem}.html'
         page.write_text(render_html(old,recipes,sources,archive))
-        render_pdf(docs/f'{p.stem}.pdf',old,recipes,sources)
+        from template_sheet import render_template_sheet
+        render_template_sheet(docs/f'{p.stem}.docx', docs/f'{p.stem}.pdf', old, recipes, sources, quantity)
+        # Keep the separate consolidated checklist in addition to the household form.
+        render_pdf(docs/f'{p.stem}-shopping.pdf',old,recipes,sources)
     catalog = '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Recipe catalog</title><style>body{font:16px/1.5 system-ui;max-width:900px;margin:30px auto;padding:20px}li{margin-bottom:15px}small{display:block;color:#555}</style><a href="index.html">← Weekly plan</a><h1>Recipe catalog</h1><p>Only recipes with verified ingredient quantities are eligible for a ready-to-shop plan. Unconfirmed book abbreviations are preserved.</p><ol>'
     for r in recipes:
         title = escape(r['name'])

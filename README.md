@@ -13,6 +13,24 @@ Generates a Sunday–Saturday dinner plan, printable shopping checklist, PDF, an
 
 ## Publication
 
+### Household print template
+
+The primary weekly PDF now follows your supplied `templates/weekly-plan.docx`:
+one landscape page, Sunday–Saturday dinner columns with book/page references,
+blank lunch options and lunch ingredients areas, and one combined shopping
+checklist spread across the original seven shopping columns. Shopping columns
+are a combined grocery list, not ingredients assigned to the weekday above them.
+
+Each week also produces an editable `.docx` and a separate `-shopping.pdf`
+checklist. The primary PDF is exported directly from the filled Word template.
+Empty trailing paragraphs are removed, and export must contain exactly one page.
+If a very long ingredient list cannot fit even after reducing checklist type,
+generation fails rather than dropping ingredients or publishing a second page.
+Lunches remain blank because no lunch recipes have been supplied.
+
+Local PDF export additionally requires LibreOffice (`libreoffice-writer`). The
+workflow installs its own renderer. Changes to `templates/` trigger regeneration.
+
 The `Weekly dinner plan` action tests, generates, commits the dated plan and printable files, uploads a downloadable artifact, and deploys `docs/` to GitHub Pages.
 
 Expected site: https://cushychicken.github.io/recipe-planner/
