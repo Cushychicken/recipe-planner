@@ -2846,15 +2846,94 @@
         "source_text": "4 large eggs"
       },
       {
-        "item": "Yum Yum Sauce (prepared), for serving",
-        "quantity": null,
-        "unit": "as needed",
+        "item": "garlic powder",
+        "quantity": "1",
+        "unit": "tsp",
         "category": "Oils and spices",
-        "source_text": "Yum Yum Sauce, for serving"
+        "source_text": "1 teaspoon garlic powder",
+        "component": "Yum Yum Sauce"
+      },
+      {
+        "item": "sweet paprika",
+        "quantity": "1/2",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "½ teaspoon sweet paprika",
+        "component": "Yum Yum Sauce"
+      },
+      {
+        "item": "warm water",
+        "quantity": "1",
+        "unit": "tbsp",
+        "category": "Water",
+        "source_text": "1 tablespoon warm water",
+        "shopping": false,
+        "component": "Yum Yum Sauce"
+      },
+      {
+        "item": "mayonnaise",
+        "quantity": "1/2",
+        "unit": "cup",
+        "category": "Oils and spices",
+        "source_text": "½ cup mayonnaise",
+        "component": "Yum Yum Sauce"
+      },
+      {
+        "item": "ketchup",
+        "quantity": "1/4",
+        "unit": "cup",
+        "category": "Oils and spices",
+        "source_text": "¼ cup ketchup",
+        "component": "Yum Yum Sauce"
+      },
+      {
+        "item": "rice vinegar",
+        "quantity": "2",
+        "unit": "tsp",
+        "category": "Bread and grains",
+        "source_text": "2 teaspoons rice vinegar",
+        "component": "Yum Yum Sauce"
+      },
+      {
+        "item": "toasted sesame oil",
+        "quantity": "1",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "1 teaspoon toasted sesame oil",
+        "component": "Yum Yum Sauce"
+      },
+      {
+        "item": "Salt",
+        "quantity": null,
+        "unit": "to taste",
+        "category": "Oils and spices",
+        "source_text": "Salt",
+        "component": "Yum Yum Sauce"
       }
     ],
     "ingredients_verified": true,
     "verified_on": "2026-11-01",
-    "notes": "Transcribed and verified against user-provided NYT Cooking ingredient screenshot. Source transcription: data/imports/shrimp-fried-rice-ocr.json. Yield range 4 to 6 servings; uses the lower end (4) for conservative per-serving shopping quantities. Rice quantity is cooked rice; no dry-rice conversion inferred. Yum Yum Sauce is listed as a prepared accompaniment; its ingredients were not supplied."
+    "notes": "Transcribed and verified against user-provided NYT Cooking ingredient screenshot. Source transcription: data/imports/shrimp-fried-rice-ocr.json. Yield range 4 to 6 servings; uses the lower end (4) for conservative per-serving shopping quantities. Rice quantity is cooked rice; no dry-rice conversion inferred. Includes one batch (about 3/4 cup) of Yum Yum Sauce per four-serving planning baseline, transcribed from the supplied sauce screenshot. Sauce ingredients are included in groceries; warm water is retained in the recipe but excluded from shopping.",
+    "components": [
+      {
+        "name": "Yum Yum Sauce",
+        "source": "NYT",
+        "source_yield": "About 3/4 cup",
+        "source_ingredients": [
+          "1 teaspoon garlic powder",
+          "½ teaspoon sweet paprika",
+          "1 tablespoon warm water",
+          "½ cup mayonnaise",
+          "¼ cup ketchup",
+          "2 teaspoons rice vinegar",
+          "1 teaspoon toasted sesame oil",
+          "Salt"
+        ],
+        "extraction_method": "Transcribed from user-provided NYT Cooking ingredient screenshot",
+        "source_image": "8DF8E864-EE86-4D6C-9184-A90402210910.png",
+        "batches_per_recipe": 1,
+        "notes": "One full batch accompanies the four-serving planning baseline of Shrimp Fried Rice; scales with the meal serving count."
+      }
+    ]
   }
 ]

@@ -1,0 +1,19 @@
+{
+  "name": "Yum Yum Sauce",
+  "source": "NYT",
+  "source_yield": "About 3/4 cup",
+  "source_ingredients": [
+    "1 teaspoon garlic powder",
+    "½ teaspoon sweet paprika",
+    "1 tablespoon warm water",
+    "½ cup mayonnaise",
+    "¼ cup ketchup",
+    "2 teaspoons rice vinegar",
+    "1 teaspoon toasted sesame oil",
+    "Salt"
+  ],
+  "extraction_method": "Transcribed from user-provided NYT Cooking ingredient screenshot",
+  "source_image": "8DF8E864-EE86-4D6C-9184-A90402210910.png",
+  "batches_per_recipe": 1,
+  "notes": "One full batch accompanies the four-serving planning baseline of Shrimp Fried Rice; scales with the meal serving count."
+}
