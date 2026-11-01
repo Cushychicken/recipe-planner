@@ -6,7 +6,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from planner import build_plan, load, quantity, select, shopping_list, validate, week_start, ROOT
+from planner import build_plan, load, quantity, select, shopping_list, validate, week_start, render_html, ROOT
 
 
 def recipe(i, verified=True):
@@ -94,6 +94,16 @@ class PlannerTests(unittest.TestCase):
         toppings=next(r for r in rows if r['category']=='Optional toppings')
         self.assertIsNone(toppings['quantity'])
         self.assertEqual('as needed',quantity(toppings))
+
+    def test_html_uses_versioned_client_and_compact_ingredient_markup(self):
+        from hashlib import sha256
+        plan=build_plan(self.recipes,date(2026,11,1),self.settings,[])
+        html=render_html(plan,self.recipes,{'TN':{'name':'Tuesday Nights'}},[])
+        version=sha256((ROOT/'scripts/planner-client.js').read_bytes()).hexdigest()[:12]
+        self.assertIn(f'src="planner.js?v={version}"',html)
+        self.assertIn('class="ingredient"',html)
+        self.assertNotIn('<input',html)
+        self.assertNotIn('<h3',html)
 
     def test_daily_shopping_snapshot_matches_only_its_recipe(self):
         self.recipes[0]['ingredients'][0]['item']='first recipe only'
