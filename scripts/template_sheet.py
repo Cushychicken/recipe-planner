@@ -75,7 +75,7 @@ def shopping_columns(plan, recipes, format_quantity):
     return columns
 
 
-def render_docx(path, plan, recipes, sources, format_quantity, shopping_size=8.5):
+def render_docx(path, plan, recipes, sources, format_quantity, shopping_size=8.5, compact=False):
     doc = template_document()
     section = doc.sections[0]
     section.bottom_margin = Inches(.4)
@@ -93,7 +93,8 @@ def render_docx(path, plan, recipes, sources, format_quantity, shopping_size=8.5
         run.font.name = 'Arial'
         run.font.size = Pt(20)
     # A minimum row height preserves writing space without clipping long entries.
-    for row, height in zip(table.rows, (.3, 1.05, 1.2, 3.5)):
+    heights = (.3, .55, 1.0, 3.5) if compact else (.3, 1.05, 1.2, 3.5)
+    for row, height in zip(table.rows, heights):
         row.height = Inches(height)
         row.height_rule = WD_ROW_HEIGHT_RULE.AT_LEAST
         props = row._tr.get_or_add_trPr()
@@ -135,6 +136,8 @@ def render_docx(path, plan, recipes, sources, format_quantity, shopping_size=8.5
     columns = shopping_columns(plan, recipes, format_quantity)
     for column, lines in enumerate(columns, 1):
         set_cell(table.cell(3,column), lines, size=shopping_size)
+        for paragraph in table.cell(3,column).paragraphs:
+            paragraph.paragraph_format.space_after = Pt(0)
     # Footer-sized legend stays in the page body; no extra trailing page paragraph.
     legend = doc.add_paragraph()
     legend.paragraph_format.space_before = Pt(4)
@@ -170,8 +173,8 @@ def export_pdf(docx_path, pdf_path):
 
 
 def render_template_sheet(docx_path, pdf_path, plan, recipes, sources, format_quantity):
-    for shopping_size in (8.5,8,7.5):
-        render_docx(docx_path,plan,recipes,sources,format_quantity,shopping_size)
+    for shopping_size, compact in ((8.5,False),(8,False),(7.5,True)):
+        render_docx(docx_path,plan,recipes,sources,format_quantity,shopping_size,compact)
         if export_pdf(docx_path,pdf_path) == 1:
             return
     raise ValueError('Shopping list exceeds one page in the weekly template. Shorten item labels before publishing; no items have been dropped.')
