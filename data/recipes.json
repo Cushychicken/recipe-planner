@@ -2777,14 +2777,14 @@
     "ingredients": [
       {
         "item": "olive oil",
-        "quantity": "1/4",
+        "quantity": "1/8",
         "unit": "cup",
         "category": "Oils and spices",
         "source_text": "¼ cup olive oil, plus more as needed"
       },
       {
         "item": "peeled and deveined medium shrimp, thawed if frozen",
-        "quantity": "1",
+        "quantity": "1/2",
         "unit": "lb",
         "category": "Seafood",
         "source_text": "1 pound peeled and deveined medium shrimp, thawed if frozen"
@@ -2798,56 +2798,56 @@
       },
       {
         "item": "garlic powder",
-        "quantity": "1/2",
+        "quantity": "1/4",
         "unit": "tsp",
         "category": "Oils and spices",
         "source_text": "½ teaspoon garlic powder"
       },
       {
         "item": "medium onion, diced",
-        "quantity": "1",
+        "quantity": "1/2",
         "unit": "each",
         "category": "Produce",
         "source_text": "1 medium onion, diced"
       },
       {
         "item": "frozen mixed vegetables",
-        "quantity": "3/2",
+        "quantity": "3/4",
         "unit": "cup",
         "category": "Frozen vegetables",
         "source_text": "1 ½ cups frozen mixed vegetables (any mix of carrots, peas, corn and green beans)"
       },
       {
         "item": "cooked jasmine or other long-grain white rice",
-        "quantity": "6",
+        "quantity": "3",
         "unit": "cup",
         "category": "Bread and grains",
         "source_text": "6 cups cooked jasmine or other long-grain white rice, preferably cold and day-old"
       },
       {
         "item": "soy sauce, or to taste",
-        "quantity": "1/4",
+        "quantity": "1/8",
         "unit": "cup",
         "category": "Oils and spices",
         "source_text": "¼ cup soy sauce, or to taste"
       },
       {
         "item": "unsalted butter",
-        "quantity": "2",
+        "quantity": "1",
         "unit": "tbsp",
         "category": "Dairy",
         "source_text": "2 tablespoons unsalted butter"
       },
       {
         "item": "large eggs",
-        "quantity": "4",
+        "quantity": "2",
         "unit": "each",
         "category": "Dairy",
         "source_text": "4 large eggs"
       },
       {
         "item": "garlic powder",
-        "quantity": "1",
+        "quantity": "1/2",
         "unit": "tsp",
         "category": "Oils and spices",
         "source_text": "1 teaspoon garlic powder",
@@ -2855,7 +2855,7 @@
       },
       {
         "item": "sweet paprika",
-        "quantity": "1/2",
+        "quantity": "1/4",
         "unit": "tsp",
         "category": "Oils and spices",
         "source_text": "½ teaspoon sweet paprika",
@@ -2863,7 +2863,7 @@
       },
       {
         "item": "warm water",
-        "quantity": "1",
+        "quantity": "1/2",
         "unit": "tbsp",
         "category": "Water",
         "source_text": "1 tablespoon warm water",
@@ -2872,7 +2872,7 @@
       },
       {
         "item": "mayonnaise",
-        "quantity": "1/2",
+        "quantity": "1/4",
         "unit": "cup",
         "category": "Oils and spices",
         "source_text": "½ cup mayonnaise",
@@ -2880,7 +2880,7 @@
       },
       {
         "item": "ketchup",
-        "quantity": "1/4",
+        "quantity": "1/8",
         "unit": "cup",
         "category": "Oils and spices",
         "source_text": "¼ cup ketchup",
@@ -2888,7 +2888,7 @@
       },
       {
         "item": "rice vinegar",
-        "quantity": "2",
+        "quantity": "1",
         "unit": "tsp",
         "category": "Bread and grains",
         "source_text": "2 teaspoons rice vinegar",
@@ -2896,7 +2896,7 @@
       },
       {
         "item": "toasted sesame oil",
-        "quantity": "1",
+        "quantity": "1/2",
         "unit": "tsp",
         "category": "Oils and spices",
         "source_text": "1 teaspoon toasted sesame oil",
@@ -2913,7 +2913,7 @@
     ],
     "ingredients_verified": true,
     "verified_on": "2026-11-01",
-    "notes": "Transcribed and verified against user-provided NYT Cooking ingredient screenshot. Source transcription: data/imports/shrimp-fried-rice-ocr.json. Yield range 4 to 6 servings; uses the lower end (4) for conservative per-serving shopping quantities. Rice quantity is cooked rice; no dry-rice conversion inferred. Includes one batch (about 3/4 cup) of Yum Yum Sauce per four-serving planning baseline, transcribed from the supplied sauce screenshot. Sauce ingredients are included in groceries; warm water is retained in the recipe but excluded from shopping.",
+    "notes": "User-adjusted half batch: 3 cups cooked rice, 2 tablespoons olive oil total (plus more only if needed), 1/2 lb shrimp, 2 eggs, and half a batch of Yum Yum Sauce. This smaller household batch is used for the existing four-portion planner setting rather than being scaled back up. Original NYT recipe yield is 4 to 6 servings; half the original batch is about 2 to 3 of those source servings. Original quantities remain in source_ingredients and ingredient source_text. Source transcriptions: data/imports/shrimp-fried-rice-ocr.json and data/imports/yum-yum-sauce-ocr.json. Rice is measured cooked, preferably cold and day-old; no dry-rice conversion inferred. Sauce water is retained in the recipe but excluded from shopping.",
     "components": [
       {
         "name": "Yum Yum Sauce",
@@ -2931,9 +2931,16 @@
         ],
         "extraction_method": "Transcribed from user-provided NYT Cooking ingredient screenshot",
         "source_image": "8DF8E864-EE86-4D6C-9184-A90402210910.png",
-        "batches_per_recipe": 1,
-        "notes": "One full batch accompanies the four-serving planning baseline of Shrimp Fried Rice; scales with the meal serving count."
+        "batches_per_recipe": "1/2",
+        "notes": "Half a sauce batch accompanies the user-adjusted 3-cup rice batch; scales with the meal serving count.",
+        "planned_yield": "About 3/8 cup"
       }
-    ]
+    ],
+    "quantity_adjustment": {
+      "factor": "1/2",
+      "reason": "User requested a 3-cup cooked-rice batch with 2 tablespoons oil total.",
+      "planning_servings": 4,
+      "note": "Smaller household batch for the existing four-portion plan; not a revised NYT serving yield. Original ingredient lines and 4–6 serving source yield are retained."
+    }
   }
 ]
