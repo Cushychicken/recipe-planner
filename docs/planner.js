@@ -76,7 +76,7 @@
       } else {
         recipe.shopping.forEach(row => {
           const pantry = row.category === 'Pantry check' ? ' (pantry)' : '';
-          shopping.append(element('div', `${row.quantity} ${row.item}${pantry}`, 'ingredient'));
+          shopping.append(element('div', row.label || `${row.quantity} ${row.item}${pantry}`, 'ingredient'));
         });
       }
       document.querySelector(`[data-action="leftovers"][data-day="${day}"]`).setAttribute('aria-pressed', String(choice.kind === 'leftovers'));
