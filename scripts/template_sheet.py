@@ -116,7 +116,10 @@ def render_docx(path, plan, recipes, sources, format_quantity, shopping_size=8.5
     # A minimum row height preserves writing space without clipping long entries.
     # Prioritize the shopping row: it is the dense, read-at-arm's-length part
     # of the sheet.  Lunch and dinner still retain useful writing space.
-    heights = (.3, .65, .8, 5.25) if compact else (.3, .8, .95, 5.0)
+    # LibreOffice versions differ slightly in how much room they reserve for
+    # table paragraphs. The compact fallback therefore gives that engine more
+    # headroom while retaining 9 pt ingredient text.
+    heights = (.3, .6, .8, 4.25) if compact else (.3, .8, .95, 5.0)
     for row, height in zip(table.rows, heights):
         row.height = Inches(height)
         row.height_rule = WD_ROW_HEIGHT_RULE.AT_LEAST
