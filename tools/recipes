@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+recipe_script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [[ -f "$recipe_script_dir/recipe-library.mjs" ]]; then
+  recipe_checkout="$(cd "$recipe_script_dir/.." && pwd)"
+else
+  recipe_checkout="${RECIPE_PLANNER_DIR:-$HOME/recipe-planner}"
+  if [[ ! -e "$recipe_checkout" ]]; then
+    git clone https://github.com/Cushychicken/recipe-planner.git "$recipe_checkout"
+  elif ! git -C "$recipe_checkout" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+    echo "$recipe_checkout already exists and is not a Git checkout. Set RECIPE_PLANNER_DIR to another directory." >&2
+    exit 1
+  elif git -C "$recipe_checkout" diff --quiet && git -C "$recipe_checkout" diff --cached --quiet; then
+    git -C "$recipe_checkout" pull --ff-only
+  else
+    echo "Using your existing checkout without replacing uncommitted edits."
+  fi
+fi
+
+if ! command -v node >/dev/null || ! command -v python3 >/dev/null; then
+  echo 'Install the runtime packages, then rerun: sudo apt-get install nodejs node-ws python3 git' >&2
+  exit 1
+fi
+exec node "$recipe_checkout/tools/recipe-library.mjs"

@@ -2,11 +2,39 @@
 
 Generates a Sunday–Saturday dinner plan, printable shopping checklist, PDF, and dated archive from your recipe collection. Runs **Saturday at 11 PM America/New_York**, with daylight saving time handled by GitHub’s timezone-aware schedule. GitHub may start scheduled jobs late; this is a scheduled publication, not a real-time guarantee.
 
+## Add recipes in one command
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/Cushychicken/recipe-planner/main/tools/recipes)
+```
+
+The command prepares `~/recipe-planner`, reuses your dedicated Chrome profile,
+and opens a local helper page. Paste a list of recipe URLs and click **Open
+recipe links**. Sign in normally and check the ingredients in those tabs. Return
+to the helper and click **Capture and import recipes**, review the results, then
+**Publish to GitHub**. The scheduled planner rebuilds automatically.
+
+**Find missing NYT recipes** fills in search links for recipes still missing
+ingredients. You can also add entirely new recipes by pasting their URLs. New
+publishers work when their pages expose standard `Recipe` JSON-LD. Truncated
+subscription previews are rejected rather than replacing good data.
+
+No extension, npm install, ZIP transfer, or manual JSON editing is needed. On
+Ubuntu, prerequisites are Chrome/Chromium, Git, Python 3, and Node 18+ with
+`node-ws` (or Node 22+). Your existing NYT sign-in stays in the same dedicated
+Chrome profile used by the previous exporter. GitHub publishing uses your normal
+Git credentials. If push authentication is not configured, **Download recipe
+data** provides a small JSON file you can upload here instead.
+
+The helper reads only recipe titles, URLs, yields and ingredient lines. It never
+exports cookies or passwords and never commits raw account pages. Temporary
+captures stay in ignored `.recipe-imports/`.
+
 ## Current setup
 
 - All **64 recipe sticks** from the supplied photo are in `data/recipes.json`.
 - Defaults: **6 recipes plus Friday leftovers/takeout, 4 servings**. Change these in `data/settings.json`.
-- **Two ingredient lists are verified:** Chorizo Rice (The Wholesome Dish, 4 servings) and Chicken Tortilla Soup (The Pioneer Woman, 8 servings). Remaining recipes still need ingredient data. Verified dinners show their own shopping list even when other days remain drafts. Once at least six enabled recipes have verified ingredients, new weekly plans select only verified recipes.
+- **18 recipes have ingredients:** 16 imported NYT recipes, Chorizo Rice, and Chicken Tortilla Soup. Seven NYT entries still need data. Weekly plans use verified recipes; random replacements prefer verified recipes too.
 - NYT = New York Times Cooking; CI = Cook’s Illustrated *Cook It in Cast Iron*; TN = Milk Street *Tuesday Nights*; MTN = Milk Street *Tuesday Nights Mediterranean*.
 - SK, EZW, Slow Cooker and W30 book titles remain unconfirmed. Source/page transcriptions should be checked against the books; the coconut sticky rice page number was unclear in the photo.
 - Recipe methods are read in the original books or linked websites. This repository stores ingredient facts and references, not copied instructions.
@@ -89,6 +117,23 @@ python scripts/planner.py --require-ready
 
 Selection is deterministic for each week, avoids the previous four weeks when the verified pool is large enough, and relaxes that avoidance when necessary rather than failing. A small verified pool will repeat recipes more often.
 
-## Save open recipe tabs
+## Import an existing export
 
-Download `tools/recipe-tab-exporter.zip`, extract it, and follow the included README. The small Chrome/Chromium extension exports already-loaded NYT recipe HTML from the current browser window into one local ZIP. Source is in `tools/recipe-tab-exporter/`.
+```bash
+python3 scripts/import_recipes.py /path/to/recipe-html.zip
+```
+
+The importer accepts saved HTML folders, ZIPs, and structured recipe-data JSON.
+It matches known recipe URLs and existing aliases, updates in place, and adds new
+recipes without duplicating repeated imports. Original titles, ingredient lines,
+and source yields remain in the catalog. Serving ranges use the lower yield for
+conservative shopping amounts; ingredient quantity ranges use the upper amount.
+A yield such as “6 burritos” is explicitly treated as six planned servings.
+Unspecified amounts remain “as needed” or “to taste,” optional items stay marked,
+and water is retained in the ingredient record but excluded from groceries.
+Separate sauces referenced by “see recipe” are listed as prepared ingredients;
+their component recipes are not fabricated. Import results are recorded in
+`data/imports/latest.json`.
+
+`tools/export-recipe-tabs.mjs` remains available for saving raw HTML separately.
+The one-command helper above replaces the earlier multi-step/extension workflow.

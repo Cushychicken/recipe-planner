@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grow your recipe library</title>
+<style>
+*{box-sizing:border-box}body{font:16px/1.5 system-ui,sans-serif;background:#eeeae1;color:#202a25;margin:0;padding:28px}main{max-width:1050px;margin:auto;padding:34px;background:#fffdf8;border-top:6px solid #365e47}h1{font:34px Georgia,serif;margin:0}h2{font:24px Georgia,serif;color:#365e47;margin:22px 0 8px}p{margin:8px 0 18px}.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#365e47}textarea{width:100%;min-height:130px;padding:12px;font:14px/1.5 ui-monospace,monospace;border:1px solid #c9ccbf;background:white;border-radius:4px}button,a.button{font:14px system-ui;border:1px solid #365e47;color:#365e47;background:transparent;border-radius:4px;padding:11px 15px;cursor:pointer;text-decoration:none;display:inline-block}button.primary{background:#365e47;color:white}button:disabled{opacity:.45;cursor:wait}.actions{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}.muted{font-size:13px;color:#687168}#status{font-weight:600;white-space:pre-wrap;padding:12px 0}ul{padding-left:20px}li{margin:7px 0}.step{border-top:1px solid #c9ccbf;padding-top:12px;margin-top:24px}a{color:#365e47}[hidden]{display:none!important}.stats{color:#687168;margin:8px 0 24px}
+</style><main>
+<div class="eyebrow">Recipe planner</div><h1>Grow your recipe library</h1>
+<p class="stats" id="stats">Loading your catalog…</p>
+<h2>1. Open recipes</h2><p>Paste recipe links, one per line. Sign in normally in the Chrome window that just opened, then make sure each recipe’s ingredients are visible.</p>
+<textarea id="links" aria-label="Recipe links" placeholder="Paste recipe links here, one per line"></textarea>
+<div class="actions"><button id="open" class="primary">Open recipe links</button><button id="missing">Find missing NYT recipes</button></div>
+<p class="muted">Already have recipe tabs open in this Chrome window? Skip to step 2. New sites work when their pages contain standard Recipe data.</p>
+<div class="step"><h2>2. Import ingredients</h2><p>Capture recipe data from the open tabs. Imports update existing dishes by link and add new dishes to your catalog.</p>
+<div class="actions"><button id="capture" class="primary">Capture and import recipes</button><a class="button" id="download" href="download" hidden>Download recipe data</a></div>
+<div id="status" role="status"></div><ul id="results"></ul></div>
+<div class="step"><h2>3. Publish</h2><p>Commit the catalog changes and push them to GitHub. The weekly planner rebuilds and publishes automatically.</p><button id="publish" class="primary" disabled>Publish to GitHub</button>
+<p class="muted">Uses your computer’s existing Git authentication. Your login stays in Chrome; cookies and saved passwords are never exported. Raw account pages are never committed.</p></div>
+</main><script src="app.js"></script></html>

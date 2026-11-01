@@ -28,12 +28,114 @@
     "name": "Sheet Pan Scallion Chicken w/ Bok Choy",
     "source": "NYT",
     "page": null,
-    "url": null,
+    "url": "https://cooking.nytimes.com/recipes/1021476-sheet-pan-scallion-chicken-with-bok-choy",
     "servings": 4,
     "enabled": true,
-    "ingredients_verified": false,
-    "ingredients": [],
-    "notes": "Imported from handwritten sticks; ingredient data pending."
+    "ingredients_verified": true,
+    "ingredients": [
+      {
+        "item": "scallions",
+        "quantity": "4",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "4 scallions, trimmed and finely chopped (about ½ cup), plus more for garnish"
+      },
+      {
+        "item": "Dijon mustard",
+        "quantity": "3",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "3 tablespoons Dijon mustard"
+      },
+      {
+        "item": "fresh ginger",
+        "quantity": "3",
+        "unit": "tbsp",
+        "category": "Produce",
+        "source_text": "3 tablespoons minced fresh ginger (from one 3-inch piece)"
+      },
+      {
+        "item": "garlic",
+        "quantity": "2",
+        "unit": "tbsp",
+        "category": "Produce",
+        "source_text": "2 tablespoons minced garlic"
+      },
+      {
+        "item": "white miso paste",
+        "quantity": "1",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "1 tablespoon white miso paste"
+      },
+      {
+        "item": "turbinado or brown sugar",
+        "quantity": "2",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "2 teaspoons turbinado or brown sugar"
+      },
+      {
+        "item": "Kosher salt and freshly ground black pepper",
+        "quantity": null,
+        "unit": "to taste",
+        "category": "Oils and spices",
+        "source_text": "Kosher salt and freshly ground black pepper"
+      },
+      {
+        "item": "safflower or canola oil",
+        "quantity": "1/2",
+        "unit": "cup",
+        "category": "Oils and spices",
+        "source_text": "½ cup safflower or canola oil"
+      },
+      {
+        "item": "baby bok choy",
+        "quantity": "3/2",
+        "unit": "lb",
+        "category": "Produce",
+        "source_text": "1 ½ pounds baby bok choy, halved lengthwise, or large broccoli florets"
+      },
+      {
+        "item": "bone-in, skin-on chicken thighs",
+        "quantity": "8",
+        "unit": "each",
+        "category": "Meat",
+        "source_text": "8 bone-in, skin-on chicken thighs (about 3 pounds), skins removed"
+      },
+      {
+        "item": "Steamed rice or mashed potatoes",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Bread and grains",
+        "source_text": "Steamed rice or mashed potatoes, for serving"
+      },
+      {
+        "item": "Lemon wedges",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Produce",
+        "source_text": "Lemon wedges, for serving"
+      }
+    ],
+    "notes": "Imported from user-saved structured recipe data. ",
+    "source_title": "Sheet-Pan Scallion Chicken With Bok Choy",
+    "source_yield": "4 servings",
+    "source_ingredients": [
+      "4 scallions, trimmed and finely chopped (about ½ cup), plus more for garnish",
+      "3 tablespoons Dijon mustard",
+      "3 tablespoons minced fresh ginger (from one 3-inch piece)",
+      "2 tablespoons minced garlic",
+      "1 tablespoon white miso paste",
+      "2 teaspoons turbinado or brown sugar",
+      "Kosher salt and freshly ground black pepper",
+      "½ cup safflower or canola oil",
+      "1 ½ pounds baby bok choy, halved lengthwise, or large broccoli florets",
+      "8 bone-in, skin-on chicken thighs (about 3 pounds), skins removed",
+      "Steamed rice or mashed potatoes, for serving",
+      "Lemon wedges, for serving"
+    ],
+    "verified_on": "2026-11-01"
   },
   {
     "id": "salmon-chirashi-bowls-nyt",
@@ -76,24 +178,205 @@
     "name": "Crisp Gnocchi w/ Feta & Spinach",
     "source": "NYT",
     "page": null,
-    "url": null,
+    "url": "https://cooking.nytimes.com/recipes/1025701-crispy-gnocchi-with-spinach-and-feta",
     "servings": 4,
     "enabled": true,
-    "ingredients_verified": false,
-    "ingredients": [],
-    "notes": "Imported from handwritten sticks; ingredient data pending."
+    "ingredients_verified": true,
+    "ingredients": [
+      {
+        "item": "baby spinach",
+        "quantity": "5",
+        "unit": "oz",
+        "category": "Produce",
+        "source_text": "5 ounces baby spinach"
+      },
+      {
+        "item": "Greek feta, crumbled",
+        "quantity": "6",
+        "unit": "oz",
+        "category": "Dairy",
+        "source_text": "6 ounces Greek feta, crumbled (about 1 cup)"
+      },
+      {
+        "item": "lemon",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "1 lemon, halved"
+      },
+      {
+        "item": "extra-virgin olive oil",
+        "quantity": "5",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "5 tablespoons extra-virgin olive oil"
+      },
+      {
+        "item": "Salt and pepper",
+        "quantity": null,
+        "unit": "to taste",
+        "category": "Oils and spices",
+        "source_text": "Salt and pepper"
+      },
+      {
+        "item": "potato gnocchi (16- to 17-oz)",
+        "quantity": "1",
+        "unit": "package",
+        "category": "Bread and grains",
+        "source_text": "1 (16- to 17-ounce) package potato gnocchi (shelf-stable, fresh or frozen)"
+      },
+      {
+        "item": "crushed red pepper",
+        "quantity": "1/2",
+        "unit": "tsp",
+        "category": "Produce",
+        "source_text": "¼ to ½ teaspoon crushed red pepper",
+        "notes": "Source range 1/4 to 1/2; shopping uses the upper end."
+      },
+      {
+        "item": "scallions",
+        "quantity": "2",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "2 scallions, thinly sliced"
+      },
+      {
+        "item": "Big handful of chopped dill",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Produce",
+        "source_text": "Big handful of chopped dill"
+      },
+      {
+        "item": "Big handful of chopped mint",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Produce",
+        "source_text": "Big handful of chopped mint"
+      }
+    ],
+    "notes": "Imported from user-saved structured recipe data. ",
+    "source_title": "Crispy Gnocchi With Spinach and Feta",
+    "source_yield": "4 servings",
+    "source_ingredients": [
+      "5 ounces baby spinach",
+      "6 ounces Greek feta, crumbled (about 1 cup)",
+      "1 lemon, halved",
+      "5 tablespoons extra-virgin olive oil",
+      "Salt and pepper",
+      "1 (16- to 17-ounce) package potato gnocchi (shelf-stable, fresh or frozen)",
+      "¼ to ½ teaspoon crushed red pepper",
+      "2 scallions, thinly sliced",
+      "Big handful of chopped dill",
+      "Big handful of chopped mint"
+    ],
+    "verified_on": "2026-11-01"
   },
   {
     "id": "sheet-pan-chicken-w-chickpeas-cumin-turmeric-nyt",
     "name": "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric",
     "source": "NYT",
     "page": null,
-    "url": null,
+    "url": "https://cooking.nytimes.com/recipes/1018910-sheet-pan-chicken-with-chickpeas-cumin-and-turmeric",
     "servings": 4,
     "enabled": true,
-    "ingredients_verified": false,
-    "ingredients": [],
-    "notes": "Imported from handwritten sticks; ingredient data pending."
+    "ingredients_verified": true,
+    "ingredients": [
+      {
+        "item": "chicken (3 1/2 to 4 lb)",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Meat",
+        "source_text": "1 (3 ½ to 4 pound) chicken, cut into parts (alternatively, 3 to 3 ½ pounds of bone-in, skin-on chicken parts, such as breasts, thighs and legs)"
+      },
+      {
+        "item": "Kosher salt and freshly ground pepper",
+        "quantity": null,
+        "unit": "to taste",
+        "category": "Oils and spices",
+        "source_text": "Kosher salt and freshly ground pepper"
+      },
+      {
+        "item": "full-fat Greek yogurt",
+        "quantity": "3/2",
+        "unit": "cup",
+        "category": "Dairy",
+        "source_text": "1 ½ cups full-fat Greek yogurt, divided"
+      },
+      {
+        "item": "fresh lemon juice",
+        "quantity": "5",
+        "unit": "tbsp",
+        "category": "Produce",
+        "source_text": "5 tablespoons fresh lemon juice, divided"
+      },
+      {
+        "item": "ground turmeric",
+        "quantity": "2",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "2 teaspoons ground turmeric, divided"
+      },
+      {
+        "item": "chickpeas (15-oz)",
+        "quantity": "2",
+        "unit": "can",
+        "category": "Canned goods",
+        "source_text": "2 (15-ounce) cans chickpeas, drained and rinsed"
+      },
+      {
+        "item": "fennel seed",
+        "quantity": "1",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "1 tablespoon fennel seed"
+      },
+      {
+        "item": "ground cumin",
+        "quantity": "1",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "1 teaspoon ground cumin"
+      },
+      {
+        "item": "large red onion",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "1 large red onion, thinly sliced, divided"
+      },
+      {
+        "item": "olive oil",
+        "quantity": "2",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "2 tablespoons olive oil"
+      },
+      {
+        "item": "mint or cilantro leaves",
+        "quantity": "1/2",
+        "unit": "cup",
+        "category": "Produce",
+        "source_text": "½ cup mint or cilantro leaves, torn"
+      }
+    ],
+    "notes": "Imported from user-saved structured recipe data. ",
+    "source_title": "Sheet-Pan Chicken With Chickpeas, Cumin and Turmeric",
+    "source_yield": "4 servings",
+    "source_ingredients": [
+      "1 (3 ½ to 4 pound) chicken, cut into parts (alternatively, 3 to 3 ½ pounds of bone-in, skin-on chicken parts, such as breasts, thighs and legs)",
+      "Kosher salt and freshly ground pepper",
+      "1 ½ cups full-fat Greek yogurt, divided",
+      "5 tablespoons fresh lemon juice, divided",
+      "2 teaspoons ground turmeric, divided",
+      "2 (15-ounce) cans chickpeas, drained and rinsed",
+      "1 tablespoon fennel seed",
+      "1 teaspoon ground cumin",
+      "1 large red onion, thinly sliced, divided",
+      "2 tablespoons olive oil",
+      "½ cup mint or cilantro leaves, torn"
+    ],
+    "verified_on": "2026-11-01"
   },
   {
     "id": "steak-tips-w-mushroom-gravy-ci",
@@ -112,12 +395,172 @@
     "name": "Cauliflower Shawarma",
     "source": "NYT",
     "page": null,
-    "url": null,
-    "servings": 4,
+    "url": "https://cooking.nytimes.com/recipes/1023019-cauliflower-shawarma-with-spicy-tahini",
+    "servings": 2,
     "enabled": true,
-    "ingredients_verified": false,
-    "ingredients": [],
-    "notes": "Imported from handwritten sticks; ingredient data pending."
+    "ingredients_verified": true,
+    "ingredients": [
+      {
+        "item": "extra-virgin olive oil",
+        "quantity": "5",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "5 tablespoons extra-virgin olive oil, plus more as needed"
+      },
+      {
+        "item": "ground cumin",
+        "quantity": "5/4",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "1 ¼ teaspoons ground cumin"
+      },
+      {
+        "item": "sweet paprika",
+        "quantity": "5/4",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "1 ¼ teaspoons sweet paprika"
+      },
+      {
+        "item": "fine sea or table salt",
+        "quantity": "3/4",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "¾ teaspoon fine sea or table salt, plus more as needed"
+      },
+      {
+        "item": "ground coriander",
+        "quantity": "1",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "1 teaspoon ground coriander"
+      },
+      {
+        "item": "ground turmeric",
+        "quantity": "1/4",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "¼ teaspoon ground turmeric"
+      },
+      {
+        "item": "freshly ground black pepper",
+        "quantity": "1/4",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "¼ teaspoon freshly ground black pepper"
+      },
+      {
+        "item": "Pinch of ground cayenne",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Oils and spices",
+        "source_text": "Pinch of ground cayenne"
+      },
+      {
+        "item": "large head cauliflower",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "1 large head cauliflower (about 2 ½ pounds), trimmed and cut into bite-size florets"
+      },
+      {
+        "item": "large red onion",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "1 large red onion, cut into ¼-inch wedges"
+      },
+      {
+        "item": "Pita or flatbread",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Bread and grains",
+        "source_text": "Pita or flatbread, for serving"
+      },
+      {
+        "item": "parsley",
+        "quantity": "1/4",
+        "unit": "cup",
+        "category": "Produce",
+        "source_text": "¼ cup coarsely chopped parsley, plus more for serving"
+      },
+      {
+        "item": "tomato, cucumber and olives",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Produce",
+        "source_text": "Chopped tomato, cucumber and olives, for serving"
+      },
+      {
+        "item": "fresh lemon juice",
+        "quantity": "1",
+        "unit": "tbsp",
+        "category": "Produce",
+        "source_text": "1 tablespoon fresh lemon juice, plus more to taste"
+      },
+      {
+        "item": "harissa paste or other hot sauce, or a large pinch of Urfa or Aleppo pepper",
+        "quantity": "2",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "1 to 2 teaspoons harissa paste or other hot sauce, or a large pinch of Urfa or Aleppo pepper, plus more to taste",
+        "notes": "Source range 1 to 2; shopping uses the upper end."
+      },
+      {
+        "item": "garlic",
+        "quantity": "1",
+        "unit": "clove",
+        "category": "Produce",
+        "source_text": "1 fat garlic clove, finely grated, passed through a press or minced"
+      },
+      {
+        "item": "fine sea or table salt",
+        "quantity": "1/4",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "¼ teaspoon fine sea or table salt"
+      },
+      {
+        "item": "tahini",
+        "quantity": "1/3",
+        "unit": "cup",
+        "category": "Oils and spices",
+        "source_text": "⅓ cup tahini"
+      },
+      {
+        "item": "ice water",
+        "quantity": "1/3",
+        "unit": "cup",
+        "category": "Water",
+        "source_text": "⅓ cup ice water, plus more as needed",
+        "shopping": false
+      }
+    ],
+    "notes": "Imported from user-saved structured recipe data. ",
+    "source_title": "Cauliflower Shawarma With Spicy Tahini",
+    "source_yield": "2 servings",
+    "source_ingredients": [
+      "5 tablespoons extra-virgin olive oil, plus more as needed",
+      "1 ¼ teaspoons ground cumin",
+      "1 ¼ teaspoons sweet paprika",
+      "¾ teaspoon fine sea or table salt, plus more as needed",
+      "1 teaspoon ground coriander",
+      "¼ teaspoon ground turmeric",
+      "¼ teaspoon freshly ground black pepper",
+      "Pinch of ground cayenne",
+      "1 large head cauliflower (about 2 ½ pounds), trimmed and cut into bite-size florets",
+      "1 large red onion, cut into ¼-inch wedges",
+      "Pita or flatbread, for serving",
+      "¼ cup coarsely chopped parsley, plus more for serving",
+      "Chopped tomato, cucumber and olives, for serving",
+      "1 tablespoon fresh lemon juice, plus more to taste",
+      "1 to 2 teaspoons harissa paste or other hot sauce, or a large pinch of Urfa or Aleppo pepper, plus more to taste",
+      "1 fat garlic clove, finely grated, passed through a press or minced",
+      "¼ teaspoon fine sea or table salt",
+      "⅓ cup tahini",
+      "⅓ cup ice water, plus more as needed"
+    ],
+    "verified_on": "2026-11-01"
   },
   {
     "id": "chicken-biscuits-ci",
@@ -268,12 +711,106 @@
     "name": "Bean & Cheese Burritos",
     "source": "NYT",
     "page": null,
-    "url": null,
-    "servings": 4,
+    "url": "https://cooking.nytimes.com/recipes/1022532-bean-and-cheese-burritos",
+    "servings": 6,
     "enabled": true,
-    "ingredients_verified": false,
-    "ingredients": [],
-    "notes": "Imported from handwritten sticks; ingredient data pending."
+    "ingredients_verified": true,
+    "ingredients": [
+      {
+        "item": "safflower or canola oil",
+        "quantity": "4",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "4 tablespoons safflower or canola oil"
+      },
+      {
+        "item": "yellow onion",
+        "quantity": "1/2",
+        "unit": "cup",
+        "category": "Produce",
+        "source_text": "½ cup finely chopped yellow onion (from ½ medium onion)"
+      },
+      {
+        "item": "green bell pepper",
+        "quantity": "1/2",
+        "unit": "cup",
+        "category": "Produce",
+        "source_text": "½ cup finely chopped green bell pepper (from ½ pepper)"
+      },
+      {
+        "item": "Salt and black pepper",
+        "quantity": null,
+        "unit": "to taste",
+        "category": "Oils and spices",
+        "source_text": "Salt and black pepper"
+      },
+      {
+        "item": "garlic, minced",
+        "quantity": "2",
+        "unit": "clove",
+        "category": "Produce",
+        "source_text": "2 garlic cloves, minced"
+      },
+      {
+        "item": "pinto beans, 1/2 cup of bean liquid reserved and the rest drained (15-oz)",
+        "quantity": "2",
+        "unit": "can",
+        "category": "Canned goods",
+        "source_text": "2 (15-ounce) cans pinto beans, ½ cup of bean liquid reserved and the rest drained"
+      },
+      {
+        "item": "store-bought or homemade pico de gallo or salsa",
+        "quantity": "1/2",
+        "unit": "cup",
+        "category": "Produce",
+        "source_text": "½ cup store-bought or homemade pico de gallo or salsa"
+      },
+      {
+        "item": "smoked paprika",
+        "quantity": "1/4",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "¼ teaspoon smoked paprika"
+      },
+      {
+        "item": "flour tortillas (9- to 10-inch)",
+        "quantity": "6",
+        "unit": "each",
+        "category": "Bread and grains",
+        "source_text": "6 (9- to 10-inch) flour tortillas"
+      },
+      {
+        "item": "shredded sharp Cheddar",
+        "quantity": "2",
+        "unit": "cup",
+        "category": "Dairy",
+        "source_text": "2 cups shredded sharp Cheddar (8 ounces)"
+      },
+      {
+        "item": "Sour cream and hot sauce",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Dairy",
+        "source_text": "Sour cream and hot sauce, for serving"
+      }
+    ],
+    "notes": "Imported from user-saved structured recipe data. Yield is 6 burritos; one finished item is treated as one planned serving.",
+    "source_title": "Bean and Cheese Burritos",
+    "source_yield": "6 burritos",
+    "source_ingredients": [
+      "4 tablespoons safflower or canola oil",
+      "½ cup finely chopped yellow onion (from ½ medium onion)",
+      "½ cup finely chopped green bell pepper (from ½ pepper)",
+      "Salt and black pepper",
+      "2 garlic cloves, minced",
+      "2 (15-ounce) cans pinto beans, ½ cup of bean liquid reserved and the rest drained",
+      "½ cup store-bought or homemade pico de gallo or salsa",
+      "¼ teaspoon smoked paprika",
+      "6 (9- to 10-inch) flour tortillas",
+      "2 cups shredded sharp Cheddar (8 ounces)",
+      "Sour cream and hot sauce, for serving"
+    ],
+    "verified_on": "2026-11-01"
   },
   {
     "id": "ground-beef-tacos-unknown",
@@ -304,12 +841,180 @@
     "name": "Chapli Burgers",
     "source": "NYT",
     "page": null,
-    "url": null,
+    "url": "https://cooking.nytimes.com/recipes/1019435-chapli-burgers",
     "servings": 4,
     "enabled": true,
-    "ingredients_verified": false,
-    "ingredients": [],
-    "notes": "Imported from handwritten sticks; ingredient data pending."
+    "ingredients_verified": true,
+    "ingredients": [
+      {
+        "item": "coriander seeds",
+        "quantity": "1",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "1 tablespoon coriander seeds"
+      },
+      {
+        "item": "Sea salt",
+        "quantity": null,
+        "unit": "to taste",
+        "category": "Oils and spices",
+        "source_text": "Sea salt"
+      },
+      {
+        "item": "fresh or dried pomegranate seeds",
+        "quantity": "2",
+        "unit": "tbsp",
+        "category": "Produce",
+        "source_text": "2 tablespoons fresh or dried pomegranate seeds"
+      },
+      {
+        "item": "ground beef",
+        "quantity": "1",
+        "unit": "lb",
+        "category": "Meat",
+        "source_text": "1 pound ground beef"
+      },
+      {
+        "item": "small yellow onion, minced",
+        "quantity": "1/2",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "½ small yellow onion, minced"
+      },
+      {
+        "item": "medium tomato",
+        "quantity": "1/2",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "½ medium tomato, finely chopped and drained of juice"
+      },
+      {
+        "item": "garlic",
+        "quantity": "1",
+        "unit": "clove",
+        "category": "Produce",
+        "source_text": "1 clove garlic, finely grated or pounded"
+      },
+      {
+        "item": "fresh ginger",
+        "quantity": "1",
+        "unit": "tbsp",
+        "category": "Produce",
+        "source_text": "1 tablespoon finely grated fresh ginger"
+      },
+      {
+        "item": "jalapeño",
+        "quantity": "1/2",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "½ jalapeño, seeded and minced"
+      },
+      {
+        "item": "red-pepper flakes",
+        "quantity": "1/2",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "½ teaspoon red-pepper flakes"
+      },
+      {
+        "item": "garam masala",
+        "quantity": "1",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "1 teaspoon garam masala"
+      },
+      {
+        "item": "cumin powder",
+        "quantity": "1",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "1 teaspoon cumin powder"
+      },
+      {
+        "item": "cilantro leaves and tender stems",
+        "quantity": "1/4",
+        "unit": "cup",
+        "category": "Produce",
+        "source_text": "¼ cup finely chopped cilantro leaves and tender stems"
+      },
+      {
+        "item": "egg",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "1 egg"
+      },
+      {
+        "item": "Neutral oil for cooking",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Oils and spices",
+        "source_text": "Neutral oil for cooking"
+      },
+      {
+        "item": "Burger buns",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Bread and grains",
+        "source_text": "Burger buns"
+      },
+      {
+        "item": "Iceberg lettuce",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Produce",
+        "source_text": "Iceberg lettuce"
+      },
+      {
+        "item": "Tamarind ketchup (prepared)",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Oils and spices",
+        "source_text": "Tamarind ketchup (see recipe)",
+        "notes": "Separate condiment recipe not supplied; listed as a prepared ingredient."
+      },
+      {
+        "item": "Herbed yogurt (prepared)",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Dairy",
+        "source_text": "Herbed yogurt (see recipe)",
+        "notes": "Separate condiment recipe not supplied; listed as a prepared ingredient."
+      },
+      {
+        "item": "Sliced Persian cucumbers, red onions and tomatoes",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Produce",
+        "source_text": "Sliced Persian cucumbers, red onions and tomatoes"
+      }
+    ],
+    "notes": "Imported from user-saved structured recipe data. Yield range 4 to 6 servings; uses the lower end (4) for conservative per-serving shopping quantities.",
+    "source_title": "Chapli Burgers",
+    "source_yield": "4 to 6 servings",
+    "source_ingredients": [
+      "1 tablespoon coriander seeds",
+      "Sea salt",
+      "2 tablespoons fresh or dried pomegranate seeds",
+      "1 pound ground beef",
+      "½ small yellow onion, minced",
+      "½ medium tomato, finely chopped and drained of juice",
+      "1 clove garlic, finely grated or pounded",
+      "1 tablespoon finely grated fresh ginger",
+      "½ jalapeño, seeded and minced",
+      "½ teaspoon red-pepper flakes",
+      "1 teaspoon garam masala",
+      "1 teaspoon cumin powder",
+      "¼ cup finely chopped cilantro leaves and tender stems",
+      "1 egg",
+      "Neutral oil for cooking",
+      "Burger buns",
+      "Iceberg lettuce",
+      "Tamarind ketchup (see recipe)",
+      "Herbed yogurt (see recipe)",
+      "Sliced Persian cucumbers, red onions and tomatoes"
+    ],
+    "verified_on": "2026-11-01"
   },
   {
     "id": "chicken-thighs-w-chard-carrots-ci",
@@ -328,12 +1033,99 @@
     "name": "Rishia Zimmern’s Chicken w/ Shallots",
     "source": "NYT",
     "page": null,
-    "url": null,
+    "url": "https://cooking.nytimes.com/recipes/1016135-rishia-zimmerns-chicken-with-shallots",
     "servings": 4,
     "enabled": true,
-    "ingredients_verified": false,
-    "ingredients": [],
-    "notes": "Imported from handwritten sticks; ingredient data pending."
+    "ingredients_verified": true,
+    "ingredients": [
+      {
+        "item": "bone-in, skin-on chicken thighs",
+        "quantity": "8",
+        "unit": "each",
+        "category": "Meat",
+        "source_text": "8 bone-in, skin-on chicken thighs"
+      },
+      {
+        "item": "all-purpose flour",
+        "quantity": "2",
+        "unit": "tbsp",
+        "category": "Bread and grains",
+        "source_text": "2 tablespoons all-purpose flour"
+      },
+      {
+        "item": "kosher salt",
+        "quantity": "1",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "1 tablespoon kosher salt"
+      },
+      {
+        "item": "black pepper",
+        "quantity": "1",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "1 tablespoon black pepper"
+      },
+      {
+        "item": "unsalted butter",
+        "quantity": "2",
+        "unit": "tbsp",
+        "category": "Dairy",
+        "source_text": "2 tablespoons unsalted butter"
+      },
+      {
+        "item": "medium shallots",
+        "quantity": "15",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "12 to 15 whole medium shallots, peeled",
+        "notes": "Source range 12 to 15; shopping uses the upper end."
+      },
+      {
+        "item": "white wine",
+        "quantity": "2",
+        "unit": "cup",
+        "category": "Oils and spices",
+        "source_text": "2 cups white wine"
+      },
+      {
+        "item": "Dijon mustard",
+        "quantity": "2",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "2 tablespoons Dijon mustard"
+      },
+      {
+        "item": "tarragon sprigs",
+        "quantity": "2",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "2 tarragon sprigs"
+      },
+      {
+        "item": "cherry tomatoes",
+        "quantity": "2",
+        "unit": "cup",
+        "category": "Produce",
+        "source_text": "2 cups cherry tomatoes, halved"
+      }
+    ],
+    "notes": "Imported from user-saved structured recipe data. Yield range 4 to 6 servings; uses the lower end (4) for conservative per-serving shopping quantities.",
+    "source_title": "Rishia Zimmern’s Chicken With Shallots",
+    "source_yield": "4 to 6 servings",
+    "source_ingredients": [
+      "8 bone-in, skin-on chicken thighs",
+      "2 tablespoons all-purpose flour",
+      "1 tablespoon kosher salt",
+      "1 tablespoon black pepper",
+      "2 tablespoons unsalted butter",
+      "12 to 15 whole medium shallots, peeled",
+      "2 cups white wine",
+      "2 tablespoons Dijon mustard",
+      "2 tarragon sprigs",
+      "2 cups cherry tomatoes, halved"
+    ],
+    "verified_on": "2026-11-01"
   },
   {
     "id": "smoked-turkey-panini-ci",
@@ -352,12 +1144,99 @@
     "name": "Turmeric Black Pepper Chicken",
     "source": "NYT",
     "page": null,
-    "url": null,
+    "url": "https://cooking.nytimes.com/recipes/1020970-turmeric-black-pepper-chicken-with-asparagus",
     "servings": 4,
     "enabled": true,
-    "ingredients_verified": false,
-    "ingredients": [],
-    "notes": "Imported from handwritten sticks; ingredient data pending."
+    "ingredients_verified": true,
+    "ingredients": [
+      {
+        "item": "honey",
+        "quantity": "3",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "3 tablespoons honey"
+      },
+      {
+        "item": "black pepper",
+        "quantity": "3/4",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "¾ teaspoon black pepper, plus more to taste"
+      },
+      {
+        "item": "Kosher salt",
+        "quantity": null,
+        "unit": "to taste",
+        "category": "Oils and spices",
+        "source_text": "Kosher salt (such as Diamond Crystal)"
+      },
+      {
+        "item": "all-purpose flour",
+        "quantity": "2",
+        "unit": "tbsp",
+        "category": "Bread and grains",
+        "source_text": "2 tablespoons all-purpose flour"
+      },
+      {
+        "item": "ground turmeric",
+        "quantity": "3/2",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "1 ½ teaspoons ground turmeric"
+      },
+      {
+        "item": "boneless, skinless chicken thighs",
+        "quantity": "1",
+        "unit": "lb",
+        "category": "Meat",
+        "source_text": "1 pound boneless, skinless chicken thighs, cut into 1-inch pieces"
+      },
+      {
+        "item": "coconut or canola oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "1 tablespoon coconut or canola oil"
+      },
+      {
+        "item": "asparagus",
+        "quantity": "12",
+        "unit": "oz",
+        "category": "Produce",
+        "source_text": "12 ounces asparagus, trimmed and thinly sliced on an angle"
+      },
+      {
+        "item": "unseasoned rice vinegar or soy sauce",
+        "quantity": "1",
+        "unit": "tsp",
+        "category": "Bread and grains",
+        "source_text": "1 teaspoon unseasoned rice vinegar or soy sauce"
+      },
+      {
+        "item": "lime (optional)",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Optional toppings",
+        "source_text": "1 lime, cut into wedges (optional)",
+        "optional": true
+      }
+    ],
+    "notes": "Imported from user-saved structured recipe data. ",
+    "source_title": "Turmeric-Black Pepper Chicken With Asparagus",
+    "source_yield": "4 servings",
+    "source_ingredients": [
+      "3 tablespoons honey",
+      "¾ teaspoon black pepper, plus more to taste",
+      "Kosher salt (such as Diamond Crystal)",
+      "2 tablespoons all-purpose flour",
+      "1 ½ teaspoons ground turmeric",
+      "1 pound boneless, skinless chicken thighs, cut into 1-inch pieces",
+      "1 tablespoon coconut or canola oil",
+      "12 ounces asparagus, trimmed and thinly sliced on an angle",
+      "1 teaspoon unseasoned rice vinegar or soy sauce",
+      "1 lime, cut into wedges (optional)"
+    ],
+    "verified_on": "2026-11-01"
   },
   {
     "id": "vietnamese-pork-meatballs-nyt",
@@ -376,12 +1255,150 @@
     "name": "Maple Miso Salmon",
     "source": "NYT",
     "page": null,
-    "url": null,
+    "url": "https://cooking.nytimes.com/recipes/1019857-maple-and-miso-sheet-pan-salmon-with-green-beans",
     "servings": 4,
     "enabled": true,
-    "ingredients_verified": false,
-    "ingredients": [],
-    "notes": "Imported from handwritten sticks; ingredient data pending."
+    "ingredients_verified": true,
+    "ingredients": [
+      {
+        "item": "skin-on salmon fillets (6-oz)",
+        "quantity": "4",
+        "unit": "each",
+        "category": "Seafood",
+        "source_text": "4 (6-ounce) skin-on salmon fillets, about 1-inch thick"
+      },
+      {
+        "item": "Kosher salt",
+        "quantity": null,
+        "unit": "to taste",
+        "category": "Oils and spices",
+        "source_text": "Kosher salt"
+      },
+      {
+        "item": "Freshly ground black pepper",
+        "quantity": null,
+        "unit": "to taste",
+        "category": "Oils and spices",
+        "source_text": "Freshly ground black pepper"
+      },
+      {
+        "item": "maple syrup",
+        "quantity": "4",
+        "unit": "tsp",
+        "category": "Produce",
+        "source_text": "4 teaspoons maple syrup"
+      },
+      {
+        "item": "white or brown miso",
+        "quantity": "1",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "1 tablespoon white or brown miso"
+      },
+      {
+        "item": "rice wine vinegar",
+        "quantity": "1",
+        "unit": "tbsp",
+        "category": "Bread and grains",
+        "source_text": "1 tablespoon rice wine vinegar"
+      },
+      {
+        "item": "soy sauce",
+        "quantity": "2",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "2 teaspoons soy sauce"
+      },
+      {
+        "item": "garlic, grated",
+        "quantity": "1",
+        "unit": "clove",
+        "category": "Produce",
+        "source_text": "1 garlic clove, grated"
+      },
+      {
+        "item": "green beans",
+        "quantity": "1",
+        "unit": "lb",
+        "category": "Canned goods",
+        "source_text": "1 pound green beans, trimmed"
+      },
+      {
+        "item": "olive oil",
+        "quantity": "2",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "2 tablespoons olive oil"
+      },
+      {
+        "item": "Pinch of red-pepper flakes (optional)",
+        "quantity": null,
+        "unit": "to taste",
+        "category": "Optional toppings",
+        "source_text": "Pinch of red-pepper flakes (optional)",
+        "optional": true
+      },
+      {
+        "item": "toasted sesame oil (optional)",
+        "quantity": "1/4",
+        "unit": "tsp",
+        "category": "Optional toppings",
+        "source_text": "¼ teaspoon toasted sesame oil (optional)",
+        "optional": true
+      },
+      {
+        "item": "cilantro, both leaves and tender stems",
+        "quantity": "1/4",
+        "unit": "cup",
+        "category": "Produce",
+        "source_text": "¼ cup roughly chopped cilantro, both leaves and tender stems"
+      },
+      {
+        "item": "lime wedges",
+        "quantity": "4",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "4 lime wedges, for serving"
+      },
+      {
+        "item": "Flaky sea salt (optional)",
+        "quantity": null,
+        "unit": "to taste",
+        "category": "Optional toppings",
+        "source_text": "Flaky sea salt, for serving (optional)",
+        "optional": true
+      },
+      {
+        "item": "Cooked white rice (optional)",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Optional toppings",
+        "source_text": "Cooked white rice, for serving (optional)",
+        "optional": true
+      }
+    ],
+    "notes": "Imported from user-saved structured recipe data. ",
+    "source_title": "Maple and Miso Sheet-Pan Salmon With Green Beans",
+    "source_yield": "4 servings",
+    "source_ingredients": [
+      "4 (6-ounce) skin-on salmon fillets, about 1-inch thick",
+      "Kosher salt",
+      "Freshly ground black pepper",
+      "4 teaspoons maple syrup",
+      "1 tablespoon white or brown miso",
+      "1 tablespoon rice wine vinegar",
+      "2 teaspoons soy sauce",
+      "1 garlic clove, grated",
+      "1 pound green beans, trimmed",
+      "2 tablespoons olive oil",
+      "Pinch of red-pepper flakes (optional)",
+      "¼ teaspoon toasted sesame oil (optional)",
+      "¼ cup roughly chopped cilantro, both leaves and tender stems",
+      "4 lime wedges, for serving",
+      "Flaky sea salt, for serving (optional)",
+      "Cooked white rice, for serving (optional)"
+    ],
+    "verified_on": "2026-11-01"
   },
   {
     "id": "chilaquiles-ci",
@@ -412,12 +1429,107 @@
     "name": "Baked Feta w/ Tomato & Broccolini",
     "source": "NYT",
     "page": null,
-    "url": null,
+    "url": "https://cooking.nytimes.com/recipes/1021277-sheet-pan-baked-feta-with-broccolini-tomatoes-and-lemon",
     "servings": 4,
     "enabled": true,
-    "ingredients_verified": false,
-    "ingredients": [],
-    "notes": "Imported from handwritten sticks; ingredient data pending."
+    "ingredients_verified": true,
+    "ingredients": [
+      {
+        "item": "broccolini",
+        "quantity": "1",
+        "unit": "bunch",
+        "category": "Produce",
+        "source_text": "1 bunch broccolini, ends trimmed, thick stalks split lengthwise, or broccoli, stalks trimmed and cut into bite-size pieces"
+      },
+      {
+        "item": "grape tomatoes",
+        "quantity": "1",
+        "unit": "pint",
+        "category": "Produce",
+        "source_text": "1 pint grape tomatoes, halved (about 2 cups)"
+      },
+      {
+        "item": "small red onion",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "1 small red onion, peeled, quartered and cut into 2-inch wedges"
+      },
+      {
+        "item": "lemon, 1/2 cut into thin rounds and the remaining 1/2 left intact",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "1 lemon, ½ cut into thin rounds and the remaining ½ left intact, for serving"
+      },
+      {
+        "item": "olive oil",
+        "quantity": "3",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "3 tablespoons olive oil, plus more for serving"
+      },
+      {
+        "item": "ground cumin",
+        "quantity": "1",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "1 teaspoon ground cumin"
+      },
+      {
+        "item": "red-pepper flakes",
+        "quantity": "1/2",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "½ teaspoon red-pepper flakes"
+      },
+      {
+        "item": "Kosher salt and black pepper",
+        "quantity": null,
+        "unit": "to taste",
+        "category": "Oils and spices",
+        "source_text": "Kosher salt and black pepper"
+      },
+      {
+        "item": "feta (6- to 8-oz)",
+        "quantity": "2",
+        "unit": "block",
+        "category": "Dairy",
+        "source_text": "2 (6- to 8-ounce) blocks feta, cut into 1-inch slices"
+      },
+      {
+        "item": "Cooked orzo or farro",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Bread and grains",
+        "source_text": "Cooked orzo or farro, for serving"
+      },
+      {
+        "item": "fresh basil or cilantro leaves and fine stems (optional)",
+        "quantity": "1/2",
+        "unit": "cup",
+        "category": "Optional toppings",
+        "source_text": "½ cup fresh basil or cilantro leaves and fine stems, roughly chopped (optional)",
+        "optional": true
+      }
+    ],
+    "notes": "Imported from user-saved structured recipe data. ",
+    "source_title": "Sheet-Pan Baked Feta With Broccolini, Tomatoes and Lemon",
+    "source_yield": "4 servings",
+    "source_ingredients": [
+      "1 bunch broccolini, ends trimmed, thick stalks split lengthwise, or broccoli, stalks trimmed and cut into bite-size pieces",
+      "1 pint grape tomatoes, halved (about 2 cups)",
+      "1 small red onion, peeled, quartered and cut into 2-inch wedges",
+      "1 lemon, ½ cut into thin rounds and the remaining ½ left intact, for serving",
+      "3 tablespoons olive oil, plus more for serving",
+      "1 teaspoon ground cumin",
+      "½ teaspoon red-pepper flakes",
+      "Kosher salt and black pepper",
+      "2 (6- to 8-ounce) blocks feta, cut into 1-inch slices",
+      "Cooked orzo or farro, for serving",
+      "½ cup fresh basil or cilantro leaves and fine stems, roughly chopped (optional)"
+    ],
+    "verified_on": "2026-11-01"
   },
   {
     "id": "farmhouse-chicken-casserole-slow",
@@ -508,24 +1620,270 @@
     "name": "Coconut Sticky Rice w/ Chicken",
     "source": "NYT",
     "page": 52,
-    "url": null,
+    "url": "https://cooking.nytimes.com/recipes/1023047-sticky-coconut-chicken-and-rice",
     "servings": 4,
     "enabled": true,
-    "ingredients_verified": false,
-    "ingredients": [],
-    "notes": "Imported from handwritten sticks; ingredient data pending."
+    "ingredients_verified": true,
+    "ingredients": [
+      {
+        "item": "boneless, skinless chicken thighs",
+        "quantity": "3/2",
+        "unit": "lb",
+        "category": "Meat",
+        "source_text": "1 ½ pounds boneless, skinless chicken thighs, each thigh cut into 2 equal-size pieces"
+      },
+      {
+        "item": "neutral oil",
+        "quantity": "1/4",
+        "unit": "cup",
+        "category": "Oils and spices",
+        "source_text": "¼ cup neutral oil, such as safflower or canola"
+      },
+      {
+        "item": "kosher salt",
+        "quantity": "2",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "2 teaspoons kosher salt (Diamond Crystal)"
+      },
+      {
+        "item": "black pepper",
+        "quantity": "1/2",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "½ teaspoon black pepper"
+      },
+      {
+        "item": "fresh ginger",
+        "quantity": "2",
+        "unit": "tbsp",
+        "category": "Produce",
+        "source_text": "2 tablespoons minced fresh ginger"
+      },
+      {
+        "item": "garlic",
+        "quantity": "1",
+        "unit": "tbsp",
+        "category": "Produce",
+        "source_text": "1 tablespoon minced garlic"
+      },
+      {
+        "item": "short-grain white rice, rinsed until water runs clear",
+        "quantity": "3/2",
+        "unit": "cup",
+        "category": "Water",
+        "source_text": "1 ½ cups short-grain white rice, rinsed until water runs clear",
+        "shopping": false
+      },
+      {
+        "item": "low-sodium chicken broth",
+        "quantity": "7/4",
+        "unit": "cup",
+        "category": "Canned goods",
+        "source_text": "1 ¾ cups low-sodium chicken broth"
+      },
+      {
+        "item": "full-fat coconut milk (13.5-oz)",
+        "quantity": "1",
+        "unit": "can",
+        "category": "Canned goods",
+        "source_text": "1 (13.5-ounce) can full-fat coconut milk"
+      },
+      {
+        "item": "yellow bell pepper",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "1 yellow bell pepper, cored, seeded and chopped (½-inch pieces)"
+      },
+      {
+        "item": "roasted cashews",
+        "quantity": "1/2",
+        "unit": "cup",
+        "category": "Oils and spices",
+        "source_text": "½ cup roasted cashews, coarsely chopped"
+      },
+      {
+        "item": "scallions, green and white parts",
+        "quantity": "3",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "3 scallions, green and white parts, thinly sliced (½ packed cup)"
+      },
+      {
+        "item": "cilantro",
+        "quantity": "2",
+        "unit": "tbsp",
+        "category": "Produce",
+        "source_text": "2 tablespoons coarsely chopped cilantro"
+      },
+      {
+        "item": "Hot sauce",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Oils and spices",
+        "source_text": "Hot sauce, for serving"
+      }
+    ],
+    "notes": "Imported from user-saved structured recipe data. ",
+    "source_title": "Sticky Coconut Chicken and Rice",
+    "source_yield": "4 servings",
+    "source_ingredients": [
+      "1 ½ pounds boneless, skinless chicken thighs, each thigh cut into 2 equal-size pieces",
+      "¼ cup neutral oil, such as safflower or canola",
+      "2 teaspoons kosher salt (Diamond Crystal)",
+      "½ teaspoon black pepper",
+      "2 tablespoons minced fresh ginger",
+      "1 tablespoon minced garlic",
+      "1 ½ cups short-grain white rice, rinsed until water runs clear",
+      "1 ¾ cups low-sodium chicken broth",
+      "1 (13.5-ounce) can full-fat coconut milk",
+      "1 yellow bell pepper, cored, seeded and chopped (½-inch pieces)",
+      "½ cup roasted cashews, coarsely chopped",
+      "3 scallions, green and white parts, thinly sliced (½ packed cup)",
+      "2 tablespoons coarsely chopped cilantro",
+      "Hot sauce, for serving"
+    ],
+    "verified_on": "2026-11-01"
   },
   {
     "id": "mattar-paneer-nyt",
     "name": "Mattar Paneer",
     "source": "NYT",
     "page": null,
-    "url": null,
-    "servings": 4,
+    "url": "https://cooking.nytimes.com/recipes/1023017-mattar-paneer-peas-and-paneer-in-spiced-tomato-gravy",
+    "servings": 2,
     "enabled": true,
-    "ingredients_verified": false,
-    "ingredients": [],
-    "notes": "Imported from handwritten sticks; ingredient data pending."
+    "ingredients_verified": true,
+    "ingredients": [
+      {
+        "item": "ghee or neutral oil",
+        "quantity": "1/4",
+        "unit": "cup",
+        "category": "Oils and spices",
+        "source_text": "¼ cup ghee or neutral oil"
+      },
+      {
+        "item": "paneer or extra-firm tofu",
+        "quantity": "1/2",
+        "unit": "lb",
+        "category": "Dairy",
+        "source_text": "½ pound paneer or extra-firm tofu, cut into 1-inch cubes and patted very dry"
+      },
+      {
+        "item": "medium yellow onion",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "1 medium yellow onion, finely chopped"
+      },
+      {
+        "item": "ginger paste or freshly grated ginger",
+        "quantity": "1/2",
+        "unit": "tsp",
+        "category": "Produce",
+        "source_text": "½ teaspoon ginger paste or freshly grated ginger"
+      },
+      {
+        "item": "garlic paste or freshly grated garlic",
+        "quantity": "1/2",
+        "unit": "tsp",
+        "category": "Produce",
+        "source_text": "½ teaspoon garlic paste or freshly grated garlic"
+      },
+      {
+        "item": "cumin seeds",
+        "quantity": "1",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "1 teaspoon cumin seeds"
+      },
+      {
+        "item": "kashmiri or other red chile powder",
+        "quantity": "3/4",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "¾ teaspoon kashmiri or other red chile powder"
+      },
+      {
+        "item": "turmeric powder",
+        "quantity": "1/4",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "¼ teaspoon turmeric powder"
+      },
+      {
+        "item": "medium plum tomatoes",
+        "quantity": "3",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "3 medium plum tomatoes, finely chopped"
+      },
+      {
+        "item": "fine sea salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "1 teaspoon fine sea salt"
+      },
+      {
+        "item": "cashew butter",
+        "quantity": "2",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "2 tablespoons cashew butter"
+      },
+      {
+        "item": "frozen or fresh green peas",
+        "quantity": "8",
+        "unit": "oz",
+        "category": "Produce",
+        "source_text": "8 ounces frozen (no need to thaw) or fresh green peas (about 1¾ cups)"
+      },
+      {
+        "item": "heavy cream or cashew cream (optional)",
+        "quantity": "3",
+        "unit": "tbsp",
+        "category": "Optional toppings",
+        "source_text": "3 tablespoons heavy cream or cashew cream (optional)",
+        "optional": true
+      },
+      {
+        "item": "garam masala",
+        "quantity": "1/2",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "½ teaspoon garam masala"
+      },
+      {
+        "item": "Rice or roti",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Bread and grains",
+        "source_text": "Rice or roti, for serving"
+      }
+    ],
+    "notes": "Imported from user-saved structured recipe data. Yield range 2 to 4 servings; uses the lower end (2) for conservative per-serving shopping quantities.",
+    "source_title": "Mattar Paneer (Peas and Paneer in Spiced Tomato Gravy)",
+    "source_yield": "2 to 4 servings",
+    "source_ingredients": [
+      "¼ cup ghee or neutral oil",
+      "½ pound paneer or extra-firm tofu, cut into 1-inch cubes and patted very dry",
+      "1 medium yellow onion, finely chopped",
+      "½ teaspoon ginger paste or freshly grated ginger",
+      "½ teaspoon garlic paste or freshly grated garlic",
+      "1 teaspoon cumin seeds",
+      "¾ teaspoon kashmiri or other red chile powder",
+      "¼ teaspoon turmeric powder",
+      "3 medium plum tomatoes, finely chopped",
+      "1 teaspoon fine sea salt",
+      "2 tablespoons cashew butter",
+      "8 ounces frozen (no need to thaw) or fresh green peas (about 1¾ cups)",
+      "3 tablespoons heavy cream or cashew cream (optional)",
+      "½ teaspoon garam masala",
+      "Rice or roti, for serving"
+    ],
+    "verified_on": "2026-11-01"
   },
   {
     "id": "carrot-sweet-potato-spinach-eggah-mtn",
@@ -568,12 +1926,139 @@
     "name": "Soy Braised Tofu w/ Bok Choy",
     "source": "NYT",
     "page": null,
-    "url": null,
+    "url": "https://cooking.nytimes.com/recipes/1023301-soy-braised-tofu-with-bok-choy",
     "servings": 4,
     "enabled": true,
-    "ingredients_verified": false,
-    "ingredients": [],
-    "notes": "Imported from handwritten sticks; ingredient data pending."
+    "ingredients_verified": true,
+    "ingredients": [
+      {
+        "item": "extra-firm tofu (14-oz)",
+        "quantity": "1",
+        "unit": "package",
+        "category": "Produce",
+        "source_text": "1 (14-ounce) package extra-firm tofu, drained and patted dry"
+      },
+      {
+        "item": "Neutral oil",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Oils and spices",
+        "source_text": "Neutral oil, such as grapeseed or vegetable"
+      },
+      {
+        "item": "Salt and black pepper",
+        "quantity": null,
+        "unit": "to taste",
+        "category": "Oils and spices",
+        "source_text": "Salt and black pepper"
+      },
+      {
+        "item": "doubanjiang or chile oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "1 tablespoon doubanjiang or chile oil"
+      },
+      {
+        "item": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "category": "Produce",
+        "source_text": "2 garlic cloves, peeled and finely chopped"
+      },
+      {
+        "item": "piece ginger (1-inch)",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "1 (1-inch) piece ginger, peeled and finely chopped (about 1 tablespoon)"
+      },
+      {
+        "item": "scallions",
+        "quantity": "4",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "4 scallions, trimmed, white and green parts separated and cut into 1-inch pieces"
+      },
+      {
+        "item": "bell pepper, stem and membrane removed",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "1 bell pepper (any color), stem and membrane removed, cut into 1-inch pieces"
+      },
+      {
+        "item": "Shaoxing wine (optional)",
+        "quantity": "2",
+        "unit": "tsp",
+        "category": "Optional toppings",
+        "source_text": "2 teaspoons Shaoxing wine (optional)",
+        "optional": true
+      },
+      {
+        "item": "baby bok choy",
+        "quantity": "4",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "4 baby bok choy, trimmed and halved through the stem"
+      },
+      {
+        "item": "Cooked rice or noodles",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Bread and grains",
+        "source_text": "Cooked rice or noodles, for serving"
+      },
+      {
+        "item": "soy sauce",
+        "quantity": "2",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "2 tablespoons soy sauce"
+      },
+      {
+        "item": "vegetarian stir-fry sauce or oyster sauce",
+        "quantity": "1",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "1 tablespoon vegetarian stir-fry sauce or oyster sauce"
+      },
+      {
+        "item": "cornstarch",
+        "quantity": "1",
+        "unit": "tsp",
+        "category": "Bread and grains",
+        "source_text": "1 teaspoon cornstarch"
+      },
+      {
+        "item": "granulated sugar",
+        "quantity": "1/2",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "½ teaspoon granulated sugar"
+      }
+    ],
+    "notes": "Imported from user-saved structured recipe data. ",
+    "source_title": "Soy-Braised Tofu With Bok Choy",
+    "source_yield": "4 servings",
+    "source_ingredients": [
+      "1 (14-ounce) package extra-firm tofu, drained and patted dry",
+      "Neutral oil, such as grapeseed or vegetable",
+      "Salt and black pepper",
+      "1 tablespoon doubanjiang or chile oil",
+      "2 garlic cloves, peeled and finely chopped",
+      "1 (1-inch) piece ginger, peeled and finely chopped (about 1 tablespoon)",
+      "4 scallions, trimmed, white and green parts separated and cut into 1-inch pieces",
+      "1 bell pepper (any color), stem and membrane removed, cut into 1-inch pieces",
+      "2 teaspoons Shaoxing wine (optional)",
+      "4 baby bok choy, trimmed and halved through the stem",
+      "Cooked rice or noodles, for serving",
+      "2 tablespoons soy sauce",
+      "1 tablespoon vegetarian stir-fry sauce or oyster sauce",
+      "1 teaspoon cornstarch",
+      "½ teaspoon granulated sugar"
+    ],
+    "verified_on": "2026-11-01"
   },
   {
     "id": "chicken-tortilla-soup-unknown",
@@ -724,12 +2209,108 @@
     "name": "Sheet Pan Bibimbap",
     "source": "NYT",
     "page": 244,
-    "url": null,
+    "url": "https://cooking.nytimes.com/recipes/1022131-sheet-pan-bibimbap",
     "servings": 4,
     "enabled": true,
-    "ingredients_verified": false,
-    "ingredients": [],
-    "notes": "Imported from handwritten sticks; ingredient data pending."
+    "ingredients_verified": true,
+    "ingredients": [
+      {
+        "item": "oyster mushrooms",
+        "quantity": "6",
+        "unit": "oz",
+        "category": "Produce",
+        "source_text": "6 ounces oyster mushrooms, torn into bite-size pieces"
+      },
+      {
+        "item": "medium sweet potato",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "1 medium sweet potato (about 6 ounces), scrubbed and thinly sliced into half-moons"
+      },
+      {
+        "item": "small red onion",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "1 small red onion (about 6 ounces), thinly sliced crosswise into half-moons"
+      },
+      {
+        "item": "Tuscan or curly kale",
+        "quantity": "3",
+        "unit": "cup",
+        "category": "Produce",
+        "source_text": "3 packed cups coarsely chopped Tuscan or curly kale (from 1 small bunch)",
+        "notes": "packed measure"
+      },
+      {
+        "item": "olive oil",
+        "quantity": "6",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "6 tablespoons olive oil"
+      },
+      {
+        "item": "Kosher salt and black pepper",
+        "quantity": null,
+        "unit": "to taste",
+        "category": "Oils and spices",
+        "source_text": "Kosher salt and black pepper"
+      },
+      {
+        "item": "cooked medium-grain white rice",
+        "quantity": "4",
+        "unit": "cup",
+        "category": "Bread and grains",
+        "source_text": "4 cups cooked medium-grain white rice, preferably cold leftovers"
+      },
+      {
+        "item": "large eggs",
+        "quantity": "4",
+        "unit": "each",
+        "category": "Dairy",
+        "source_text": "4 large eggs"
+      },
+      {
+        "item": "toasted sesame oil",
+        "quantity": "4",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "4 teaspoons toasted sesame oil, plus more to taste, for serving"
+      },
+      {
+        "item": "gochujang",
+        "quantity": "4",
+        "unit": "tsp",
+        "category": "Produce",
+        "source_text": "4 teaspoons gochujang, plus more to taste, for serving"
+      },
+      {
+        "item": "Kimchi (optional)",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Optional toppings",
+        "source_text": "Kimchi, for serving (optional)",
+        "optional": true
+      }
+    ],
+    "notes": "Imported from user-saved structured recipe data. ",
+    "source_title": "Sheet-Pan Bibimbap",
+    "source_yield": "4 servings",
+    "source_ingredients": [
+      "6 ounces oyster mushrooms, torn into bite-size pieces",
+      "1 medium sweet potato (about 6 ounces), scrubbed and thinly sliced into half-moons",
+      "1 small red onion (about 6 ounces), thinly sliced crosswise into half-moons",
+      "3 packed cups coarsely chopped Tuscan or curly kale (from 1 small bunch)",
+      "6 tablespoons olive oil",
+      "Kosher salt and black pepper",
+      "4 cups cooked medium-grain white rice, preferably cold leftovers",
+      "4 large eggs",
+      "4 teaspoons toasted sesame oil, plus more to taste, for serving",
+      "4 teaspoons gochujang, plus more to taste, for serving",
+      "Kimchi, for serving (optional)"
+    ],
+    "verified_on": "2026-11-01"
   },
   {
     "id": "pasta-w-brown-butter-yogurt-herbs-tn",
@@ -889,12 +2470,139 @@
     "name": "Rice Noodles w/ Egg Drop Gravy",
     "source": "NYT",
     "page": null,
-    "url": null,
+    "url": "https://cooking.nytimes.com/recipes/1022985-rice-noodles-with-egg-drop-gravy",
     "servings": 4,
     "enabled": true,
-    "ingredients_verified": false,
-    "ingredients": [],
-    "notes": "Imported from handwritten sticks; ingredient data pending."
+    "ingredients_verified": true,
+    "ingredients": [
+      {
+        "item": "Kosher salt and black pepper",
+        "quantity": null,
+        "unit": "to taste",
+        "category": "Oils and spices",
+        "source_text": "Kosher salt and black pepper"
+      },
+      {
+        "item": "thick dried rice noodles",
+        "quantity": "12",
+        "unit": "oz",
+        "category": "Bread and grains",
+        "source_text": "12 ounces thick dried rice noodles"
+      },
+      {
+        "item": "neutral oil",
+        "quantity": "3",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "3 tablespoons neutral oil, such as grapeseed or canola"
+      },
+      {
+        "item": "soy sauce",
+        "quantity": "2",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "2 tablespoons soy sauce"
+      },
+      {
+        "item": "dark soy sauce",
+        "quantity": "1",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "1 tablespoon dark soy sauce (see Tip)"
+      },
+      {
+        "item": "vegetable stock",
+        "quantity": "2",
+        "unit": "cup",
+        "category": "Canned goods",
+        "source_text": "2 cups vegetable stock"
+      },
+      {
+        "item": "granulated sugar",
+        "quantity": "1",
+        "unit": "tsp",
+        "category": "Oils and spices",
+        "source_text": "1 teaspoon granulated sugar"
+      },
+      {
+        "item": "cornstarch",
+        "quantity": "1",
+        "unit": "tbsp",
+        "category": "Bread and grains",
+        "source_text": "1 tablespoon cornstarch"
+      },
+      {
+        "item": "garlic",
+        "quantity": "2",
+        "unit": "clove",
+        "category": "Produce",
+        "source_text": "2 garlic cloves, finely chopped"
+      },
+      {
+        "item": "piece of ginger (1-inch)",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "1 (1-inch) piece of ginger, peeled and finely chopped"
+      },
+      {
+        "item": "carrot",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Produce",
+        "source_text": "1 carrot, peeled and thinly sliced diagonally"
+      },
+      {
+        "item": "baby bok choy",
+        "quantity": "4",
+        "unit": "head",
+        "category": "Produce",
+        "source_text": "4 heads baby bok choy (about 12 ounces), trimmed and sliced lengthwise into 4 pieces"
+      },
+      {
+        "item": "vegetarian stir-fry sauce or oyster sauce",
+        "quantity": "2",
+        "unit": "tbsp",
+        "category": "Oils and spices",
+        "source_text": "2 tablespoons vegetarian stir-fry sauce or oyster sauce"
+      },
+      {
+        "item": "eggs, beaten",
+        "quantity": "2",
+        "unit": "each",
+        "category": "Dairy",
+        "source_text": "2 eggs, beaten"
+      },
+      {
+        "item": "Handful of cilantro leaves (optional)",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Optional toppings",
+        "source_text": "Handful of cilantro leaves (optional)",
+        "optional": true
+      }
+    ],
+    "notes": "Imported from user-saved structured recipe data. ",
+    "source_title": "Rice Noodles With Egg Drop Gravy",
+    "source_yield": "4 servings",
+    "source_ingredients": [
+      "Kosher salt and black pepper",
+      "12 ounces thick dried rice noodles",
+      "3 tablespoons neutral oil, such as grapeseed or canola",
+      "2 tablespoons soy sauce",
+      "1 tablespoon dark soy sauce (see Tip)",
+      "2 cups vegetable stock",
+      "1 teaspoon granulated sugar",
+      "1 tablespoon cornstarch",
+      "2 garlic cloves, finely chopped",
+      "1 (1-inch) piece of ginger, peeled and finely chopped",
+      "1 carrot, peeled and thinly sliced diagonally",
+      "4 heads baby bok choy (about 12 ounces), trimmed and sliced lengthwise into 4 pieces",
+      "2 tablespoons vegetarian stir-fry sauce or oyster sauce",
+      "2 eggs, beaten",
+      "Handful of cilantro leaves (optional)"
+    ],
+    "verified_on": "2026-11-01"
   },
   {
     "id": "chicken-salmoriglio-mtn",
@@ -940,9 +2648,72 @@
     "url": "https://cooking.nytimes.com/recipes/1019681-cheesy-white-bean-tomato-bake",
     "servings": 4,
     "enabled": true,
-    "ingredients_verified": false,
-    "ingredients": [],
-    "notes": "Imported from handwritten sticks; ingredient data pending."
+    "ingredients_verified": true,
+    "ingredients": [
+      {
+        "item": "extra-virgin olive oil",
+        "quantity": "1/4",
+        "unit": "cup",
+        "category": "Oils and spices",
+        "source_text": "¼ cup extra-virgin olive oil"
+      },
+      {
+        "item": "garlic",
+        "quantity": "3",
+        "unit": "clove",
+        "category": "Produce",
+        "source_text": "3 fat garlic cloves, thinly sliced"
+      },
+      {
+        "item": "tomato paste",
+        "quantity": "3",
+        "unit": "tbsp",
+        "category": "Canned goods",
+        "source_text": "3 tablespoons tomato paste"
+      },
+      {
+        "item": "white beans or chickpeas (15-oz)",
+        "quantity": "2",
+        "unit": "can",
+        "category": "Canned goods",
+        "source_text": "2 (15-ounce) cans white beans (such as cannellini or Great Northern) or chickpeas, drained and rinsed"
+      },
+      {
+        "item": "boiling water",
+        "quantity": "1/2",
+        "unit": "cup",
+        "category": "Water",
+        "source_text": "½ cup boiling water",
+        "shopping": false
+      },
+      {
+        "item": "Salt and black pepper",
+        "quantity": null,
+        "unit": "to taste",
+        "category": "Oils and spices",
+        "source_text": "Salt and black pepper"
+      },
+      {
+        "item": "mozzarella",
+        "quantity": "1/3",
+        "unit": "lb",
+        "category": "Dairy",
+        "source_text": "⅓ pound mozzarella, coarsely grated (about 1 ⅓ cups)"
+      }
+    ],
+    "notes": "Imported from user-saved structured recipe data. ",
+    "source_title": "Cheesy White Bean-Tomato Bake",
+    "source_yield": "4 servings",
+    "source_ingredients": [
+      "¼ cup extra-virgin olive oil",
+      "3 fat garlic cloves, thinly sliced",
+      "3 tablespoons tomato paste",
+      "2 (15-ounce) cans white beans (such as cannellini or Great Northern) or chickpeas, drained and rinsed",
+      "½ cup boiling water",
+      "Salt and black pepper",
+      "⅓ pound mozzarella, coarsely grated (about 1 ⅓ cups)"
+    ],
+    "verified_on": "2026-11-01"
   },
   {
     "id": "kale-soup-w-sausage-tomato-nyt",

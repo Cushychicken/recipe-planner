@@ -30,7 +30,10 @@ class TemplateTests(unittest.TestCase):
             for i,meal in enumerate(self.plan['meals'],1):
                 expected='Leftovers / takeout' if meal.get('kind')=='leftovers' else by_id[meal['recipe_id']]['name']
                 self.assertIn(expected,table.cell(2,i).text)
-            self.assertIn('DRAFT',table.cell(3,1).text)
+            if self.plan['meals'][0]['ingredients_verified']:
+                self.assertNotIn('DRAFT',table.cell(3,1).text)
+            else:
+                self.assertIn('DRAFT',table.cell(3,1).text)
             self.assertGreater(doc.sections[0].page_width,doc.sections[0].page_height)
 
     @unittest.skipUnless(shutil.which('soffice') or shutil.which('libreoffice'),'LibreOffice required')

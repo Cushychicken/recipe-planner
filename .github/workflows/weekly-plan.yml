@@ -10,6 +10,8 @@ on:
     paths:
       - 'data/**'
       - 'scripts/**'
+      - 'tools/recipe-library*'
+      - 'tools/recipes'
       - 'templates/**'
       - 'tests/**'
       - 'requirements.txt'
@@ -39,7 +41,7 @@ jobs:
       - name: Test planner
         run: python -m unittest discover -s tests -v
       - name: Test day controls
-        run: node --test tests/test_client.cjs tests/test_exporter.cjs
+        run: node --test tests/test_client.cjs tests/test_exporter.cjs tests/test_recipe_helper.mjs
       - name: Generate plan and printable sheets
         run: python scripts/planner.py
       - name: Save weekly history
