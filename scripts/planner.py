@@ -115,6 +115,38 @@ def quantity(row):
     return f'{display} {unit}'
 
 
+
+def shopping_label(row):
+    """Show buying amounts, not spoonfuls used while cooking.
+
+    Full recipe measurements remain in saved data. Counts, package sizes and
+    weights help with purchases; stock/broth/milk volumes help choose cartons.
+    """
+    item = row['item']
+    unit = row['unit']
+    amount = row['quantity']
+    buying_units = {'each', 'can', 'package', 'block', 'bunch', 'head', 'clove',
+                    'oz', 'lb', 'g', 'kg', 'pint', 'quart'}
+    carton = bool(re.search(r'\b(broth|stock|milk)\b', item, re.I))
+    show = amount is not None and (unit in buying_units or
+                                   (carton and unit in {'tsp','tbsp','cup','ml','l'}))
+    if not show:
+        label = item
+    elif unit == 'each':
+        # Counted pieces already named in the ingredient (e.g. chicken thighs)
+        # need no extra “each” unit. Pluralize common whole produce names.
+        if Fraction(str(amount)) > 1:
+            plurals = {'lemon':'lemons','lime':'limes','carrot':'carrots','egg':'eggs',
+                       'jalapeño':'jalapeños','potato':'potatoes','tomato':'tomatoes',
+                       'onion':'onions','pepper':'peppers','chicken':'chickens'}
+            item = re.sub(r'\b('+'|'.join(plurals)+r')(?=,| \(|$)',
+                          lambda m: plurals[m.group(0)], item)
+        label = f"{quantity(row).removesuffix(' each')} {item}"
+    else:
+        label = f"{quantity(row)} {item}"
+    return label + (' (pantry)' if row.get('pantry') else '')
+
+
 def reference(recipe, sources):
     source = sources.get(recipe['source'], {'name': recipe['source']})['name']
     return source + (f", p. {recipe['page']}" if recipe.get('page') else '')
@@ -187,8 +219,7 @@ def render_html(plan, recipes, sources, archive):
                 cell = '<p class="pending">Ingredients pending verification.</p>'
             else:
                 for row in day_shopping(plan,meal,recipe):
-                    pantry = ' (pantry)' if row['pantry'] else ''
-                    cell += f'<div class="ingredient">{escape(quantity(row))} {escape(row["item"])}{pantry}</div>'
+                    cell += f'<div class="ingredient">{escape(shopping_label(row))}</div>'
         elif records_by_day.get(day,{}).get('kind') == 'leftovers':
             cell = '<p class="pending">No groceries needed.</p>'
         groceries += f'<td id="shopping-{i}">{cell}</td>'
@@ -201,7 +232,7 @@ def render_html(plan, recipes, sources, archive):
                             reference=recipe['source']+(f", p. {recipe['page']}" if recipe.get('page') else ''),
                             url=recipe.get('url'),enabled=recipe.get('enabled',True),
                             verified=recipe['ingredients_verified'],
-                            shopping=[dict(item=r['item'],quantity=quantity(r),
+                            shopping=[dict(item=r['item'],quantity=quantity(r),label=shopping_label(r),
                                            category='Pantry check' if r['pantry'] else r['category']) for r in rows]))
     initial = []
     for i in range(7):
@@ -256,7 +287,7 @@ def render_pdf(path, plan, recipes, sources):
         if category != previous:
             story.append(Paragraph(escape(category), styles['Heading3']))
             previous = category
-        story.append(Paragraph(f"[  ] {escape(row['item'])} — {escape(quantity(row))}", styles['Normal']))
+        story.append(Paragraph(f"[  ] {escape(shopping_label(row))}", styles['Normal']))
     if plan['draft']:
         story.append(Paragraph('Check ingredient lists against the original recipes before enabling weekly shopping lists.', styles['Normal']))
     SimpleDocTemplate(str(path), pagesize=(8.5*inch,11*inch),rightMargin=36,leftMargin=36,topMargin=32,bottomMargin=32).build(story)

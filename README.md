@@ -47,7 +47,9 @@ The primary weekly PDF now follows your supplied `templates/weekly-plan.docx`:
 one landscape page, Sunday–Saturday dinner columns with book/page references,
 blank lunch options and lunch ingredients areas, and ingredients directly beneath
 the corresponding dinner. Each shopping column belongs to the weekday above it.
-Ingredient lines are compact, with quantities first and no checkboxes or store-section
+Ingredient lines show buying amounts (counts, packages, weights and carton volumes),
+while omitting cooking measurements for staples such as spices, oil and butter. Full
+recipe quantities remain in the saved data. There are no checkboxes or store-section
 headings. Browser printing fits the current selections to one landscape page.
 
 Each week also produces an editable `.docx` and a separate `-shopping.pdf`

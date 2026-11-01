@@ -6,7 +6,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from planner import build_plan, load, quantity, select, shopping_list, validate, week_start, render_html, ROOT
+from planner import build_plan, load, quantity, select, shopping_list, validate, week_start, render_html, shopping_label, ROOT
 
 
 def recipe(i, verified=True):
@@ -104,6 +104,27 @@ class PlannerTests(unittest.TestCase):
         self.assertIn('class="ingredient"',html)
         self.assertNotIn('<input',html)
         self.assertNotIn('<h3',html)
+
+    def test_shopping_labels_preserve_buying_amounts_but_hide_cooking_measures(self):
+        cases = [
+            ('ground cumin','2','tsp','ground cumin'),
+            ('salt','1/2','tsp','salt'),
+            ('olive oil','1','cup','olive oil'),
+            ('unsalted butter','2','tbsp','unsalted butter'),
+            ('lemon','2','each','2 lemons'),
+            ('bone-in, skin-on chicken thighs','8','each','8 bone-in, skin-on chicken thighs'),
+            ('ground beef','24','oz','1 1/2 lb ground beef'),
+            ('black beans (15-oz)','2','can','2 can black beans (15-oz)'),
+            ('chicken broth','96','tsp','2 cup chicken broth'),
+            ('parsley','4','tbsp','parsley'),
+            ('hot sauce',None,'as needed','hot sauce'),
+        ]
+        for item,amount,unit,expected in cases:
+            with self.subTest(item=item):
+                row=dict(item=item,quantity=amount,unit=unit,pantry=False)
+                original=copy.deepcopy(row)
+                self.assertEqual(expected,shopping_label(row))
+                self.assertEqual(original,row)
 
     def test_daily_shopping_snapshot_matches_only_its_recipe(self):
         self.recipes[0]['ingredients'][0]['item']='first recipe only'

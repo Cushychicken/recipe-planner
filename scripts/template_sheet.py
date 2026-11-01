@@ -56,7 +56,7 @@ def set_cell(cell, lines, size=9, bold_first=False):
 
 def shopping_columns(plan, recipes, format_quantity):
     """Each column contains only the ingredients for the dinner directly above it."""
-    from planner import day_shopping
+    from planner import day_shopping, shopping_label
     by_id = {r['id']:r for r in recipes}
     columns = [[] for _ in range(7)]
     for meal in plan['meals']:
@@ -69,8 +69,7 @@ def shopping_columns(plan, recipes, format_quantity):
             columns[column] = ['DRAFT', 'Ingredients pending verification.']
             continue
         for row in day_shopping(plan,meal,recipe):
-            pantry = ' (pantry)' if row['pantry'] else ''
-            columns[column].append(f"{format_quantity(row)} {row['item']}{pantry}")
+            columns[column].append(shopping_label(row))
     return columns
 
 
