@@ -5,31 +5,45 @@
   "meals": [
     {
       "day": "2026-11-01",
-      "recipe_id": "pasta-w-brown-butter-yogurt-herbs-tn"
+      "recipe_id": "pasta-w-brown-butter-yogurt-herbs-tn",
+      "ingredients_verified": false,
+      "shopping": []
     },
     {
       "day": "2026-11-02",
-      "recipe_id": "keema-matar-tn"
+      "recipe_id": "keema-matar-tn",
+      "ingredients_verified": false,
+      "shopping": []
     },
     {
       "day": "2026-11-03",
-      "recipe_id": "cauliflower-shawarma-nyt"
+      "recipe_id": "cauliflower-shawarma-nyt",
+      "ingredients_verified": false,
+      "shopping": []
     },
     {
       "day": "2026-11-04",
-      "recipe_id": "fish-tacos-nyt"
+      "recipe_id": "fish-tacos-nyt",
+      "ingredients_verified": false,
+      "shopping": []
     },
     {
       "day": "2026-11-05",
-      "recipe_id": "farro-w-pesto-tomato-spinach-ezw"
+      "recipe_id": "farro-w-pesto-tomato-spinach-ezw",
+      "ingredients_verified": false,
+      "shopping": []
     },
     {
       "day": "2026-11-06",
-      "recipe_id": "palestinian-herb-omelet-tn"
+      "recipe_id": "palestinian-herb-omelet-tn",
+      "ingredients_verified": false,
+      "shopping": []
     },
     {
       "day": "2026-11-07",
-      "recipe_id": "pasta-w-tomato-capers-herbs-mtn"
+      "recipe_id": "pasta-w-tomato-capers-herbs-mtn",
+      "ingredients_verified": false,
+      "shopping": []
     }
   ],
   "shopping": []
