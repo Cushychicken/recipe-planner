@@ -6,7 +6,7 @@ Generates a Sunday–Saturday dinner plan, printable shopping checklist, PDF, an
 
 - All **64 recipe sticks** from the supplied photo are in `data/recipes.json`.
 - Defaults: **7 dinners, 4 servings**. Change these in `data/settings.json`.
-- **Ingredient quantities have not been imported yet.** The initial output is explicitly a draft, without a shopping list. Once at least seven enabled recipes have verified ingredients, new plans select only verified recipes.
+- **Two ingredient lists are verified:** Chorizo Rice (The Wholesome Dish, 4 servings) and Chicken Tortilla Soup (The Pioneer Woman, 8 servings). Remaining recipes still need ingredient data. Verified dinners show their own shopping list even when other days remain drafts. Once at least seven enabled recipes have verified ingredients, new weekly plans select only verified recipes.
 - NYT = New York Times Cooking; CI = Cook’s Illustrated *Cook It in Cast Iron*; TN = Milk Street *Tuesday Nights*; MTN = Milk Street *Tuesday Nights Mediterranean*.
 - SK, EZW, Slow Cooker and W30 book titles remain unconfirmed. Source/page transcriptions should be checked against the books; the coconut sticky rice page number was unclear in the photo.
 - Recipe methods are read in the original books or linked websites. This repository stores ingredient facts and references, not copied instructions.
@@ -17,9 +17,8 @@ Generates a Sunday–Saturday dinner plan, printable shopping checklist, PDF, an
 
 The primary weekly PDF now follows your supplied `templates/weekly-plan.docx`:
 one landscape page, Sunday–Saturday dinner columns with book/page references,
-blank lunch options and lunch ingredients areas, and one combined shopping
-checklist spread across the original seven shopping columns. Shopping columns
-are a combined grocery list, not ingredients assigned to the weekday above them.
+blank lunch options and lunch ingredients areas, and ingredients directly beneath
+the corresponding dinner. Each shopping column belongs to the weekday above it.
 
 Each week also produces an editable `.docx` and a separate `-shopping.pdf`
 checklist. The primary PDF is exported directly from the filled Word template.
@@ -27,6 +26,17 @@ Empty trailing paragraphs are removed, and export must contain exactly one page.
 If a very long ingredient list cannot fit even after reducing checklist type,
 generation fails rather than dropping ingredients or publishing a second page.
 Lunches remain blank because no lunch recipes have been supplied.
+
+Each day has **Random recipe** and **Leftovers / takeout** buttons. Random avoids
+the current recipe and, when possible, dishes elsewhere in the week. Leftovers
+replaces the dinner and clears that day’s groceries; pressing it again restores
+the previous recipe. **Reset week** restores the published choices.
+
+Edits are saved per week in this browser, not back to GitHub or across devices.
+**Print one-page plan** prints the current on-screen choices. The original Word
+and PDF downloads are hidden while the plan is customized so they cannot be
+mistaken for updated downloads. The original combined checklist remains an
+additional download for the unmodified published plan.
 
 Local PDF export additionally requires LibreOffice (`libreoffice-writer`). The
 workflow installs its own renderer. Changes to `templates/` trigger regeneration.
@@ -54,7 +64,7 @@ Example ingredient record:
 }
 ```
 
-Use consistent item names and categories to combine duplicates. Quantities can be integers, decimals or fractions (`"1/2"`). Supported convertible units are `tsp`, `tbsp`, `cup`, `oz`, `lb`, `g`, `kg`, `ml`, and `l`. Other units (`each`, `clove`, `can`) combine only with the exact same unit. Include the package size in the item name, e.g. `white beans (15 oz can)`. Weight, volume and count are kept separate rather than guessed; e.g. a cup of flour is not converted to grams automatically. Quantities are recipe requirements, not rounded supermarket pack sizes.
+Use consistent item names and categories to combine duplicates. Quantities can be integers, decimals or fractions (`"1/2"`). Use `null` with unit `as needed` or `to taste` for unspecified garnish amounts; no quantities are invented. Set an ingredient’s `shopping` to `false` for non-purchased inputs such as tap water while retaining it in the recipe record. Supported convertible units are `tsp`, `tbsp`, `cup`, `oz`, `lb`, `g`, `kg`, `ml`, and `l`. Other units (`each`, `clove`, `can`) combine only with the exact same unit. Include the package size in the item name, e.g. `white beans (15 oz can)`. Weight, volume and count are kept separate rather than guessed; e.g. a cup of flour is not converted to grams automatically. Quantities are recipe requirements, not rounded supermarket pack sizes.
 
 Set `enabled: false` to remove a dish from the selection pool. Add normalized item names to `pantry` in `data/settings.json` to move them into a separate pantry-check section; they are never silently omitted.
 
@@ -67,6 +77,7 @@ Python 3.12+:
 ```sh
 python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
+node --test tests/test_client.cjs
 python scripts/planner.py
 python scripts/planner.py --week 2026-11-08
 python scripts/planner.py --require-ready

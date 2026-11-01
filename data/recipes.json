@@ -578,14 +578,146 @@
   {
     "id": "chicken-tortilla-soup-unknown",
     "name": "Chicken Tortilla Soup",
-    "source": "UNKNOWN",
+    "source": "PW",
     "page": null,
-    "url": null,
-    "servings": 4,
+    "url": "https://www.thepioneerwoman.com/food-cooking/recipes/a11528/chicken-tortilla-soup/",
+    "servings": 8,
     "enabled": true,
-    "ingredients_verified": false,
-    "ingredients": [],
-    "notes": "Imported from handwritten sticks; ingredient data pending."
+    "ingredients_verified": true,
+    "ingredients": [
+      {
+        "item": "boneless skinless chicken breasts",
+        "quantity": "2",
+        "unit": "each",
+        "category": "Meat"
+      },
+      {
+        "item": "olive oil",
+        "quantity": "2",
+        "unit": "tbsp",
+        "category": "Oils and spices"
+      },
+      {
+        "item": "ground cumin",
+        "quantity": "3/2",
+        "unit": "tsp",
+        "category": "Oils and spices"
+      },
+      {
+        "item": "chili powder",
+        "quantity": "1",
+        "unit": "tsp",
+        "category": "Oils and spices"
+      },
+      {
+        "item": "garlic powder",
+        "quantity": "1/2",
+        "unit": "tsp",
+        "category": "Oils and spices"
+      },
+      {
+        "item": "salt",
+        "quantity": "1/2",
+        "unit": "tsp",
+        "category": "Oils and spices"
+      },
+      {
+        "item": "diced onion",
+        "quantity": "1",
+        "unit": "cup",
+        "category": "Produce"
+      },
+      {
+        "item": "diced green bell pepper",
+        "quantity": "1/4",
+        "unit": "cup",
+        "category": "Produce"
+      },
+      {
+        "item": "diced red bell pepper",
+        "quantity": "1/4",
+        "unit": "cup",
+        "category": "Produce"
+      },
+      {
+        "item": "garlic",
+        "quantity": "3",
+        "unit": "clove",
+        "category": "Produce"
+      },
+      {
+        "item": "Rotel tomatoes and green chilies (10 oz can)",
+        "quantity": "1",
+        "unit": "can",
+        "category": "Canned goods"
+      },
+      {
+        "item": "low-sodium chicken stock",
+        "quantity": "4",
+        "unit": "cup",
+        "category": "Canned goods"
+      },
+      {
+        "item": "tomato paste",
+        "quantity": "3",
+        "unit": "tbsp",
+        "category": "Canned goods"
+      },
+      {
+        "item": "water",
+        "quantity": "4",
+        "unit": "cup",
+        "category": "Water",
+        "shopping": false
+      },
+      {
+        "item": "black beans (15 oz can)",
+        "quantity": "2",
+        "unit": "can",
+        "category": "Canned goods"
+      },
+      {
+        "item": "cornmeal or masa",
+        "quantity": "3",
+        "unit": "tbsp",
+        "category": "Grains"
+      },
+      {
+        "item": "corn tortillas",
+        "quantity": "5",
+        "unit": "each",
+        "category": "Bread and tortillas"
+      },
+      {
+        "item": "sour cream, red onion, avocado, pico de gallo or salsa, Monterey Jack cheese, cilantro",
+        "quantity": null,
+        "unit": "as needed",
+        "category": "Optional toppings"
+      }
+    ],
+    "notes": "8-serving recipe. Page lists olive oil twice, 1 Tbsp each; combined to 2 Tbsp. Toppings are optional with no published quantities. Water is retained as an ingredient but excluded from groceries.",
+    "verified_on": "2026-11-01",
+    "source_ingredients": [
+      "2 whole boneless, skinless chicken breasts",
+      "1 tbsp. olive oil",
+      "1 1/2 tsp. cumin",
+      "1 tsp. chili powder",
+      "1/2 tsp. garlic powder",
+      "1/2 tsp. salt",
+      "1 Tbsp. olive oil (second entry in the page ingredient list; absent from JSON-LD)",
+      "1 c. diced onion",
+      "1/4 c. diced green bell pepper",
+      "1/4 c. red bell pepper",
+      "3 cloves garlic, minced",
+      "1 (10-oz.) can Rotel tomatoes & green chilies",
+      "32 oz. low-sodium chicken stock",
+      "3 tbsp. tomato paste",
+      "4 c. hot water",
+      "2 (15-oz.) cans black beans, drained",
+      "3 tbsp. cornmeal or masa",
+      "5 whole corn tortillas, cut into uniform strips around 2 to 3 inches",
+      "Sour cream, diced red onion, diced avocado, pico de gallo or salsa, grated Monterey Jack cheese, and/or cilantro, for garnishing"
+    ]
   },
   {
     "id": "sheet-pan-bibimbap-nyt",
@@ -614,14 +746,95 @@
   {
     "id": "chorizo-rice-unknown",
     "name": "Chorizo Rice",
-    "source": "UNKNOWN",
+    "source": "WD",
     "page": null,
-    "url": null,
+    "url": "https://www.thewholesomedish.com/one-pot-wonder-spanish-rice-with-chorizo/",
     "servings": 4,
     "enabled": true,
-    "ingredients_verified": false,
-    "ingredients": [],
-    "notes": "Imported from handwritten sticks; ingredient data pending."
+    "ingredients_verified": true,
+    "ingredients": [
+      {
+        "item": "black beans (15 oz can)",
+        "quantity": "1",
+        "unit": "can",
+        "category": "Canned goods"
+      },
+      {
+        "item": "Rotel tomatoes and green chilies (10 oz can)",
+        "quantity": "1",
+        "unit": "can",
+        "category": "Canned goods"
+      },
+      {
+        "item": "chicken broth",
+        "quantity": "1",
+        "unit": "cup",
+        "category": "Canned goods"
+      },
+      {
+        "item": "sweet bell pepper",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Produce"
+      },
+      {
+        "item": "small yellow onion",
+        "quantity": "1",
+        "unit": "each",
+        "category": "Produce"
+      },
+      {
+        "item": "uncooked white rice",
+        "quantity": "1/2",
+        "unit": "cup",
+        "category": "Grains"
+      },
+      {
+        "item": "chili powder",
+        "quantity": "1",
+        "unit": "tsp",
+        "category": "Oils and spices"
+      },
+      {
+        "item": "ground cumin",
+        "quantity": "1/2",
+        "unit": "tsp",
+        "category": "Oils and spices"
+      },
+      {
+        "item": "salt",
+        "quantity": "1/2",
+        "unit": "tsp",
+        "category": "Oils and spices"
+      },
+      {
+        "item": "ground black pepper",
+        "quantity": "1/4",
+        "unit": "tsp",
+        "category": "Oils and spices"
+      },
+      {
+        "item": "chorizo sausage links",
+        "quantity": "3/4",
+        "unit": "lb",
+        "category": "Meat"
+      }
+    ],
+    "notes": "Ingredient list and 4-serving yield checked against the original recipe.",
+    "verified_on": "2026-11-01",
+    "source_ingredients": [
+      "1 15 oz. can black beans, drained and rinsed",
+      "1 10 oz. can Rotel diced tomatoes and chilies",
+      "1 cup chicken broth (or any broth)",
+      "1 medium sweet bell pepper (seeded and chopped)",
+      "1 small yellow onion (chopped)",
+      "½ cup uncooked rice",
+      "1 tsp. chili powder",
+      "1/2 tsp. cumin",
+      "1/2 tsp. salt",
+      "1/4 tsp. ground black pepper",
+      "3/4 lb. chorizo sausage links (sliced into 1/2 inch pieces (about 4 links))"
+    ]
   },
   {
     "id": "chicken-tomato-soup-pw",

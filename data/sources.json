@@ -24,12 +24,17 @@
     "name": "Slow Cooker [book title unconfirmed]"
   },
   "PW": {
-    "name": "Pioneer Woman"
+    "name": "Pioneer Woman",
+    "url": "https://www.thepioneerwoman.com/"
   },
   "W30": {
     "name": "W30 [book title unconfirmed]"
   },
   "UNKNOWN": {
     "name": "Source not listed"
+  },
+  "WD": {
+    "name": "The Wholesome Dish",
+    "url": "https://www.thewholesomedish.com/"
   }
 }

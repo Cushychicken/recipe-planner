@@ -5,7 +5,6 @@ from pathlib import Path
 import shutil
 import subprocess
 import tempfile
-from textwrap import wrap
 from zipfile import ZipFile, ZIP_DEFLATED
 
 from docx import Document
@@ -55,21 +54,24 @@ def set_cell(cell, lines, size=9, bold_first=False):
         run.bold = bold_first and index == 0
 
 
-def shopping_columns(shopping, format_quantity):
-    """Keep the original seven columns, filled as one combined grocery checklist."""
+def shopping_columns(plan, recipes, format_quantity):
+    """Each column contains only the ingredients for the dinner directly above it."""
+    from planner import day_shopping
+    by_id = {r['id']:r for r in recipes}
     columns = [[] for _ in range(7)]
-    heights = [0]*7
-    category_before = [None]*7
-    for row in shopping:
-        column = min(range(7), key=lambda c: heights[c])
-        category = 'Pantry check' if row['pantry'] else row['category']
-        if category_before[column] != category:
-            columns[column].append(category.upper())
-            heights[column] += len(wrap(category, 19)) + 1
-            category_before[column] = category
-        line = f"[ ] {row['item']} - {format_quantity(row)}"
-        columns[column].append(line)
-        heights[column] += max(1, len(wrap(line, 19))) + 1
+    for meal in plan['meals']:
+        recipe = by_id[meal['recipe_id']]
+        column = (date.fromisoformat(meal['day']).weekday()+1)%7
+        if not meal.get('ingredients_verified', recipe['ingredients_verified']):
+            columns[column] = ['DRAFT', 'Ingredients pending verification.']
+            continue
+        previous = None
+        for row in day_shopping(plan,meal,recipe):
+            category = 'Pantry check' if row['pantry'] else row['category']
+            if category != previous:
+                columns[column].append(category.upper())
+                previous = category
+            columns[column].append(f"[ ] {row['item']} - {format_quantity(row)}")
     return columns
 
 
@@ -111,7 +113,7 @@ def render_docx(path, plan, recipes, sources, format_quantity, shopping_size=8.5
     set_cell(table.cell(1,0), ['Lunch Options'], size=10, bold_first=True)
     set_cell(table.cell(1,4), ['Lunch Ingredients'], size=10, bold_first=True)
     set_cell(table.cell(2,0), ['Dinner'], size=10, bold_first=True)
-    set_cell(table.cell(3,0), ['Shopping','List','(combined)'], size=9, bold_first=True)
+    set_cell(table.cell(3,0), ['Shopping','List','(by day)'], size=9, bold_first=True)
     for row in table.rows:
         for cell in row.cells:
             borders = cell._tc.get_or_add_tcPr().find(qn('w:tcBorders'))
@@ -130,11 +132,9 @@ def render_docx(path, plan, recipes, sources, format_quantity, shopping_size=8.5
         if recipe.get('page'):
             source += f", p. {recipe['page']}"
         set_cell(table.cell(2,column), [recipe['name'], source], bold_first=True)
-    columns = shopping_columns(plan['shopping'], format_quantity)
+    columns = shopping_columns(plan, recipes, format_quantity)
     for column, lines in enumerate(columns, 1):
         set_cell(table.cell(3,column), lines, size=shopping_size)
-    if plan['draft']:
-        set_cell(table.cell(3,1), ['DRAFT','Ingredient quantities not verified. Shopping list pending.'], size=9, bold_first=True)
     # Footer-sized legend stays in the page body; no extra trailing page paragraph.
     legend = doc.add_paragraph()
     legend.paragraph_format.space_before = Pt(4)

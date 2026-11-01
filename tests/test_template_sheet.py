@@ -38,10 +38,19 @@ class TemplateTests(unittest.TestCase):
         self.plan['shopping']=[dict(item=f'ingredient {i:02d}',quantity='2',unit='cup',
                                     category=['Produce','Meat','Pantry'][i//14],pantry=False)
                                for i in range(42)]
+        for i, meal in enumerate(self.plan['meals']):
+            meal['ingredients_verified']=True
+            meal['shopping']=self.plan['shopping'][i*6:(i+1)*6]
         with tempfile.TemporaryDirectory() as directory:
             docx=Path(directory)/'plan.docx'
             pdf=Path(directory)/'plan.pdf'
             render_template_sheet(docx,pdf,self.plan,self.recipes,self.sources,quantity)
+            table=Document(docx).tables[0]
+            for i in range(7):
+                for item in self.plan['meals'][i]['shopping']:
+                    self.assertIn(item['item'],table.cell(3,i+1).text)
+                next_item=self.plan['meals'][(i+1)%7]['shopping'][0]['item']
+                self.assertNotIn(next_item,table.cell(3,i+1).text)
             output=PdfReader(pdf)
             self.assertEqual(1,len(output.pages))
             text=' '.join(output.pages[0].extract_text().split())

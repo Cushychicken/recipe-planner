@@ -71,5 +71,25 @@ class PlannerTests(unittest.TestCase):
     def test_real_catalog_valid(self):
         validate(load(ROOT/'data/recipes.json'),load(ROOT/'data/settings.json'))
 
+    def test_imported_soup_scales_without_guessing_garnish_amounts(self):
+        recipes=load(ROOT/'data/recipes.json')
+        soup=next(r for r in recipes if r['id']=='chicken-tortilla-soup-unknown')
+        self.assertEqual(8,soup['servings'])
+        rows=shopping_list([soup],4,[])
+        by_item={r['item']:r for r in rows}
+        self.assertEqual('1 tbsp',quantity(by_item['olive oil']))
+        self.assertEqual('2 cup',quantity(by_item['low-sodium chicken stock']))
+        self.assertNotIn('water',by_item)
+        toppings=next(r for r in rows if r['category']=='Optional toppings')
+        self.assertIsNone(toppings['quantity'])
+        self.assertEqual('as needed',quantity(toppings))
+
+    def test_daily_shopping_snapshot_matches_only_its_recipe(self):
+        self.recipes[0]['ingredients'][0]['item']='first recipe only'
+        plan=build_plan(self.recipes,date(2026,11,1),self.settings,[])
+        for meal in plan['meals']:
+            expected=next(r for r in self.recipes if r['id']==meal['recipe_id'])
+            self.assertEqual(shopping_list([expected],4,[]),meal['shopping'])
+
 
 if __name__=='__main__': unittest.main()
