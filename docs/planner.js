@@ -17,7 +17,9 @@
 
   function chooseRandom(catalog, choices, day, random = Math.random) {
     const current = choices[day].recipe_id;
-    const pool = catalog.filter(r => r.enabled && r.id !== current);
+    const available = catalog.filter(r => r.enabled && r.id !== current);
+    const ready = available.filter(r => r.verified);
+    const pool = ready.length ? ready : available;
     const used = new Set(choices.filter((c, i) => i !== day && c.kind === 'recipe').map(c => c.recipe_id));
     const fresh = pool.filter(r => !used.has(r.id));
     const candidates = fresh.length ? fresh : pool;

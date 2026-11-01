@@ -1,42 +1,747 @@
 {
   "week_start": "2026-11-01",
   "servings": 4,
-  "draft": true,
+  "draft": false,
   "meals": [
     {
       "day": "2026-11-01",
       "kind": "recipe",
-      "recipe_id": "pasta-w-brown-butter-yogurt-herbs-tn",
-      "ingredients_verified": false,
-      "shopping": []
+      "recipe_id": "coconut-sticky-rice-w-chicken-nyt",
+      "ingredients_verified": true,
+      "shopping": [
+        {
+          "category": "Canned goods",
+          "item": "full-fat coconut milk (13.5-oz)",
+          "unit": "can",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Coconut Sticky Rice w/ Chicken"
+          ]
+        },
+        {
+          "category": "Canned goods",
+          "item": "low-sodium chicken broth",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "84",
+          "recipes": [
+            "Coconut Sticky Rice w/ Chicken"
+          ]
+        },
+        {
+          "category": "Meat",
+          "item": "boneless, skinless chicken thighs",
+          "unit": "oz",
+          "pantry": false,
+          "quantity": "24",
+          "recipes": [
+            "Coconut Sticky Rice w/ Chicken"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "black pepper",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1/2",
+          "recipes": [
+            "Coconut Sticky Rice w/ Chicken"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "hot sauce",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Coconut Sticky Rice w/ Chicken"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "kosher salt",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Coconut Sticky Rice w/ Chicken"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "neutral oil",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "12",
+          "recipes": [
+            "Coconut Sticky Rice w/ Chicken"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "roasted cashews",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "24",
+          "recipes": [
+            "Coconut Sticky Rice w/ Chicken"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "cilantro",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Coconut Sticky Rice w/ Chicken"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "fresh ginger",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Coconut Sticky Rice w/ Chicken"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "garlic",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3",
+          "recipes": [
+            "Coconut Sticky Rice w/ Chicken"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "scallions, green and white parts",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "3",
+          "recipes": [
+            "Coconut Sticky Rice w/ Chicken"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "yellow bell pepper",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Coconut Sticky Rice w/ Chicken"
+          ]
+        }
+      ]
     },
     {
       "day": "2026-11-02",
       "kind": "recipe",
-      "recipe_id": "keema-matar-tn",
-      "ingredients_verified": false,
-      "shopping": []
+      "recipe_id": "cauliflower-shawarma-nyt",
+      "ingredients_verified": true,
+      "shopping": [
+        {
+          "category": "Bread and grains",
+          "item": "pita or flatbread",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Cauliflower Shawarma"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "extra-virgin olive oil",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "30",
+          "recipes": [
+            "Cauliflower Shawarma"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "fine sea or table salt",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Cauliflower Shawarma"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "freshly ground black pepper",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1/2",
+          "recipes": [
+            "Cauliflower Shawarma"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "ground coriander",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Cauliflower Shawarma"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "ground cumin",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "5/2",
+          "recipes": [
+            "Cauliflower Shawarma"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "ground turmeric",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1/2",
+          "recipes": [
+            "Cauliflower Shawarma"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "harissa paste or other hot sauce, or a large pinch of urfa or aleppo pepper",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "4",
+          "recipes": [
+            "Cauliflower Shawarma"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "pinch of ground cayenne",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Cauliflower Shawarma"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "sweet paprika",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "5/2",
+          "recipes": [
+            "Cauliflower Shawarma"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "tahini",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "32",
+          "recipes": [
+            "Cauliflower Shawarma"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "fresh lemon juice",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Cauliflower Shawarma"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "garlic",
+          "unit": "clove",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Cauliflower Shawarma"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "large head cauliflower",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Cauliflower Shawarma"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "large red onion",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Cauliflower Shawarma"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "parsley",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "24",
+          "recipes": [
+            "Cauliflower Shawarma"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "tomato, cucumber and olives",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Cauliflower Shawarma"
+          ]
+        }
+      ]
     },
     {
       "day": "2026-11-03",
       "kind": "recipe",
-      "recipe_id": "cauliflower-shawarma-nyt",
-      "ingredients_verified": false,
-      "shopping": []
+      "recipe_id": "turmeric-black-pepper-chicken-nyt",
+      "ingredients_verified": true,
+      "shopping": [
+        {
+          "category": "Bread and grains",
+          "item": "all-purpose flour",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Turmeric Black Pepper Chicken"
+          ]
+        },
+        {
+          "category": "Bread and grains",
+          "item": "unseasoned rice vinegar or soy sauce",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Turmeric Black Pepper Chicken"
+          ]
+        },
+        {
+          "category": "Meat",
+          "item": "boneless, skinless chicken thighs",
+          "unit": "oz",
+          "pantry": false,
+          "quantity": "16",
+          "recipes": [
+            "Turmeric Black Pepper Chicken"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "black pepper",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3/4",
+          "recipes": [
+            "Turmeric Black Pepper Chicken"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "coconut or canola oil",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3",
+          "recipes": [
+            "Turmeric Black Pepper Chicken"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "ground turmeric",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3/2",
+          "recipes": [
+            "Turmeric Black Pepper Chicken"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "honey",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "9",
+          "recipes": [
+            "Turmeric Black Pepper Chicken"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "kosher salt",
+          "unit": "to taste",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Turmeric Black Pepper Chicken"
+          ]
+        },
+        {
+          "category": "Optional toppings",
+          "item": "lime (optional)",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Turmeric Black Pepper Chicken"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "asparagus",
+          "unit": "oz",
+          "pantry": false,
+          "quantity": "12",
+          "recipes": [
+            "Turmeric Black Pepper Chicken"
+          ]
+        }
+      ]
     },
     {
       "day": "2026-11-04",
       "kind": "recipe",
-      "recipe_id": "fish-tacos-nyt",
-      "ingredients_verified": false,
-      "shopping": []
+      "recipe_id": "chapli-burgers-nyt",
+      "ingredients_verified": true,
+      "shopping": [
+        {
+          "category": "Bread and grains",
+          "item": "burger buns",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Dairy",
+          "item": "herbed yogurt (prepared)",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Meat",
+          "item": "ground beef",
+          "unit": "oz",
+          "pantry": false,
+          "quantity": "16",
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "coriander seeds",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3",
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "cumin powder",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "garam masala",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "neutral oil for cooking",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "red-pepper flakes",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1/2",
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "sea salt",
+          "unit": "to taste",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "tamarind ketchup (prepared)",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "cilantro leaves and tender stems",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "12",
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "egg",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "fresh ginger",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3",
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "fresh or dried pomegranate seeds",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "garlic",
+          "unit": "clove",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "iceberg lettuce",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "jalapeño",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1/2",
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "medium tomato",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1/2",
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "sliced persian cucumbers, red onions and tomatoes",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "small yellow onion, minced",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1/2",
+          "recipes": [
+            "Chapli Burgers"
+          ]
+        }
+      ]
     },
     {
       "day": "2026-11-05",
       "kind": "recipe",
-      "recipe_id": "farro-w-pesto-tomato-spinach-ezw",
-      "ingredients_verified": false,
-      "shopping": []
+      "recipe_id": "crisp-gnocchi-w-feta-spinach-nyt",
+      "ingredients_verified": true,
+      "shopping": [
+        {
+          "category": "Bread and grains",
+          "item": "potato gnocchi (16- to 17-oz)",
+          "unit": "package",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Crisp Gnocchi w/ Feta & Spinach"
+          ]
+        },
+        {
+          "category": "Dairy",
+          "item": "greek feta, crumbled",
+          "unit": "oz",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Crisp Gnocchi w/ Feta & Spinach"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "extra-virgin olive oil",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "15",
+          "recipes": [
+            "Crisp Gnocchi w/ Feta & Spinach"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "salt and pepper",
+          "unit": "to taste",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Crisp Gnocchi w/ Feta & Spinach"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "baby spinach",
+          "unit": "oz",
+          "pantry": false,
+          "quantity": "5",
+          "recipes": [
+            "Crisp Gnocchi w/ Feta & Spinach"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "big handful of chopped dill",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Crisp Gnocchi w/ Feta & Spinach"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "big handful of chopped mint",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Crisp Gnocchi w/ Feta & Spinach"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "crushed red pepper",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1/2",
+          "recipes": [
+            "Crisp Gnocchi w/ Feta & Spinach"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "lemon",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Crisp Gnocchi w/ Feta & Spinach"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "scallions",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Crisp Gnocchi w/ Feta & Spinach"
+          ]
+        }
+      ]
     },
     {
       "day": "2026-11-06",
@@ -48,10 +753,831 @@
     {
       "day": "2026-11-07",
       "kind": "recipe",
-      "recipe_id": "palestinian-herb-omelet-tn",
-      "ingredients_verified": false,
-      "shopping": []
+      "recipe_id": "rishia-zimmern-s-chicken-w-shallots-nyt",
+      "ingredients_verified": true,
+      "shopping": [
+        {
+          "category": "Bread and grains",
+          "item": "all-purpose flour",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Rishia Zimmern’s Chicken w/ Shallots"
+          ]
+        },
+        {
+          "category": "Dairy",
+          "item": "unsalted butter",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Rishia Zimmern’s Chicken w/ Shallots"
+          ]
+        },
+        {
+          "category": "Meat",
+          "item": "bone-in, skin-on chicken thighs",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "8",
+          "recipes": [
+            "Rishia Zimmern’s Chicken w/ Shallots"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "black pepper",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3",
+          "recipes": [
+            "Rishia Zimmern’s Chicken w/ Shallots"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "dijon mustard",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Rishia Zimmern’s Chicken w/ Shallots"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "kosher salt",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3",
+          "recipes": [
+            "Rishia Zimmern’s Chicken w/ Shallots"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "white wine",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "96",
+          "recipes": [
+            "Rishia Zimmern’s Chicken w/ Shallots"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "cherry tomatoes",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "96",
+          "recipes": [
+            "Rishia Zimmern’s Chicken w/ Shallots"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "medium shallots",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "15",
+          "recipes": [
+            "Rishia Zimmern’s Chicken w/ Shallots"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "tarragon sprigs",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Rishia Zimmern’s Chicken w/ Shallots"
+          ]
+        }
+      ]
     }
   ],
-  "shopping": []
+  "shopping": [
+    {
+      "category": "Bread and grains",
+      "item": "all-purpose flour",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "12",
+      "recipes": [
+        "Rishia Zimmern’s Chicken w/ Shallots",
+        "Turmeric Black Pepper Chicken"
+      ]
+    },
+    {
+      "category": "Bread and grains",
+      "item": "burger buns",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Bread and grains",
+      "item": "pita or flatbread",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Cauliflower Shawarma"
+      ]
+    },
+    {
+      "category": "Bread and grains",
+      "item": "potato gnocchi (16- to 17-oz)",
+      "unit": "package",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Crisp Gnocchi w/ Feta & Spinach"
+      ]
+    },
+    {
+      "category": "Bread and grains",
+      "item": "unseasoned rice vinegar or soy sauce",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Turmeric Black Pepper Chicken"
+      ]
+    },
+    {
+      "category": "Canned goods",
+      "item": "full-fat coconut milk (13.5-oz)",
+      "unit": "can",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Coconut Sticky Rice w/ Chicken"
+      ]
+    },
+    {
+      "category": "Canned goods",
+      "item": "low-sodium chicken broth",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "84",
+      "recipes": [
+        "Coconut Sticky Rice w/ Chicken"
+      ]
+    },
+    {
+      "category": "Dairy",
+      "item": "greek feta, crumbled",
+      "unit": "oz",
+      "pantry": false,
+      "quantity": "6",
+      "recipes": [
+        "Crisp Gnocchi w/ Feta & Spinach"
+      ]
+    },
+    {
+      "category": "Dairy",
+      "item": "herbed yogurt (prepared)",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Dairy",
+      "item": "unsalted butter",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "6",
+      "recipes": [
+        "Rishia Zimmern’s Chicken w/ Shallots"
+      ]
+    },
+    {
+      "category": "Meat",
+      "item": "bone-in, skin-on chicken thighs",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "8",
+      "recipes": [
+        "Rishia Zimmern’s Chicken w/ Shallots"
+      ]
+    },
+    {
+      "category": "Meat",
+      "item": "boneless, skinless chicken thighs",
+      "unit": "oz",
+      "pantry": false,
+      "quantity": "40",
+      "recipes": [
+        "Coconut Sticky Rice w/ Chicken",
+        "Turmeric Black Pepper Chicken"
+      ]
+    },
+    {
+      "category": "Meat",
+      "item": "ground beef",
+      "unit": "oz",
+      "pantry": false,
+      "quantity": "16",
+      "recipes": [
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "black pepper",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "17/4",
+      "recipes": [
+        "Coconut Sticky Rice w/ Chicken",
+        "Rishia Zimmern’s Chicken w/ Shallots",
+        "Turmeric Black Pepper Chicken"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "coconut or canola oil",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "3",
+      "recipes": [
+        "Turmeric Black Pepper Chicken"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "coriander seeds",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "3",
+      "recipes": [
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "cumin powder",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "dijon mustard",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "6",
+      "recipes": [
+        "Rishia Zimmern’s Chicken w/ Shallots"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "extra-virgin olive oil",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "45",
+      "recipes": [
+        "Cauliflower Shawarma",
+        "Crisp Gnocchi w/ Feta & Spinach"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "fine sea or table salt",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Cauliflower Shawarma"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "freshly ground black pepper",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1/2",
+      "recipes": [
+        "Cauliflower Shawarma"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "garam masala",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "ground coriander",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Cauliflower Shawarma"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "ground cumin",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "5/2",
+      "recipes": [
+        "Cauliflower Shawarma"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "ground turmeric",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Cauliflower Shawarma",
+        "Turmeric Black Pepper Chicken"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "harissa paste or other hot sauce, or a large pinch of urfa or aleppo pepper",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "4",
+      "recipes": [
+        "Cauliflower Shawarma"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "honey",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "9",
+      "recipes": [
+        "Turmeric Black Pepper Chicken"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "hot sauce",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Coconut Sticky Rice w/ Chicken"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "kosher salt",
+      "unit": "to taste",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Turmeric Black Pepper Chicken"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "kosher salt",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "5",
+      "recipes": [
+        "Coconut Sticky Rice w/ Chicken",
+        "Rishia Zimmern’s Chicken w/ Shallots"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "neutral oil",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "12",
+      "recipes": [
+        "Coconut Sticky Rice w/ Chicken"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "neutral oil for cooking",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "pinch of ground cayenne",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Cauliflower Shawarma"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "red-pepper flakes",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1/2",
+      "recipes": [
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "roasted cashews",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "24",
+      "recipes": [
+        "Coconut Sticky Rice w/ Chicken"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "salt and pepper",
+      "unit": "to taste",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Crisp Gnocchi w/ Feta & Spinach"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "sea salt",
+      "unit": "to taste",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "sweet paprika",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "5/2",
+      "recipes": [
+        "Cauliflower Shawarma"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "tahini",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "32",
+      "recipes": [
+        "Cauliflower Shawarma"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "tamarind ketchup (prepared)",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "white wine",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "96",
+      "recipes": [
+        "Rishia Zimmern’s Chicken w/ Shallots"
+      ]
+    },
+    {
+      "category": "Optional toppings",
+      "item": "lime (optional)",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Turmeric Black Pepper Chicken"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "asparagus",
+      "unit": "oz",
+      "pantry": false,
+      "quantity": "12",
+      "recipes": [
+        "Turmeric Black Pepper Chicken"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "baby spinach",
+      "unit": "oz",
+      "pantry": false,
+      "quantity": "5",
+      "recipes": [
+        "Crisp Gnocchi w/ Feta & Spinach"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "big handful of chopped dill",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Crisp Gnocchi w/ Feta & Spinach"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "big handful of chopped mint",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Crisp Gnocchi w/ Feta & Spinach"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "cherry tomatoes",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "96",
+      "recipes": [
+        "Rishia Zimmern’s Chicken w/ Shallots"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "cilantro",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "6",
+      "recipes": [
+        "Coconut Sticky Rice w/ Chicken"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "cilantro leaves and tender stems",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "12",
+      "recipes": [
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "crushed red pepper",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1/2",
+      "recipes": [
+        "Crisp Gnocchi w/ Feta & Spinach"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "egg",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "fresh ginger",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "9",
+      "recipes": [
+        "Chapli Burgers",
+        "Coconut Sticky Rice w/ Chicken"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "fresh lemon juice",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "6",
+      "recipes": [
+        "Cauliflower Shawarma"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "fresh or dried pomegranate seeds",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "6",
+      "recipes": [
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "garlic",
+      "unit": "clove",
+      "pantry": false,
+      "quantity": "3",
+      "recipes": [
+        "Cauliflower Shawarma",
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "garlic",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "3",
+      "recipes": [
+        "Coconut Sticky Rice w/ Chicken"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "iceberg lettuce",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "jalapeño",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "1/2",
+      "recipes": [
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "large head cauliflower",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Cauliflower Shawarma"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "large red onion",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Cauliflower Shawarma"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "lemon",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Crisp Gnocchi w/ Feta & Spinach"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "medium shallots",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "15",
+      "recipes": [
+        "Rishia Zimmern’s Chicken w/ Shallots"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "medium tomato",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "1/2",
+      "recipes": [
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "parsley",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "24",
+      "recipes": [
+        "Cauliflower Shawarma"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "scallions",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Crisp Gnocchi w/ Feta & Spinach"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "scallions, green and white parts",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "3",
+      "recipes": [
+        "Coconut Sticky Rice w/ Chicken"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "sliced persian cucumbers, red onions and tomatoes",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "small yellow onion, minced",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "1/2",
+      "recipes": [
+        "Chapli Burgers"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "tarragon sprigs",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Rishia Zimmern’s Chicken w/ Shallots"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "tomato, cucumber and olives",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Cauliflower Shawarma"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "yellow bell pepper",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Coconut Sticky Rice w/ Chicken"
+      ]
+    }
+  ]
 }
