@@ -1,8 +1,16 @@
 #!/usr/bin/env node
-// Node 22+. Built-in APIs only. Run in your own terminal, against your own Chrome.
+// Node 18+. Node 18 needs Ubuntu's node-ws package; Node 22+ uses its built-in WebSocket. Run in your own terminal, against your own Chrome.
 import {mkdir, writeFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
+import {createRequire} from 'node:module';
+
+const require = createRequire(import.meta.url);
+export function websocketClass() {
+  if (globalThis.WebSocket) return globalThis.WebSocket;
+  try { return require('ws'); }
+  catch { throw Error('Install the Node 18 WebSocket dependency: sudo apt-get install node-ws'); }
+}
 
 export function isRecipe(url) {
   try {
@@ -11,7 +19,7 @@ export function isRecipe(url) {
   } catch { return false; }
 }
 
-export async function connect(address, Socket = globalThis.WebSocket) {
+export async function connect(address, Socket = websocketClass()) {
   const url = new URL(address);
   if (url.protocol !== 'ws:' || !['127.0.0.1','localhost','[::1]'].includes(url.hostname)) {
     throw Error('Only a local Chrome debugging connection is accepted.');
@@ -54,7 +62,7 @@ export async function connect(address, Socket = globalThis.WebSocket) {
 }
 
 export async function main(args = process.argv.slice(2)) {
-  if (!globalThis.WebSocket) throw Error('Node.js 22 or newer is required. No npm packages are needed.');
+  websocketClass();
   const directory = resolve(args[0] || 'recipe-html');
   const port = Number(args[1] || 9222);
   if (!Number.isInteger(port) || port < 1 || port > 65535) throw Error('Invalid debugging port.');
