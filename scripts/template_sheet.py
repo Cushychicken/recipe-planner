@@ -60,6 +60,9 @@ def shopping_columns(plan, recipes, format_quantity):
     by_id = {r['id']:r for r in recipes}
     columns = [[] for _ in range(7)]
     for meal in plan['meals']:
+        if meal.get('kind') == 'leftovers':
+            columns[(date.fromisoformat(meal['day']).weekday()+1)%7] = ['No groceries needed.']
+            continue
         recipe = by_id[meal['recipe_id']]
         column = (date.fromisoformat(meal['day']).weekday()+1)%7
         if not meal.get('ingredients_verified', recipe['ingredients_verified']):
@@ -126,6 +129,10 @@ def render_docx(path, plan, recipes, sources, format_quantity, shopping_size=8.5
         set_cell(table.cell(2,column), [])
         set_cell(table.cell(3,column), [])
     for meal in plan['meals']:
+        if meal.get('kind') == 'leftovers':
+            column = (date.fromisoformat(meal['day']).weekday()+1)%7+1
+            set_cell(table.cell(2,column), ['Leftovers / takeout'], bold_first=True)
+            continue
         recipe = by_id[meal['recipe_id']]
         day = date.fromisoformat(meal['day'])
         column = (day.weekday()+1)%7 + 1
@@ -143,7 +150,7 @@ def render_docx(path, plan, recipes, sources, format_quantity, shopping_size=8.5
     legend.paragraph_format.space_before = Pt(4)
     legend.paragraph_format.space_after = Pt(0)
     legend.paragraph_format.line_spacing = 1
-    used = sorted({by_id[m['recipe_id']]['source'] for m in plan['meals']})
+    used = sorted({by_id[m['recipe_id']]['source'] for m in plan['meals'] if m.get('recipe_id')})
     text = ' | '.join(f"{code}: {sources.get(code, {'name':code})['name']}" for code in used)
     run = legend.add_run(f"{plan['servings']} servings per dinner. " + text)
     run.font.name = 'Arial'

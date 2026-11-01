@@ -71,6 +71,17 @@ class PlannerTests(unittest.TestCase):
     def test_real_catalog_valid(self):
         validate(load(ROOT/'data/recipes.json'),load(ROOT/'data/settings.json'))
 
+    def test_friday_is_leftovers_with_no_groceries_and_only_six_recipes_needed(self):
+        self.settings['leftovers_days']=['Friday']
+        plan=build_plan(self.recipes[:6],date(2026,11,1),self.settings,[])
+        self.assertFalse(plan['draft'])
+        friday=plan['meals'][5]
+        self.assertEqual('2026-11-06',friday['day'])
+        self.assertEqual('leftovers',friday['kind'])
+        self.assertIsNone(friday['recipe_id'])
+        self.assertEqual([],friday['shopping'])
+        self.assertEqual(6,sum(m['kind']=='recipe' for m in plan['meals']))
+
     def test_imported_soup_scales_without_guessing_garnish_amounts(self):
         recipes=load(ROOT/'data/recipes.json')
         soup=next(r for r in recipes if r['id']=='chicken-tortilla-soup-unknown')

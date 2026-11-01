@@ -5,8 +5,8 @@ Generates a Sunday–Saturday dinner plan, printable shopping checklist, PDF, an
 ## Current setup
 
 - All **64 recipe sticks** from the supplied photo are in `data/recipes.json`.
-- Defaults: **7 dinners, 4 servings**. Change these in `data/settings.json`.
-- **Two ingredient lists are verified:** Chorizo Rice (The Wholesome Dish, 4 servings) and Chicken Tortilla Soup (The Pioneer Woman, 8 servings). Remaining recipes still need ingredient data. Verified dinners show their own shopping list even when other days remain drafts. Once at least seven enabled recipes have verified ingredients, new weekly plans select only verified recipes.
+- Defaults: **6 recipes plus Friday leftovers/takeout, 4 servings**. Change these in `data/settings.json`.
+- **Two ingredient lists are verified:** Chorizo Rice (The Wholesome Dish, 4 servings) and Chicken Tortilla Soup (The Pioneer Woman, 8 servings). Remaining recipes still need ingredient data. Verified dinners show their own shopping list even when other days remain drafts. Once at least six enabled recipes have verified ingredients, new weekly plans select only verified recipes.
 - NYT = New York Times Cooking; CI = Cook’s Illustrated *Cook It in Cast Iron*; TN = Milk Street *Tuesday Nights*; MTN = Milk Street *Tuesday Nights Mediterranean*.
 - SK, EZW, Slow Cooker and W30 book titles remain unconfirmed. Source/page transcriptions should be checked against the books; the coconut sticky rice page number was unclear in the photo.
 - Recipe methods are read in the original books or linked websites. This repository stores ingredient facts and references, not copied instructions.
@@ -26,6 +26,8 @@ Empty trailing paragraphs are removed, and export must contain exactly one page.
 If a very long ingredient list cannot fit even after reducing checklist type,
 generation fails rather than dropping ingredients or publishing a second page.
 Lunches remain blank because no lunch recipes have been supplied.
+
+**Friday defaults to Leftovers / takeout** in the web page and printed sheet, with no grocery items. Change `leftovers_days` in `data/settings.json` to adjust the default. You can still select a random Friday recipe in the browser.
 
 Each day has **Random recipe** and **Leftovers / takeout** buttons. Random avoids
 the current recipe and, when possible, dishes elsewhere in the week. Leftovers
@@ -86,3 +88,7 @@ python scripts/planner.py --require-ready
 `--week` must be a Sunday. Without it, Saturday targets the following Sunday; Sunday reruns target the current Sunday. `--require-ready` fails instead of emitting a draft.
 
 Selection is deterministic for each week, avoids the previous four weeks when the verified pool is large enough, and relaxes that avoidance when necessary rather than failing. A small verified pool will repeat recipes more often.
+
+## Save open recipe tabs
+
+Download `tools/recipe-tab-exporter.zip`, extract it, and follow the included README. The small Chrome/Chromium extension exports already-loaded NYT recipe HTML from the current browser window into one local ZIP. Source is in `tools/recipe-tab-exporter/`.

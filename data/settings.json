@@ -3,5 +3,8 @@
   "servings": 4,
   "dinners": 7,
   "avoid_repeat_weeks": 4,
-  "pantry": []
+  "pantry": [],
+  "leftovers_days": [
+    "Friday"
+  ]
 }

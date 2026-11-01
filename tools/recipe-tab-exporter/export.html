@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Export recipe tabs</title>
+<style>
+body{font:16px/1.5 system-ui,sans-serif;background:#eeeae1;color:#202a25;margin:0;padding:36px}
+main{max-width:800px;margin:auto;background:#fffdf8;padding:32px;border-top:6px solid #365e47}
+h1{font:32px Georgia,serif;margin-top:0}button{background:#365e47;color:white;border:0;border-radius:4px;padding:12px 18px;font:inherit;cursor:pointer}button:disabled{opacity:.6;cursor:wait}
+#status{font-weight:600}li{margin:8px 0}small{color:#687168}
+</style>
+<main>
+<h1>Export recipe tabs</h1>
+<p>Open your NYT Cooking recipes in this browser window and make sure the ingredients are visible on each page. This exports those recipe tabs into one ZIP.</p>
+<button id="export" type="button">Save recipe tabs</button>
+<p id="status" role="status">Ready.</p>
+<ul id="results"></ul>
+<p><small>Files stay on your computer. This does not request cookies, saved passwords, or account access. It captures the HTML already loaded in each recipe tab; it does not log in, reload pages, or bypass access restrictions.</small></p>
+</main>
+<script src="zip.js"></script>
+<script src="export.js"></script>
+</html>

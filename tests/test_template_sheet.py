@@ -28,7 +28,8 @@ class TemplateTests(unittest.TestCase):
             self.assertEqual('Lunch Ingredients',table.cell(1,4).text)
             by_id={r['id']:r for r in self.recipes}
             for i,meal in enumerate(self.plan['meals'],1):
-                self.assertIn(by_id[meal['recipe_id']]['name'],table.cell(2,i).text)
+                expected='Leftovers / takeout' if meal.get('kind')=='leftovers' else by_id[meal['recipe_id']]['name']
+                self.assertIn(expected,table.cell(2,i).text)
             self.assertIn('DRAFT',table.cell(3,1).text)
             self.assertGreater(doc.sections[0].page_width,doc.sections[0].page_height)
 
@@ -39,6 +40,8 @@ class TemplateTests(unittest.TestCase):
                                     category=['Produce','Meat','Pantry'][i//14],pantry=False)
                                for i in range(42)]
         for i, meal in enumerate(self.plan['meals']):
+            meal['kind']='recipe'
+            meal['recipe_id']=self.recipes[i]['id']
             meal['ingredients_verified']=True
             meal['shopping']=self.plan['shopping'][i*6:(i+1)*6]
         with tempfile.TemporaryDirectory() as directory:

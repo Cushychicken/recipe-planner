@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Recipe Tab Exporter",
+  "version": "1.0.0",
+  "description": "Save already-open NYT Cooking recipe tabs in this window to a local ZIP.",
+  "permissions": ["scripting", "downloads"],
+  "host_permissions": ["https://cooking.nytimes.com/*"],
+  "background": {"service_worker": "background.js"},
+  "action": {"default_title": "Export recipe tabs"}
+}

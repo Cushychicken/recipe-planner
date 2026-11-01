@@ -39,7 +39,7 @@ jobs:
       - name: Test planner
         run: python -m unittest discover -s tests -v
       - name: Test day controls
-        run: node --test tests/test_client.cjs
+        run: node --test tests/test_client.cjs tests/test_exporter.cjs
       - name: Generate plan and printable sheets
         run: python scripts/planner.py
       - name: Save weekly history
@@ -69,7 +69,10 @@ jobs:
           ready = sum(r['ingredients_verified'] for r in recipes)
           print(f'## Recipe setup: {ready}/{len(recipes)} ingredient lists verified')
           print('Download the print sheets artifact above, or visit the published Pages site.')
-          if ready < 7:
+          settings = json.loads(Path('data/settings.json').read_text())
+          days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][:settings['dinners']]
+          required = sum(day not in settings.get('leftovers_days', []) for day in days)
+          if ready < required:
               print('**DRAFT: ingredient setup is incomplete. No shopping list is fabricated.**')
           PY
   deploy:

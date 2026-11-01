@@ -121,17 +121,29 @@ def reference(recipe, sources):
 
 def build_plan(recipes, start, settings, history, existing=None):
     by_id = {r['id']: r for r in recipes}
-    if existing and not existing['draft']:
-        chosen = [by_id[m['recipe_id']] for m in existing['meals']]
-        draft = any(not r['ingredients_verified'] for r in chosen)
+    slots = [start+timedelta(days=i) for i in range(settings['dinners'])]
+    leftovers = set(settings.get('leftovers_days', []))
+    recipe_days = [day for day in slots if day.strftime('%A') not in leftovers]
+    previous = {m['day']:m for m in existing['meals']} if existing and not existing['draft'] else {}
+    if all(previous.get(day.isoformat(),{}).get('recipe_id') in by_id for day in recipe_days):
+        chosen = [by_id[previous[day.isoformat()]['recipe_id']] for day in recipe_days]
     else:
-        chosen, draft = select(recipes, start, settings, history)
-    return dict(week_start=start.isoformat(), servings=settings['servings'], draft=draft,
-                meals=[dict(day=(start + timedelta(days=i)).isoformat(), recipe_id=r['id'],
-                            ingredients_verified=r['ingredients_verified'],
-                            shopping=shopping_list([r], settings['servings'], settings['pantry']) if r['ingredients_verified'] else [])
-                       for i, r in enumerate(chosen)],
-                shopping=[] if draft else shopping_list(chosen, settings['servings'], settings['pantry']))
+        selection_settings = dict(settings, dinners=len(recipe_days))
+        chosen, _ = select(recipes,start,selection_settings,history)
+    draft = any(not r['ingredients_verified'] for r in chosen)
+    selected = iter(chosen)
+    meals = []
+    for day in slots:
+        if day.strftime('%A') in leftovers:
+            meals.append(dict(day=day.isoformat(), kind='leftovers', recipe_id=None,
+                              ingredients_verified=True, shopping=[]))
+        else:
+            recipe = next(selected)
+            meals.append(dict(day=day.isoformat(), kind='recipe', recipe_id=recipe['id'],
+                              ingredients_verified=recipe['ingredients_verified'],
+                              shopping=shopping_list([recipe],settings['servings'],settings['pantry']) if recipe['ingredients_verified'] else []))
+    return dict(week_start=start.isoformat(),servings=settings['servings'],draft=draft,meals=meals,
+                shopping=[] if draft else shopping_list(chosen,settings['servings'],settings['pantry']))
 
 
 def day_shopping(plan, meal, recipe):
@@ -145,7 +157,7 @@ def render_html(plan, recipes, sources, archive):
     by_id = {r['id']: r for r in recipes}
     start = date.fromisoformat(plan['week_start'])
     records_by_day = {date.fromisoformat(m['day']): m for m in plan['meals']}
-    meals_by_day = {day: by_id[m['recipe_id']] for day,m in records_by_day.items()}
+    meals_by_day = {day: by_id[m['recipe_id']] for day,m in records_by_day.items() if m.get('recipe_id')}
     headings = '<th scope="col" class="row-label">Day</th>'
     dinners = '<th scope="row" class="row-label">Dinner</th>'
     for i, label in enumerate(('Sun','Mon','Tues','Weds','Thurs','Fri','Sat')):
@@ -158,6 +170,8 @@ def render_html(plan, recipes, sources, archive):
                 title = f'<a href="{escape(recipe["url"], quote=True)}">{title}</a>'
             page = f", p. {recipe['page']}" if recipe.get('page') else ''
             dinners += f'<td id="dinner-{i}"><strong>{title}</strong><small>{escape(recipe["source"]+page)}</small></td>'
+        elif records_by_day.get(day,{}).get('kind') == 'leftovers':
+            dinners += f'<td id="dinner-{i}"><strong>Leftovers / takeout</strong></td>'
         else:
             dinners += f'<td id="dinner-{i}"></td>'
     groceries = '<th scope="row" class="row-label">Shopping<br>list<small>By day</small></th>'
@@ -177,6 +191,8 @@ def render_html(plan, recipes, sources, archive):
                         cell += f'<h3>{escape(category)}</h3>'
                         previous = category
                     cell += f'<label><input type="checkbox"><span>{escape(row["item"])} - {escape(quantity(row))}</span></label>'
+        elif records_by_day.get(day,{}).get('kind') == 'leftovers':
+            cell = '<p class="pending">No groceries needed.</p>'
         groceries += f'<td id="shopping-{i}">{cell}</td>'
     warning = '<aside id="plan-status"><b>Draft plan.</b> Some ingredient lists still need verification.</aside>' if plan['draft'] else '<aside id="plan-status" hidden></aside>'
     settings = load(ROOT/'data/settings.json')
@@ -189,8 +205,11 @@ def render_html(plan, recipes, sources, archive):
                             verified=recipe['ingredients_verified'],
                             shopping=[dict(item=r['item'],quantity=quantity(r),
                                            category='Pantry check' if r['pantry'] else r['category']) for r in rows]))
-    initial = [dict(kind='recipe',recipe_id=records_by_day[start+timedelta(days=i)]['recipe_id'])
-               if start+timedelta(days=i) in records_by_day else dict(kind='empty') for i in range(7)]
+    initial = []
+    for i in range(7):
+        meal = records_by_day.get(start+timedelta(days=i))
+        initial.append(dict(kind='leftovers') if meal and meal.get('kind') == 'leftovers' else
+                       dict(kind='recipe',recipe_id=meal['recipe_id']) if meal else dict(kind='empty'))
     client_data = json.dumps(dict(week=plan['week_start'],catalog=catalog,initial=initial,sources=sources),ensure_ascii=False).replace('<','\\u003c')
     links = ' · '.join(f'<a href="{escape(p)}.html">{escape(p)}</a>' for p in archive)
     used = sorted({r['source'] for r in meals_by_day.values()})
@@ -224,6 +243,9 @@ def render_pdf(path, plan, recipes, sources):
         story += [Paragraph('DRAFT — ingredient quantities are unverified. Shopping list unavailable.', styles['Heading3'])]
     rows = []
     for meal in plan['meals']:
+        if meal.get('kind') == 'leftovers':
+            rows.append([date.fromisoformat(meal['day']).strftime('%a %m/%d'), Paragraph('<b>Leftovers / takeout</b>', styles['Normal'])])
+            continue
         recipe = by_id[meal['recipe_id']]
         rows.append([date.fromisoformat(meal['day']).strftime('%a %m/%d'),
                      Paragraph(f"<b>{escape(recipe['name'])}</b><br/>{escape(reference(recipe,sources))}", styles['Normal'])])
