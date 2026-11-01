@@ -1,0 +1,35 @@
+{
+  "NYT": {
+    "name": "New York Times Cooking",
+    "url": "https://cooking.nytimes.com/"
+  },
+  "CI": {
+    "name": "Cook’s Illustrated — Cook It in Cast Iron"
+  },
+  "TN": {
+    "name": "Milk Street — Tuesday Nights",
+    "url": "https://www.177milkstreet.com/recipes"
+  },
+  "MTN": {
+    "name": "Milk Street — Tuesday Nights Mediterranean",
+    "url": "https://www.177milkstreet.com/recipes"
+  },
+  "SK": {
+    "name": "SK [book title unconfirmed]"
+  },
+  "EZW": {
+    "name": "EZW [book title unconfirmed]"
+  },
+  "SLOW": {
+    "name": "Slow Cooker [book title unconfirmed]"
+  },
+  "PW": {
+    "name": "Pioneer Woman"
+  },
+  "W30": {
+    "name": "W30 [book title unconfirmed]"
+  },
+  "UNKNOWN": {
+    "name": "Source not listed"
+  }
+}

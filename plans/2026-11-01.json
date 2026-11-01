@@ -1,0 +1,36 @@
+{
+  "week_start": "2026-11-01",
+  "servings": 4,
+  "draft": true,
+  "meals": [
+    {
+      "day": "2026-11-01",
+      "recipe_id": "pasta-w-brown-butter-yogurt-herbs-tn"
+    },
+    {
+      "day": "2026-11-02",
+      "recipe_id": "keema-matar-tn"
+    },
+    {
+      "day": "2026-11-03",
+      "recipe_id": "cauliflower-shawarma-nyt"
+    },
+    {
+      "day": "2026-11-04",
+      "recipe_id": "fish-tacos-nyt"
+    },
+    {
+      "day": "2026-11-05",
+      "recipe_id": "farro-w-pesto-tomato-spinach-ezw"
+    },
+    {
+      "day": "2026-11-06",
+      "recipe_id": "palestinian-herb-omelet-tn"
+    },
+    {
+      "day": "2026-11-07",
+      "recipe_id": "pasta-w-tomato-capers-herbs-mtn"
+    }
+  ],
+  "shopping": []
+}
