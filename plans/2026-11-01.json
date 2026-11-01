@@ -5,43 +5,50 @@
   "meals": [
     {
       "day": "2026-11-01",
+      "kind": "recipe",
       "recipe_id": "pasta-w-brown-butter-yogurt-herbs-tn",
       "ingredients_verified": false,
       "shopping": []
     },
     {
       "day": "2026-11-02",
+      "kind": "recipe",
       "recipe_id": "keema-matar-tn",
       "ingredients_verified": false,
       "shopping": []
     },
     {
       "day": "2026-11-03",
+      "kind": "recipe",
       "recipe_id": "cauliflower-shawarma-nyt",
       "ingredients_verified": false,
       "shopping": []
     },
     {
       "day": "2026-11-04",
+      "kind": "recipe",
       "recipe_id": "fish-tacos-nyt",
       "ingredients_verified": false,
       "shopping": []
     },
     {
       "day": "2026-11-05",
+      "kind": "recipe",
       "recipe_id": "farro-w-pesto-tomato-spinach-ezw",
       "ingredients_verified": false,
       "shopping": []
     },
     {
       "day": "2026-11-06",
-      "recipe_id": "palestinian-herb-omelet-tn",
-      "ingredients_verified": false,
+      "kind": "leftovers",
+      "recipe_id": null,
+      "ingredients_verified": true,
       "shopping": []
     },
     {
       "day": "2026-11-07",
-      "recipe_id": "pasta-w-tomato-capers-herbs-mtn",
+      "kind": "recipe",
+      "recipe_id": "palestinian-herb-omelet-tn",
       "ingredients_verified": false,
       "shopping": []
     }

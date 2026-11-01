@@ -111,7 +111,9 @@
         choices[day] = replacement;
       } else {
         const previous = choices[day].recipe_id;
-        choices[day] = toggleLeftovers(choices[day], previous ? {kind: 'recipe', recipe_id: previous} : data.initial[day]);
+        choices[day] = choices[day].kind === 'leftovers' && !previous
+          ? chooseRandom(data.catalog, choices, day) || data.initial[day]
+          : toggleLeftovers(choices[day], previous ? {kind: 'recipe', recipe_id: previous} : data.initial[day]);
       }
       persist();
     });
