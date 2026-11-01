@@ -76,22 +76,47 @@ def shopping_columns(plan, recipes, format_quantity):
 def render_docx(path, plan, recipes, sources, format_quantity, shopping_size=8.5, compact=False):
     doc = template_document()
     section = doc.sections[0]
-    section.bottom_margin = Inches(.4)
+    # Use the full printable Letter sheet.  The supplied form left a generous
+    # right margin, which made seven ingredient columns unnecessarily narrow.
+    section.top_margin = Inches(.25)
+    section.bottom_margin = Inches(.25)
+    section.left_margin = Inches(.25)
+    section.right_margin = Inches(.25)
     # Remove blank body paragraphs/explicit page breaks from the supplied form.
     body = doc._element.body
     table = doc.tables[0]
     for child in list(body):
         if child.tag == qn('w:p') and not ''.join(child.itertext()).strip():
             body.remove(child)
+    # Expand the fixed-width source table from 9.75 to 10.5 inches, matching
+    # the page width between the new margins.  Resize both the table grid and
+    # its cell widths; LibreOffice relies on both when exporting the PDF.
+    table_width = 15120
+    table.autofit = False
+    table_properties = table._tbl.tblPr
+    table_width_node = table_properties.find(qn('w:tblW'))
+    source_width = int(table_width_node.get(qn('w:w'))) if table_width_node is not None else table_width
+    scale = table_width / source_width
+    if table_width_node is not None:
+        table_width_node.set(qn('w:w'), str(table_width))
+    for grid_column in table._tbl.tblGrid.gridCol_lst:
+        grid_column.set(qn('w:w'), str(round(int(grid_column.get(qn('w:w'))) * scale)))
+    for cell_width in table._tbl.iter(qn('w:tcW')):
+        try:
+            cell_width.set(qn('w:w'), str(round(int(cell_width.get(qn('w:w'))) * scale)))
+        except (TypeError, ValueError):
+            pass
     title = doc.paragraphs[0]
     title.text = 'Dinner Plan - Week of ' + date.fromisoformat(plan['week_start']).strftime('%B %d, %Y')
-    title.paragraph_format.space_after = Pt(7)
+    title.paragraph_format.space_after = Pt(4)
     title.paragraph_format.keep_with_next = True
     for run in title.runs:
         run.font.name = 'Arial'
-        run.font.size = Pt(20)
+        run.font.size = Pt(18)
     # A minimum row height preserves writing space without clipping long entries.
-    heights = (.3, .55, 1.0, 3.5) if compact else (.3, 1.05, 1.2, 3.5)
+    # Prioritize the shopping row: it is the dense, read-at-arm's-length part
+    # of the sheet.  Lunch and dinner still retain useful writing space.
+    heights = (.3, .65, .8, 5.25) if compact else (.3, .8, .95, 5.0)
     for row, height in zip(table.rows, heights):
         row.height = Inches(height)
         row.height_rule = WD_ROW_HEIGHT_RULE.AT_LEAST
@@ -175,7 +200,9 @@ def export_pdf(docx_path, pdf_path):
 
 
 def render_template_sheet(docx_path, pdf_path, plan, recipes, sources, format_quantity):
-    for shopping_size, compact in ((8.5,False),(8,False),(7.5,True)):
+    # Keep ingredients comfortably readable.  The final compact pass gains
+    # vertical room before reducing type below 9 pt.
+    for shopping_size, compact in ((10,False),(9.5,False),(9,True)):
         render_docx(docx_path,plan,recipes,sources,format_quantity,shopping_size,compact)
         if export_pdf(docx_path,pdf_path) == 1:
             return

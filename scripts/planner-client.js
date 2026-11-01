@@ -114,19 +114,11 @@
   });
   document.getElementById('reset-plan').addEventListener('click', () => { choices = data.initial.map(x => ({...x})); persist(); });
   document.getElementById('print-plan').addEventListener('click', () => window.print());
-  // Fit current browser selections, including random replacements, on the same
-  // landscape Letter sheet as the generated PDF. Keep all ingredients intact.
+  // The print stylesheet uses the complete Letter sheet. Do not apply a
+  // whole-page zoom here: it makes the ingredient list unreadably small.
   window.addEventListener('beforeprint', () => {
     const root = document.documentElement;
-    const page = document.querySelector('main');
-    const availableHeight = 7.8 * 96; // 8.5-inch page minus two 0.35-inch margins.
     root.style.setProperty('--print-scale','1');
-    for (const size of [8.25,8,7.75,7.5]) {
-      root.style.setProperty('--shopping-font',`${size}pt`);
-      if (page.getBoundingClientRect().height <= availableHeight) return;
-    }
-    const scale = Math.min(1,availableHeight / page.getBoundingClientRect().height);
-    root.style.setProperty('--print-scale',String(scale * 0.99));
   });
   window.addEventListener('afterprint', () => {
     document.documentElement.style.removeProperty('--shopping-font');
