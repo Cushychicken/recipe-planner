@@ -2,7 +2,7 @@ name: Weekly dinner plan
 
 on:
   schedule:
-    - cron: '0 23 * * 6'
+    - cron: '0 23 * * 5'
       timezone: America/New_York
   workflow_dispatch:
   push:

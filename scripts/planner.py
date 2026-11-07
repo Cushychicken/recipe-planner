@@ -24,7 +24,7 @@ def save(path, value):
 
 
 def week_start(now):
-    """Sunday at 23:00 Saturday targets tomorrow; Sunday reruns target today."""
+    """Friday/Saturday target the upcoming Sunday; Sunday targets today."""
     return now.date() + timedelta(days=(6 - now.weekday()) % 7)
 
 
