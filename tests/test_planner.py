@@ -20,11 +20,18 @@ class PlannerTests(unittest.TestCase):
         self.settings = dict(dinners=7,servings=4,avoid_repeat_weeks=4,pantry=[])
         self.recipes = [recipe(i) for i in range(40)]
 
-    def test_saturday_and_sunday_target_same_week_across_dst(self):
+    def test_friday_saturday_and_sunday_target_same_week_across_dst(self):
         zone = ZoneInfo('America/New_York')
-        for saturday, sunday in [('2026-10-31T23:00','2026-11-01'),('2027-03-13T23:00','2027-03-14')]:
-            self.assertEqual(week_start(datetime.fromisoformat(saturday).replace(tzinfo=zone)),date.fromisoformat(sunday))
-            self.assertEqual(week_start(datetime.fromisoformat(sunday+'T04:00').replace(tzinfo=zone)),date.fromisoformat(sunday))
+        for friday, saturday, sunday in [
+            ('2026-10-30', '2026-10-31', '2026-11-01'),
+            ('2027-03-12', '2027-03-13', '2027-03-14'),
+        ]:
+            for local_time in (friday+'T23:00', saturday+'T23:00', sunday+'T04:00'):
+                with self.subTest(local_time=local_time):
+                    self.assertEqual(
+                        week_start(datetime.fromisoformat(local_time).replace(tzinfo=zone)),
+                        date.fromisoformat(sunday),
+                    )
 
     def test_deterministic_and_no_repeats_for_four_weeks(self):
         history=[]
