@@ -1,0 +1,1532 @@
+{
+  "week_start": "2026-11-08",
+  "servings": 4,
+  "draft": false,
+  "meals": [
+    {
+      "day": "2026-11-08",
+      "kind": "recipe",
+      "recipe_id": "chicken-tortilla-soup-unknown",
+      "ingredients_verified": true,
+      "shopping": [
+        {
+          "category": "Bread and tortillas",
+          "item": "corn tortillas",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "5/2",
+          "recipes": [
+            "Chicken Tortilla Soup"
+          ]
+        },
+        {
+          "category": "Canned goods",
+          "item": "black beans (15 oz can)",
+          "unit": "can",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Chicken Tortilla Soup"
+          ]
+        },
+        {
+          "category": "Canned goods",
+          "item": "low-sodium chicken stock",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "96",
+          "recipes": [
+            "Chicken Tortilla Soup"
+          ]
+        },
+        {
+          "category": "Canned goods",
+          "item": "rotel tomatoes and green chilies (10 oz can)",
+          "unit": "can",
+          "pantry": false,
+          "quantity": "1/2",
+          "recipes": [
+            "Chicken Tortilla Soup"
+          ]
+        },
+        {
+          "category": "Canned goods",
+          "item": "tomato paste",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "9/2",
+          "recipes": [
+            "Chicken Tortilla Soup"
+          ]
+        },
+        {
+          "category": "Grains",
+          "item": "cornmeal or masa",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "9/2",
+          "recipes": [
+            "Chicken Tortilla Soup"
+          ]
+        },
+        {
+          "category": "Meat",
+          "item": "boneless skinless chicken breasts",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Chicken Tortilla Soup"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "chili powder",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1/2",
+          "recipes": [
+            "Chicken Tortilla Soup"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "garlic powder",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1/4",
+          "recipes": [
+            "Chicken Tortilla Soup"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "ground cumin",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3/4",
+          "recipes": [
+            "Chicken Tortilla Soup"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "olive oil",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3",
+          "recipes": [
+            "Chicken Tortilla Soup"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "salt",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1/4",
+          "recipes": [
+            "Chicken Tortilla Soup"
+          ]
+        },
+        {
+          "category": "Optional toppings",
+          "item": "sour cream, red onion, avocado, pico de gallo or salsa, monterey jack cheese, cilantro",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Chicken Tortilla Soup"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "diced green bell pepper",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Chicken Tortilla Soup"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "diced onion",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "24",
+          "recipes": [
+            "Chicken Tortilla Soup"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "diced red bell pepper",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Chicken Tortilla Soup"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "garlic",
+          "unit": "clove",
+          "pantry": false,
+          "quantity": "3/2",
+          "recipes": [
+            "Chicken Tortilla Soup"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "2026-11-09",
+      "kind": "recipe",
+      "recipe_id": "baked-feta-w-tomato-broccolini-nyt",
+      "ingredients_verified": true,
+      "shopping": [
+        {
+          "category": "Bread and grains",
+          "item": "cooked orzo or farro",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Baked Feta w/ Tomato & Broccolini"
+          ]
+        },
+        {
+          "category": "Dairy",
+          "item": "feta (6- to 8-oz)",
+          "unit": "block",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Baked Feta w/ Tomato & Broccolini"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "ground cumin",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Baked Feta w/ Tomato & Broccolini"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "kosher salt and black pepper",
+          "unit": "to taste",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Baked Feta w/ Tomato & Broccolini"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "olive oil",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "9",
+          "recipes": [
+            "Baked Feta w/ Tomato & Broccolini"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "red-pepper flakes",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1/2",
+          "recipes": [
+            "Baked Feta w/ Tomato & Broccolini"
+          ]
+        },
+        {
+          "category": "Optional toppings",
+          "item": "fresh basil or cilantro leaves and fine stems (optional)",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "24",
+          "recipes": [
+            "Baked Feta w/ Tomato & Broccolini"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "broccolini",
+          "unit": "bunch",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Baked Feta w/ Tomato & Broccolini"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "grape tomatoes",
+          "unit": "pint",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Baked Feta w/ Tomato & Broccolini"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "lemon, 1/2 cut into thin rounds and the remaining 1/2 left intact",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Baked Feta w/ Tomato & Broccolini"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "small red onion",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Baked Feta w/ Tomato & Broccolini"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "2026-11-10",
+      "kind": "recipe",
+      "recipe_id": "sheet-pan-bibimbap-nyt",
+      "ingredients_verified": true,
+      "shopping": [
+        {
+          "category": "Bread and grains",
+          "item": "cooked medium-grain white rice",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "192",
+          "recipes": [
+            "Sheet Pan Bibimbap"
+          ]
+        },
+        {
+          "category": "Dairy",
+          "item": "large eggs",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "4",
+          "recipes": [
+            "Sheet Pan Bibimbap"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "kosher salt and black pepper",
+          "unit": "to taste",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Sheet Pan Bibimbap"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "olive oil",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "18",
+          "recipes": [
+            "Sheet Pan Bibimbap"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "toasted sesame oil",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "4",
+          "recipes": [
+            "Sheet Pan Bibimbap"
+          ]
+        },
+        {
+          "category": "Optional toppings",
+          "item": "kimchi (optional)",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Sheet Pan Bibimbap"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "gochujang",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "4",
+          "recipes": [
+            "Sheet Pan Bibimbap"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "medium sweet potato",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Sheet Pan Bibimbap"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "oyster mushrooms",
+          "unit": "oz",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Sheet Pan Bibimbap"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "small red onion",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Sheet Pan Bibimbap"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "tuscan or curly kale",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "144",
+          "recipes": [
+            "Sheet Pan Bibimbap"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "2026-11-11",
+      "kind": "recipe",
+      "recipe_id": "maple-miso-salmon-nyt",
+      "ingredients_verified": true,
+      "shopping": [
+        {
+          "category": "Bread and grains",
+          "item": "rice wine vinegar",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3",
+          "recipes": [
+            "Maple Miso Salmon"
+          ]
+        },
+        {
+          "category": "Canned goods",
+          "item": "green beans",
+          "unit": "oz",
+          "pantry": false,
+          "quantity": "16",
+          "recipes": [
+            "Maple Miso Salmon"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "freshly ground black pepper",
+          "unit": "to taste",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Maple Miso Salmon"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "kosher salt",
+          "unit": "to taste",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Maple Miso Salmon"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "olive oil",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Maple Miso Salmon"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "soy sauce",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Maple Miso Salmon"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "white or brown miso",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3",
+          "recipes": [
+            "Maple Miso Salmon"
+          ]
+        },
+        {
+          "category": "Optional toppings",
+          "item": "cooked white rice (optional)",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Maple Miso Salmon"
+          ]
+        },
+        {
+          "category": "Optional toppings",
+          "item": "flaky sea salt (optional)",
+          "unit": "to taste",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Maple Miso Salmon"
+          ]
+        },
+        {
+          "category": "Optional toppings",
+          "item": "pinch of red-pepper flakes (optional)",
+          "unit": "to taste",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Maple Miso Salmon"
+          ]
+        },
+        {
+          "category": "Optional toppings",
+          "item": "toasted sesame oil (optional)",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1/4",
+          "recipes": [
+            "Maple Miso Salmon"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "cilantro, both leaves and tender stems",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "12",
+          "recipes": [
+            "Maple Miso Salmon"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "garlic, grated",
+          "unit": "clove",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Maple Miso Salmon"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "lime wedges",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "4",
+          "recipes": [
+            "Maple Miso Salmon"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "maple syrup",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "4",
+          "recipes": [
+            "Maple Miso Salmon"
+          ]
+        },
+        {
+          "category": "Seafood",
+          "item": "skin-on salmon fillets (6-oz)",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "4",
+          "recipes": [
+            "Maple Miso Salmon"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "2026-11-12",
+      "kind": "recipe",
+      "recipe_id": "bean-cheese-burritos-nyt",
+      "ingredients_verified": true,
+      "shopping": [
+        {
+          "category": "Bread and grains",
+          "item": "flour tortillas (9- to 10-inch)",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "4",
+          "recipes": [
+            "Bean & Cheese Burritos"
+          ]
+        },
+        {
+          "category": "Canned goods",
+          "item": "pinto beans, 1/2 cup of bean liquid reserved and the rest drained (15-oz)",
+          "unit": "can",
+          "pantry": false,
+          "quantity": "4/3",
+          "recipes": [
+            "Bean & Cheese Burritos"
+          ]
+        },
+        {
+          "category": "Dairy",
+          "item": "shredded sharp cheddar",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "64",
+          "recipes": [
+            "Bean & Cheese Burritos"
+          ]
+        },
+        {
+          "category": "Dairy",
+          "item": "sour cream and hot sauce",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Bean & Cheese Burritos"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "safflower or canola oil",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "8",
+          "recipes": [
+            "Bean & Cheese Burritos"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "salt and black pepper",
+          "unit": "to taste",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Bean & Cheese Burritos"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "smoked paprika",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1/6",
+          "recipes": [
+            "Bean & Cheese Burritos"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "garlic, minced",
+          "unit": "clove",
+          "pantry": false,
+          "quantity": "4/3",
+          "recipes": [
+            "Bean & Cheese Burritos"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "green bell pepper",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "16",
+          "recipes": [
+            "Bean & Cheese Burritos"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "store-bought or homemade pico de gallo or salsa",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "16",
+          "recipes": [
+            "Bean & Cheese Burritos"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "yellow onion",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "16",
+          "recipes": [
+            "Bean & Cheese Burritos"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "2026-11-13",
+      "kind": "leftovers",
+      "recipe_id": null,
+      "ingredients_verified": true,
+      "shopping": []
+    },
+    {
+      "day": "2026-11-14",
+      "kind": "recipe",
+      "recipe_id": "sheet-pan-chicken-w-chickpeas-cumin-turmeric-nyt",
+      "ingredients_verified": true,
+      "shopping": [
+        {
+          "category": "Canned goods",
+          "item": "chickpeas (15-oz)",
+          "unit": "can",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+          ]
+        },
+        {
+          "category": "Dairy",
+          "item": "full-fat greek yogurt",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "72",
+          "recipes": [
+            "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+          ]
+        },
+        {
+          "category": "Meat",
+          "item": "chicken (3 1/2 to 4 lb)",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "fennel seed",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3",
+          "recipes": [
+            "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "ground cumin",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "ground turmeric",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "kosher salt and freshly ground pepper",
+          "unit": "to taste",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "olive oil",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "fresh lemon juice",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "15",
+          "recipes": [
+            "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "large red onion",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "mint or cilantro leaves",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "24",
+          "recipes": [
+            "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+          ]
+        }
+      ]
+    }
+  ],
+  "shopping": [
+    {
+      "category": "Bread and grains",
+      "item": "cooked medium-grain white rice",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "192",
+      "recipes": [
+        "Sheet Pan Bibimbap"
+      ]
+    },
+    {
+      "category": "Bread and grains",
+      "item": "cooked orzo or farro",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Baked Feta w/ Tomato & Broccolini"
+      ]
+    },
+    {
+      "category": "Bread and grains",
+      "item": "flour tortillas (9- to 10-inch)",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "4",
+      "recipes": [
+        "Bean & Cheese Burritos"
+      ]
+    },
+    {
+      "category": "Bread and grains",
+      "item": "rice wine vinegar",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "3",
+      "recipes": [
+        "Maple Miso Salmon"
+      ]
+    },
+    {
+      "category": "Bread and tortillas",
+      "item": "corn tortillas",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "5/2",
+      "recipes": [
+        "Chicken Tortilla Soup"
+      ]
+    },
+    {
+      "category": "Canned goods",
+      "item": "black beans (15 oz can)",
+      "unit": "can",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Chicken Tortilla Soup"
+      ]
+    },
+    {
+      "category": "Canned goods",
+      "item": "chickpeas (15-oz)",
+      "unit": "can",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+      ]
+    },
+    {
+      "category": "Canned goods",
+      "item": "green beans",
+      "unit": "oz",
+      "pantry": false,
+      "quantity": "16",
+      "recipes": [
+        "Maple Miso Salmon"
+      ]
+    },
+    {
+      "category": "Canned goods",
+      "item": "low-sodium chicken stock",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "96",
+      "recipes": [
+        "Chicken Tortilla Soup"
+      ]
+    },
+    {
+      "category": "Canned goods",
+      "item": "pinto beans, 1/2 cup of bean liquid reserved and the rest drained (15-oz)",
+      "unit": "can",
+      "pantry": false,
+      "quantity": "4/3",
+      "recipes": [
+        "Bean & Cheese Burritos"
+      ]
+    },
+    {
+      "category": "Canned goods",
+      "item": "rotel tomatoes and green chilies (10 oz can)",
+      "unit": "can",
+      "pantry": false,
+      "quantity": "1/2",
+      "recipes": [
+        "Chicken Tortilla Soup"
+      ]
+    },
+    {
+      "category": "Canned goods",
+      "item": "tomato paste",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "9/2",
+      "recipes": [
+        "Chicken Tortilla Soup"
+      ]
+    },
+    {
+      "category": "Dairy",
+      "item": "feta (6- to 8-oz)",
+      "unit": "block",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Baked Feta w/ Tomato & Broccolini"
+      ]
+    },
+    {
+      "category": "Dairy",
+      "item": "full-fat greek yogurt",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "72",
+      "recipes": [
+        "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+      ]
+    },
+    {
+      "category": "Dairy",
+      "item": "large eggs",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "4",
+      "recipes": [
+        "Sheet Pan Bibimbap"
+      ]
+    },
+    {
+      "category": "Dairy",
+      "item": "shredded sharp cheddar",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "64",
+      "recipes": [
+        "Bean & Cheese Burritos"
+      ]
+    },
+    {
+      "category": "Dairy",
+      "item": "sour cream and hot sauce",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Bean & Cheese Burritos"
+      ]
+    },
+    {
+      "category": "Grains",
+      "item": "cornmeal or masa",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "9/2",
+      "recipes": [
+        "Chicken Tortilla Soup"
+      ]
+    },
+    {
+      "category": "Meat",
+      "item": "boneless skinless chicken breasts",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Chicken Tortilla Soup"
+      ]
+    },
+    {
+      "category": "Meat",
+      "item": "chicken (3 1/2 to 4 lb)",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "chili powder",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1/2",
+      "recipes": [
+        "Chicken Tortilla Soup"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "fennel seed",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "3",
+      "recipes": [
+        "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "freshly ground black pepper",
+      "unit": "to taste",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Maple Miso Salmon"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "garlic powder",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1/4",
+      "recipes": [
+        "Chicken Tortilla Soup"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "ground cumin",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "11/4",
+      "recipes": [
+        "Baked Feta w/ Tomato & Broccolini",
+        "Chicken Tortilla Soup",
+        "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "ground turmeric",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "kosher salt",
+      "unit": "to taste",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Maple Miso Salmon"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "kosher salt and black pepper",
+      "unit": "to taste",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Baked Feta w/ Tomato & Broccolini",
+        "Sheet Pan Bibimbap"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "kosher salt and freshly ground pepper",
+      "unit": "to taste",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "olive oil",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "42",
+      "recipes": [
+        "Baked Feta w/ Tomato & Broccolini",
+        "Chicken Tortilla Soup",
+        "Maple Miso Salmon",
+        "Sheet Pan Bibimbap",
+        "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "red-pepper flakes",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1/2",
+      "recipes": [
+        "Baked Feta w/ Tomato & Broccolini"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "safflower or canola oil",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "8",
+      "recipes": [
+        "Bean & Cheese Burritos"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "salt",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1/4",
+      "recipes": [
+        "Chicken Tortilla Soup"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "salt and black pepper",
+      "unit": "to taste",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Bean & Cheese Burritos"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "smoked paprika",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1/6",
+      "recipes": [
+        "Bean & Cheese Burritos"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "soy sauce",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Maple Miso Salmon"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "toasted sesame oil",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "4",
+      "recipes": [
+        "Sheet Pan Bibimbap"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "white or brown miso",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "3",
+      "recipes": [
+        "Maple Miso Salmon"
+      ]
+    },
+    {
+      "category": "Optional toppings",
+      "item": "cooked white rice (optional)",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Maple Miso Salmon"
+      ]
+    },
+    {
+      "category": "Optional toppings",
+      "item": "flaky sea salt (optional)",
+      "unit": "to taste",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Maple Miso Salmon"
+      ]
+    },
+    {
+      "category": "Optional toppings",
+      "item": "fresh basil or cilantro leaves and fine stems (optional)",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "24",
+      "recipes": [
+        "Baked Feta w/ Tomato & Broccolini"
+      ]
+    },
+    {
+      "category": "Optional toppings",
+      "item": "kimchi (optional)",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Sheet Pan Bibimbap"
+      ]
+    },
+    {
+      "category": "Optional toppings",
+      "item": "pinch of red-pepper flakes (optional)",
+      "unit": "to taste",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Maple Miso Salmon"
+      ]
+    },
+    {
+      "category": "Optional toppings",
+      "item": "sour cream, red onion, avocado, pico de gallo or salsa, monterey jack cheese, cilantro",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Chicken Tortilla Soup"
+      ]
+    },
+    {
+      "category": "Optional toppings",
+      "item": "toasted sesame oil (optional)",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1/4",
+      "recipes": [
+        "Maple Miso Salmon"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "broccolini",
+      "unit": "bunch",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Baked Feta w/ Tomato & Broccolini"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "cilantro, both leaves and tender stems",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "12",
+      "recipes": [
+        "Maple Miso Salmon"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "diced green bell pepper",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "6",
+      "recipes": [
+        "Chicken Tortilla Soup"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "diced onion",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "24",
+      "recipes": [
+        "Chicken Tortilla Soup"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "diced red bell pepper",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "6",
+      "recipes": [
+        "Chicken Tortilla Soup"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "fresh lemon juice",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "15",
+      "recipes": [
+        "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "garlic",
+      "unit": "clove",
+      "pantry": false,
+      "quantity": "3/2",
+      "recipes": [
+        "Chicken Tortilla Soup"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "garlic, grated",
+      "unit": "clove",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Maple Miso Salmon"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "garlic, minced",
+      "unit": "clove",
+      "pantry": false,
+      "quantity": "4/3",
+      "recipes": [
+        "Bean & Cheese Burritos"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "gochujang",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "4",
+      "recipes": [
+        "Sheet Pan Bibimbap"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "grape tomatoes",
+      "unit": "pint",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Baked Feta w/ Tomato & Broccolini"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "green bell pepper",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "16",
+      "recipes": [
+        "Bean & Cheese Burritos"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "large red onion",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "lemon, 1/2 cut into thin rounds and the remaining 1/2 left intact",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Baked Feta w/ Tomato & Broccolini"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "lime wedges",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "4",
+      "recipes": [
+        "Maple Miso Salmon"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "maple syrup",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "4",
+      "recipes": [
+        "Maple Miso Salmon"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "medium sweet potato",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Sheet Pan Bibimbap"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "mint or cilantro leaves",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "24",
+      "recipes": [
+        "Sheet Pan Chicken w/ Chickpeas, Cumin, Turmeric"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "oyster mushrooms",
+      "unit": "oz",
+      "pantry": false,
+      "quantity": "6",
+      "recipes": [
+        "Sheet Pan Bibimbap"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "small red onion",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Baked Feta w/ Tomato & Broccolini",
+        "Sheet Pan Bibimbap"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "store-bought or homemade pico de gallo or salsa",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "16",
+      "recipes": [
+        "Bean & Cheese Burritos"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "tuscan or curly kale",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "144",
+      "recipes": [
+        "Sheet Pan Bibimbap"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "yellow onion",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "16",
+      "recipes": [
+        "Bean & Cheese Burritos"
+      ]
+    },
+    {
+      "category": "Seafood",
+      "item": "skin-on salmon fillets (6-oz)",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "4",
+      "recipes": [
+        "Maple Miso Salmon"
+      ]
+    }
+  ]
+}
