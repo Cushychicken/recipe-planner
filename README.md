@@ -1,6 +1,6 @@
 # Weekly dinner planner
 
-Generates a Sunday–Saturday dinner plan, printable shopping checklist, PDF, and dated archive from your recipe collection. Runs **Saturday at 11 PM America/New_York**, with daylight saving time handled by GitHub’s timezone-aware schedule. GitHub may start scheduled jobs late; this is a scheduled publication, not a real-time guarantee.
+Generates a Sunday–Saturday dinner plan, printable shopping checklist, PDF, and dated archive from your recipe collection. Runs **Friday at 11 PM America/New_York**, with daylight saving time handled by GitHub’s timezone-aware schedule. GitHub may start scheduled jobs late; this is a scheduled publication, not a real-time guarantee.
 
 ## Add recipes in one command
 
@@ -117,7 +117,7 @@ python scripts/planner.py --week 2026-11-08
 python scripts/planner.py --require-ready
 ```
 
-`--week` must be a Sunday. Without it, Saturday targets the following Sunday; Sunday reruns target the current Sunday. `--require-ready` fails instead of emitting a draft.
+`--week` must be a Sunday. Without it, Friday or Saturday targets the following Sunday; Sunday reruns target the current Sunday. `--require-ready` fails instead of emitting a draft.
 
 Selection is deterministic for each week, avoids the previous four weeks when the verified pool is large enough, and relaxes that avoidance when necessary rather than failing. A small verified pool will repeat recipes more often.
 
