@@ -1,0 +1,1535 @@
+{
+  "week_start": "2026-11-15",
+  "servings": 4,
+  "draft": false,
+  "meals": [
+    {
+      "day": "2026-11-15",
+      "kind": "recipe",
+      "recipe_id": "sheet-pan-scallion-chicken-w-bok-choy-nyt",
+      "ingredients_verified": true,
+      "shopping": [
+        {
+          "category": "Bread and grains",
+          "item": "steamed rice or mashed potatoes",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Sheet Pan Scallion Chicken w/ Bok Choy"
+          ]
+        },
+        {
+          "category": "Meat",
+          "item": "bone-in, skin-on chicken thighs",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "8",
+          "recipes": [
+            "Sheet Pan Scallion Chicken w/ Bok Choy"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "dijon mustard",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "9",
+          "recipes": [
+            "Sheet Pan Scallion Chicken w/ Bok Choy"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "kosher salt and freshly ground black pepper",
+          "unit": "to taste",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Sheet Pan Scallion Chicken w/ Bok Choy"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "safflower or canola oil",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "24",
+          "recipes": [
+            "Sheet Pan Scallion Chicken w/ Bok Choy"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "turbinado or brown sugar",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Sheet Pan Scallion Chicken w/ Bok Choy"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "white miso paste",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3",
+          "recipes": [
+            "Sheet Pan Scallion Chicken w/ Bok Choy"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "baby bok choy",
+          "unit": "oz",
+          "pantry": false,
+          "quantity": "24",
+          "recipes": [
+            "Sheet Pan Scallion Chicken w/ Bok Choy"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "fresh ginger",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "9",
+          "recipes": [
+            "Sheet Pan Scallion Chicken w/ Bok Choy"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "garlic",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Sheet Pan Scallion Chicken w/ Bok Choy"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "lemon wedges",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Sheet Pan Scallion Chicken w/ Bok Choy"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "scallions",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "4",
+          "recipes": [
+            "Sheet Pan Scallion Chicken w/ Bok Choy"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "2026-11-16",
+      "kind": "recipe",
+      "recipe_id": "chorizo-rice-unknown",
+      "ingredients_verified": true,
+      "shopping": [
+        {
+          "category": "Canned goods",
+          "item": "black beans (15 oz can)",
+          "unit": "can",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Chorizo Rice"
+          ]
+        },
+        {
+          "category": "Canned goods",
+          "item": "chicken broth",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "48",
+          "recipes": [
+            "Chorizo Rice"
+          ]
+        },
+        {
+          "category": "Canned goods",
+          "item": "rotel tomatoes and green chilies (10 oz can)",
+          "unit": "can",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Chorizo Rice"
+          ]
+        },
+        {
+          "category": "Grains",
+          "item": "uncooked white rice",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "24",
+          "recipes": [
+            "Chorizo Rice"
+          ]
+        },
+        {
+          "category": "Meat",
+          "item": "chorizo sausage links",
+          "unit": "oz",
+          "pantry": false,
+          "quantity": "12",
+          "recipes": [
+            "Chorizo Rice"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "chili powder",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Chorizo Rice"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "ground black pepper",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1/4",
+          "recipes": [
+            "Chorizo Rice"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "ground cumin",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1/2",
+          "recipes": [
+            "Chorizo Rice"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "salt",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1/2",
+          "recipes": [
+            "Chorizo Rice"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "small yellow onion",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Chorizo Rice"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "sweet bell pepper",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Chorizo Rice"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "2026-11-17",
+      "kind": "recipe",
+      "recipe_id": "cheesy-white-bean-tomato-bake-nyt",
+      "ingredients_verified": true,
+      "shopping": [
+        {
+          "category": "Canned goods",
+          "item": "tomato paste",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "9",
+          "recipes": [
+            "Cheesy White Bean Tomato Bake"
+          ]
+        },
+        {
+          "category": "Canned goods",
+          "item": "white beans or chickpeas (15-oz)",
+          "unit": "can",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Cheesy White Bean Tomato Bake"
+          ]
+        },
+        {
+          "category": "Dairy",
+          "item": "mozzarella",
+          "unit": "oz",
+          "pantry": false,
+          "quantity": "16/3",
+          "recipes": [
+            "Cheesy White Bean Tomato Bake"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "extra-virgin olive oil",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "12",
+          "recipes": [
+            "Cheesy White Bean Tomato Bake"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "salt and black pepper",
+          "unit": "to taste",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Cheesy White Bean Tomato Bake"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "garlic",
+          "unit": "clove",
+          "pantry": false,
+          "quantity": "3",
+          "recipes": [
+            "Cheesy White Bean Tomato Bake"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "2026-11-18",
+      "kind": "recipe",
+      "recipe_id": "shrimp-fried-rice-nyt",
+      "ingredients_verified": true,
+      "shopping": [
+        {
+          "category": "Bread and grains",
+          "item": "cooked jasmine or other long-grain white rice",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "144",
+          "recipes": [
+            "Shrimp Fried Rice"
+          ]
+        },
+        {
+          "category": "Bread and grains",
+          "item": "rice vinegar",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Shrimp Fried Rice"
+          ]
+        },
+        {
+          "category": "Dairy",
+          "item": "large eggs",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Shrimp Fried Rice"
+          ]
+        },
+        {
+          "category": "Dairy",
+          "item": "unsalted butter",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3",
+          "recipes": [
+            "Shrimp Fried Rice"
+          ]
+        },
+        {
+          "category": "Frozen vegetables",
+          "item": "frozen mixed vegetables",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "36",
+          "recipes": [
+            "Shrimp Fried Rice"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "garlic powder",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3/4",
+          "recipes": [
+            "Shrimp Fried Rice"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "ketchup",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Shrimp Fried Rice"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "mayonnaise",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "12",
+          "recipes": [
+            "Shrimp Fried Rice"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "olive oil",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Shrimp Fried Rice"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "salt",
+          "unit": "to taste",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Shrimp Fried Rice"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "soy sauce, or to taste",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Shrimp Fried Rice"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "sweet paprika",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1/4",
+          "recipes": [
+            "Shrimp Fried Rice"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "toasted sesame oil",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1/2",
+          "recipes": [
+            "Shrimp Fried Rice"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "medium onion, diced",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1/2",
+          "recipes": [
+            "Shrimp Fried Rice"
+          ]
+        },
+        {
+          "category": "Seafood",
+          "item": "peeled and deveined medium shrimp, thawed if frozen",
+          "unit": "oz",
+          "pantry": false,
+          "quantity": "8",
+          "recipes": [
+            "Shrimp Fried Rice"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "2026-11-19",
+      "kind": "recipe",
+      "recipe_id": "mattar-paneer-nyt",
+      "ingredients_verified": true,
+      "shopping": [
+        {
+          "category": "Bread and grains",
+          "item": "rice or roti",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Mattar Paneer"
+          ]
+        },
+        {
+          "category": "Dairy",
+          "item": "paneer or extra-firm tofu",
+          "unit": "oz",
+          "pantry": false,
+          "quantity": "16",
+          "recipes": [
+            "Mattar Paneer"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "cashew butter",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "12",
+          "recipes": [
+            "Mattar Paneer"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "cumin seeds",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Mattar Paneer"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "fine sea salt",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Mattar Paneer"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "garam masala",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Mattar Paneer"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "ghee or neutral oil",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "24",
+          "recipes": [
+            "Mattar Paneer"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "kashmiri or other red chile powder",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3/2",
+          "recipes": [
+            "Mattar Paneer"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "turmeric powder",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1/2",
+          "recipes": [
+            "Mattar Paneer"
+          ]
+        },
+        {
+          "category": "Optional toppings",
+          "item": "heavy cream or cashew cream (optional)",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "18",
+          "recipes": [
+            "Mattar Paneer"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "frozen or fresh green peas",
+          "unit": "oz",
+          "pantry": false,
+          "quantity": "16",
+          "recipes": [
+            "Mattar Paneer"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "garlic paste or freshly grated garlic",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Mattar Paneer"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "ginger paste or freshly grated ginger",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Mattar Paneer"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "medium plum tomatoes",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Mattar Paneer"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "medium yellow onion",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Mattar Paneer"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "2026-11-20",
+      "kind": "leftovers",
+      "recipe_id": null,
+      "ingredients_verified": true,
+      "shopping": []
+    },
+    {
+      "day": "2026-11-21",
+      "kind": "recipe",
+      "recipe_id": "rice-noodles-w-egg-drop-gravy-nyt",
+      "ingredients_verified": true,
+      "shopping": [
+        {
+          "category": "Bread and grains",
+          "item": "cornstarch",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3",
+          "recipes": [
+            "Rice Noodles w/ Egg Drop Gravy"
+          ]
+        },
+        {
+          "category": "Bread and grains",
+          "item": "thick dried rice noodles",
+          "unit": "oz",
+          "pantry": false,
+          "quantity": "12",
+          "recipes": [
+            "Rice Noodles w/ Egg Drop Gravy"
+          ]
+        },
+        {
+          "category": "Canned goods",
+          "item": "vegetable stock",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "96",
+          "recipes": [
+            "Rice Noodles w/ Egg Drop Gravy"
+          ]
+        },
+        {
+          "category": "Dairy",
+          "item": "eggs, beaten",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Rice Noodles w/ Egg Drop Gravy"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "dark soy sauce",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "3",
+          "recipes": [
+            "Rice Noodles w/ Egg Drop Gravy"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "granulated sugar",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Rice Noodles w/ Egg Drop Gravy"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "kosher salt and black pepper",
+          "unit": "to taste",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Rice Noodles w/ Egg Drop Gravy"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "neutral oil",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "9",
+          "recipes": [
+            "Rice Noodles w/ Egg Drop Gravy"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "soy sauce",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Rice Noodles w/ Egg Drop Gravy"
+          ]
+        },
+        {
+          "category": "Oils and spices",
+          "item": "vegetarian stir-fry sauce or oyster sauce",
+          "unit": "tsp",
+          "pantry": false,
+          "quantity": "6",
+          "recipes": [
+            "Rice Noodles w/ Egg Drop Gravy"
+          ]
+        },
+        {
+          "category": "Optional toppings",
+          "item": "handful of cilantro leaves (optional)",
+          "unit": "as needed",
+          "pantry": false,
+          "quantity": null,
+          "recipes": [
+            "Rice Noodles w/ Egg Drop Gravy"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "baby bok choy",
+          "unit": "head",
+          "pantry": false,
+          "quantity": "4",
+          "recipes": [
+            "Rice Noodles w/ Egg Drop Gravy"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "carrot",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Rice Noodles w/ Egg Drop Gravy"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "garlic",
+          "unit": "clove",
+          "pantry": false,
+          "quantity": "2",
+          "recipes": [
+            "Rice Noodles w/ Egg Drop Gravy"
+          ]
+        },
+        {
+          "category": "Produce",
+          "item": "piece of ginger (1-inch)",
+          "unit": "each",
+          "pantry": false,
+          "quantity": "1",
+          "recipes": [
+            "Rice Noodles w/ Egg Drop Gravy"
+          ]
+        }
+      ]
+    }
+  ],
+  "shopping": [
+    {
+      "category": "Bread and grains",
+      "item": "cooked jasmine or other long-grain white rice",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "144",
+      "recipes": [
+        "Shrimp Fried Rice"
+      ]
+    },
+    {
+      "category": "Bread and grains",
+      "item": "cornstarch",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "3",
+      "recipes": [
+        "Rice Noodles w/ Egg Drop Gravy"
+      ]
+    },
+    {
+      "category": "Bread and grains",
+      "item": "rice or roti",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Mattar Paneer"
+      ]
+    },
+    {
+      "category": "Bread and grains",
+      "item": "rice vinegar",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Shrimp Fried Rice"
+      ]
+    },
+    {
+      "category": "Bread and grains",
+      "item": "steamed rice or mashed potatoes",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Sheet Pan Scallion Chicken w/ Bok Choy"
+      ]
+    },
+    {
+      "category": "Bread and grains",
+      "item": "thick dried rice noodles",
+      "unit": "oz",
+      "pantry": false,
+      "quantity": "12",
+      "recipes": [
+        "Rice Noodles w/ Egg Drop Gravy"
+      ]
+    },
+    {
+      "category": "Canned goods",
+      "item": "black beans (15 oz can)",
+      "unit": "can",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Chorizo Rice"
+      ]
+    },
+    {
+      "category": "Canned goods",
+      "item": "chicken broth",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "48",
+      "recipes": [
+        "Chorizo Rice"
+      ]
+    },
+    {
+      "category": "Canned goods",
+      "item": "rotel tomatoes and green chilies (10 oz can)",
+      "unit": "can",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Chorizo Rice"
+      ]
+    },
+    {
+      "category": "Canned goods",
+      "item": "tomato paste",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "9",
+      "recipes": [
+        "Cheesy White Bean Tomato Bake"
+      ]
+    },
+    {
+      "category": "Canned goods",
+      "item": "vegetable stock",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "96",
+      "recipes": [
+        "Rice Noodles w/ Egg Drop Gravy"
+      ]
+    },
+    {
+      "category": "Canned goods",
+      "item": "white beans or chickpeas (15-oz)",
+      "unit": "can",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Cheesy White Bean Tomato Bake"
+      ]
+    },
+    {
+      "category": "Dairy",
+      "item": "eggs, beaten",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Rice Noodles w/ Egg Drop Gravy"
+      ]
+    },
+    {
+      "category": "Dairy",
+      "item": "large eggs",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Shrimp Fried Rice"
+      ]
+    },
+    {
+      "category": "Dairy",
+      "item": "mozzarella",
+      "unit": "oz",
+      "pantry": false,
+      "quantity": "16/3",
+      "recipes": [
+        "Cheesy White Bean Tomato Bake"
+      ]
+    },
+    {
+      "category": "Dairy",
+      "item": "paneer or extra-firm tofu",
+      "unit": "oz",
+      "pantry": false,
+      "quantity": "16",
+      "recipes": [
+        "Mattar Paneer"
+      ]
+    },
+    {
+      "category": "Dairy",
+      "item": "unsalted butter",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "3",
+      "recipes": [
+        "Shrimp Fried Rice"
+      ]
+    },
+    {
+      "category": "Frozen vegetables",
+      "item": "frozen mixed vegetables",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "36",
+      "recipes": [
+        "Shrimp Fried Rice"
+      ]
+    },
+    {
+      "category": "Grains",
+      "item": "uncooked white rice",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "24",
+      "recipes": [
+        "Chorizo Rice"
+      ]
+    },
+    {
+      "category": "Meat",
+      "item": "bone-in, skin-on chicken thighs",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "8",
+      "recipes": [
+        "Sheet Pan Scallion Chicken w/ Bok Choy"
+      ]
+    },
+    {
+      "category": "Meat",
+      "item": "chorizo sausage links",
+      "unit": "oz",
+      "pantry": false,
+      "quantity": "12",
+      "recipes": [
+        "Chorizo Rice"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "cashew butter",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "12",
+      "recipes": [
+        "Mattar Paneer"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "chili powder",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Chorizo Rice"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "cumin seeds",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Mattar Paneer"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "dark soy sauce",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "3",
+      "recipes": [
+        "Rice Noodles w/ Egg Drop Gravy"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "dijon mustard",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "9",
+      "recipes": [
+        "Sheet Pan Scallion Chicken w/ Bok Choy"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "extra-virgin olive oil",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "12",
+      "recipes": [
+        "Cheesy White Bean Tomato Bake"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "fine sea salt",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Mattar Paneer"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "garam masala",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Mattar Paneer"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "garlic powder",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "3/4",
+      "recipes": [
+        "Shrimp Fried Rice"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "ghee or neutral oil",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "24",
+      "recipes": [
+        "Mattar Paneer"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "granulated sugar",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Rice Noodles w/ Egg Drop Gravy"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "ground black pepper",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1/4",
+      "recipes": [
+        "Chorizo Rice"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "ground cumin",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1/2",
+      "recipes": [
+        "Chorizo Rice"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "kashmiri or other red chile powder",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "3/2",
+      "recipes": [
+        "Mattar Paneer"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "ketchup",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "6",
+      "recipes": [
+        "Shrimp Fried Rice"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "kosher salt and black pepper",
+      "unit": "to taste",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Rice Noodles w/ Egg Drop Gravy"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "kosher salt and freshly ground black pepper",
+      "unit": "to taste",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Sheet Pan Scallion Chicken w/ Bok Choy"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "mayonnaise",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "12",
+      "recipes": [
+        "Shrimp Fried Rice"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "neutral oil",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "9",
+      "recipes": [
+        "Rice Noodles w/ Egg Drop Gravy"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "olive oil",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "6",
+      "recipes": [
+        "Shrimp Fried Rice"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "safflower or canola oil",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "24",
+      "recipes": [
+        "Sheet Pan Scallion Chicken w/ Bok Choy"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "salt",
+      "unit": "to taste",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Shrimp Fried Rice"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "salt",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1/2",
+      "recipes": [
+        "Chorizo Rice"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "salt and black pepper",
+      "unit": "to taste",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Cheesy White Bean Tomato Bake"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "soy sauce",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "6",
+      "recipes": [
+        "Rice Noodles w/ Egg Drop Gravy"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "soy sauce, or to taste",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "6",
+      "recipes": [
+        "Shrimp Fried Rice"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "sweet paprika",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1/4",
+      "recipes": [
+        "Shrimp Fried Rice"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "toasted sesame oil",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1/2",
+      "recipes": [
+        "Shrimp Fried Rice"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "turbinado or brown sugar",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Sheet Pan Scallion Chicken w/ Bok Choy"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "turmeric powder",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1/2",
+      "recipes": [
+        "Mattar Paneer"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "vegetarian stir-fry sauce or oyster sauce",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "6",
+      "recipes": [
+        "Rice Noodles w/ Egg Drop Gravy"
+      ]
+    },
+    {
+      "category": "Oils and spices",
+      "item": "white miso paste",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "3",
+      "recipes": [
+        "Sheet Pan Scallion Chicken w/ Bok Choy"
+      ]
+    },
+    {
+      "category": "Optional toppings",
+      "item": "handful of cilantro leaves (optional)",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Rice Noodles w/ Egg Drop Gravy"
+      ]
+    },
+    {
+      "category": "Optional toppings",
+      "item": "heavy cream or cashew cream (optional)",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "18",
+      "recipes": [
+        "Mattar Paneer"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "baby bok choy",
+      "unit": "head",
+      "pantry": false,
+      "quantity": "4",
+      "recipes": [
+        "Rice Noodles w/ Egg Drop Gravy"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "baby bok choy",
+      "unit": "oz",
+      "pantry": false,
+      "quantity": "24",
+      "recipes": [
+        "Sheet Pan Scallion Chicken w/ Bok Choy"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "carrot",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Rice Noodles w/ Egg Drop Gravy"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "fresh ginger",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "9",
+      "recipes": [
+        "Sheet Pan Scallion Chicken w/ Bok Choy"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "frozen or fresh green peas",
+      "unit": "oz",
+      "pantry": false,
+      "quantity": "16",
+      "recipes": [
+        "Mattar Paneer"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "garlic",
+      "unit": "clove",
+      "pantry": false,
+      "quantity": "5",
+      "recipes": [
+        "Cheesy White Bean Tomato Bake",
+        "Rice Noodles w/ Egg Drop Gravy"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "garlic",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "6",
+      "recipes": [
+        "Sheet Pan Scallion Chicken w/ Bok Choy"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "garlic paste or freshly grated garlic",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Mattar Paneer"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "ginger paste or freshly grated ginger",
+      "unit": "tsp",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Mattar Paneer"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "lemon wedges",
+      "unit": "as needed",
+      "pantry": false,
+      "quantity": null,
+      "recipes": [
+        "Sheet Pan Scallion Chicken w/ Bok Choy"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "medium onion, diced",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "1/2",
+      "recipes": [
+        "Shrimp Fried Rice"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "medium plum tomatoes",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "6",
+      "recipes": [
+        "Mattar Paneer"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "medium yellow onion",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "2",
+      "recipes": [
+        "Mattar Paneer"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "piece of ginger (1-inch)",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Rice Noodles w/ Egg Drop Gravy"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "scallions",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "4",
+      "recipes": [
+        "Sheet Pan Scallion Chicken w/ Bok Choy"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "small yellow onion",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Chorizo Rice"
+      ]
+    },
+    {
+      "category": "Produce",
+      "item": "sweet bell pepper",
+      "unit": "each",
+      "pantry": false,
+      "quantity": "1",
+      "recipes": [
+        "Chorizo Rice"
+      ]
+    },
+    {
+      "category": "Seafood",
+      "item": "peeled and deveined medium shrimp, thawed if frozen",
+      "unit": "oz",
+      "pantry": false,
+      "quantity": "8",
+      "recipes": [
+        "Shrimp Fried Rice"
+      ]
+    }
+  ]
+}
